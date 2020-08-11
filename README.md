@@ -12,6 +12,14 @@ To run the programs install the following dependencies:
 - NumPy
 - Matplotlib
 
+### Linux
+
+Install the python modules via pip:
+
+> pip install tensorflow <br>
+> pip install numpy <br>
+> pip install matplotlib
+
 ## Project Directory Structure
 
 ### ReluNetwork
