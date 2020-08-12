@@ -32,18 +32,18 @@ def main(argv):
 			load_checkpoint = True
 		elif opt in ("-d", "--data"):
 			training_data_path = arg
-
-	# Train the model
-	trainModel(training_data_path=training_data_path, omit_saturated=True, layer_count=2, neurons_per_layer=16, epochs=1000, batch_size=64, load_checkpoint=load_checkpoint, save_best=True, early_stopping=True, patience=10)
-
-
-def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturated=False, layer_count=3, neurons_per_layer=16, use_bias=True, epochs=100, batch_size=64, load_checkpoint=False, save_best=True, early_stopping=True, patience=10, verbose=True, model=None):
-
-	if model == None:
-		model = network.get_model(layer_count, neurons_per_layer, use_bias)
+			
+	# Get an example model
+	model = network.get_model(layer_count=2, neurons_per_layer=16, use_bias=True)
 
 	if load_checkpoint:
 		model.load_weights(CHECKPOINT_NAME)
+
+	# Train the model
+	trainModel(training_data_path=training_data_path, omit_saturated=True, epochs=1000, batch_size=64, save_best=True, early_stopping=True, patience=10, model=model)
+
+
+def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturated=False, epochs=100, batch_size=64, save_best=True, early_stopping=True, tensorboard=True, patience=10, verbose=True, model=None, name="network"):
 
 	# Load the Training Data
 	data = training_data.load_data(training_data_path)
@@ -61,7 +61,6 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 		      metrics=[keras.metrics.MeanAbsoluteError()]
 		      ) # TODO  optimizer=keras.optimizers.RMSprop(learning_rate=1e-3),
 
-		      
 	# Print the weights of the model
 	#printLayers(model)
 
@@ -72,7 +71,7 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 	# Create a checkpoint callback to save the model
 	cpkt_callback = tf.keras.callbacks.ModelCheckpoint(filepath=CHECKPOINT_NAME,
 		                                         monitor='loss',
-		                                         verbose=1,
+		                                         verbose=verbose,
 		                                         save_best_only=True,
 		                                         save_weights_only=False,
 		                                         mode='auto', save_freq='epoch', options=None
@@ -81,7 +80,10 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 	# Create an early stopping callback
 	earlystopping_callback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=patience, mode='auto')
 	
-	callbacks = [tboard_callback]
+	callbacks = []
+	
+	if tensorboard:
+		callbacks.append(tboard_callback)
 	
 	if save_best:
 		callbacks.append(cpkt_callback)
@@ -94,7 +96,7 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 		            batch_size=batch_size,
 		            epochs=epochs,
 		            initial_epoch=0,
-		            verbose=1,
+		            verbose=verbose,
 		            shuffle=True,
 		            callbacks = callbacks)
 
@@ -117,11 +119,10 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 	print("Training summary\n loss: {}, mean_absolute_error: {}, epochs: {}".format(loss, mean_absolute_error, trained_epochs))
 	
 	print("Evaluate on test data")
-	results = model.evaluate(x_train, y_train)#, batch_size=128) TODO
+	results = model.evaluate(x_train, y_train)
 	loss = results[0]
 	mean_absolute_error = results[1]
 	print("test loss, test mean_absolute_error: {}, {}".format(loss, mean_absolute_error))
-
 
 	# Print a summary
 	model.summary()
@@ -137,9 +138,14 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 	print('Trainable params: {:,}'.format(trainable_count))
 	print('Non-trainable params: {:,}'.format(non_trainable_count))
 	
-	printLayers(model)
+	if verbose:
+		printLayers(model)
 
-	return trainable_count, non_trainable_count, loss, mean_absolute_error, trained_epochs
+	complete_name = name + "_variables={}_loss={:.3f}".format(trainable_count, loss)
+
+	saveLayers(model, complete_name)
+
+	return loss, mean_absolute_error, trained_epochs
 
 def predictFunction(model, rows, columns, blocking=True, text=""):
 
@@ -148,7 +154,6 @@ def predictFunction(model, rows, columns, blocking=True, text=""):
 
 	X, Y = np.meshgrid(x, y)
 	
-	###
 	X_flat = X.flatten()
 	Y_flat = Y.flatten()
 	
@@ -160,30 +165,18 @@ def predictFunction(model, rows, columns, blocking=True, text=""):
 		dataset_x[i][0] = x
 		dataset_x[i][1] = y
 		i += 1
-	###
-	
+		
 	values = model.predict(dataset_x)
 
-	Z_new = np.empty([rows, columns]) # value
-
-	cnt=0
-	for value in values:
-		my_x = int(cnt / columns)
-		my_y = int(cnt % columns)
-
-		Z_new[my_x][my_y] = value
-		
-		cnt += 1
+	Z_new = np.empty([rows, columns]) 
 	
-	"""	TEST TODO!!!!
 	for my_x in range(columns):
 		for my_y in range(rows):
-			Z_new[my_x][my_y] = values[my_y * columns + my_x]
-	"""
+			Z_new[my_y][my_x] = values[my_y * columns + my_x]
 
-	print(X.shape)
-	print(Y.shape)
-	print(Z_new.shape)
+	#print(X.shape)
+	#print(Y.shape)
+	#print(Z_new.shape)
 
 	plt.figure()
 	ax = plt.axes(projection='3d')
@@ -193,32 +186,41 @@ def predictFunction(model, rows, columns, blocking=True, text=""):
 	plt.show(block=blocking)
 
 def printLayers(model):
-	data = {}
 	layers = model.layers
 	
-	layer_cnt = 0
 	for layer in layers:
 		print("Layer: " + str(layer))
 		
 		weights = layer.get_weights()
 		print("Weights: " + str(weights))
 		
+		for weight in weights:
+			print("Weight:" + str(weight))
+
+def saveLayers(model, name='network'):
+	data = {}
+	layers = model.layers
+	
+	layer_cnt = 0
+	for layer in layers:
+		weights = layer.get_weights()
 		data['layer_{}'.format(layer_cnt)] = {}
 		
 		weight_count = 0
-		for weight in weights:
-			print("Weight:" + str(weight))
-			
+		for weight in weights:		
 			data['layer_{}'.format(layer_cnt)]['weight_{}'.format(weight_count)] = weight.tolist()
-			
 			weight_count += 1
 			
 		layer_cnt += 1
 		
 	json_data = json.dumps(data, indent='\t')
-	print(json_data)
 	
-	f = open("network.json", "w")
+	# Make sure the directory exists
+	if not os.path.exists("networks/"):
+		os.makedirs("networks/")
+	
+	# Save the file
+	f = open("networks/" + name + '.json', "w")
 	f.write(json_data)
 	f.close()
 
