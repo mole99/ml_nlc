@@ -5,12 +5,14 @@ NLC table replacement based on ML
 
 ## Getting Started
 
-To run the programs install the following dependencies:
+To run most of the programs install the following dependencies:
 
 - Python > 3.5
 - Tensorflow > 2
 - NumPy
 - Matplotlib
+
+Install [spfpm](https://pypi.org/project/spfpm/) to run the script for quantizing the Neural Network.
 
 ### Linux
 
@@ -18,7 +20,8 @@ Install the python modules via pip:
 
 > pip install tensorflow <br>
 > pip install numpy <br>
-> pip install matplotlib
+> pip install matplotlib <br>
+> pip install spfpm
 
 ## Project Directory Structure
 
