@@ -4,6 +4,8 @@ output = activation(dot(input, kernel) + bias)
 """
 
 from matplotlib import pyplot as plt
+from matplotlib import colors
+from matplotlib.ticker import PercentFormatter
 import numpy as np
 import sys, getopt
 import json
@@ -120,10 +122,53 @@ def plotDifferenceGraph(network, trainingData, max_value, rows, columns, name, b
 	ax.set_title(name);
 	plt.show(block=block)
 	
+def plotHistogram(network, x_train, y_train, max_value, block=True, omit_saturated=False):
+	
+	histogram_data = []
+	n_bins = 300
+	
+	count = 0
+	for x_in in x_train:
+		prediction = network.predict(x_in[0], x_in[1])[0]
+		if omit_saturated:
+			if prediction > max_value:
+				prediction = max_value
+		
+		correct_value = y_train[count][0]
+		
+		square_error = (prediction - correct_value) ** 2
+		error = prediction - correct_value
+		absolute_error = abs(error)
+		
+		histogram_data.append(absolute_error)
+	
+		count += 1
+		
+	fig, ax = plt.subplots()
+
+	# N is the count in each bin, bins is the lower-limit of the bin
+	N, bins, patches = ax.hist(histogram_data, bins=n_bins)
+	
+	# Color by height
+	fracs = N / N.max()
+
+	# Normalize the data to 0..1 for the full range of the colormap
+	norm = colors.Normalize(fracs.min(), fracs.max())
+
+	# Loop through the objects and set the color of each accordingly
+	for thisfrac, thispatch in zip(fracs, patches):
+		color = plt.cm.viridis(norm(thisfrac))
+		thispatch.set_facecolor(color)
+	
+	# Normalize the inputs by the total number of counts
+	ax.hist(histogram_data, bins=n_bins, density=True)
+
+	plt.show(block=block)
+	
 def calculateMetrics(network, x_train, y_train, max_value, omit_saturated=False):
-	mean = 0
 	
 	# Calculate mean value of training set
+	mean = 0
 	count = 0
 	for x_in in x_train:
 		mean += y_train[count][0]
@@ -135,17 +180,16 @@ def calculateMetrics(network, x_train, y_train, max_value, omit_saturated=False)
 	mean_absolute_error = 0
 	mean_variance = 0
 	
-	
 	# Initialize min/max values
 	prediction = network.predict(x_train[0][0], x_train[0][1])[0]
 	if omit_saturated:
-			if prediction > max_value:
-				prediction = max_value
+		if prediction > max_value:
+			prediction = max_value
 	
 	min_prediction = prediction
 	max_prediction = prediction
 	
-	error = prediction - y_train[0]
+	error = prediction - y_train[0][0]
 	
 	min_error = error
 	max_error = error
@@ -182,12 +226,12 @@ def calculateMetrics(network, x_train, y_train, max_value, omit_saturated=False)
 		mean_variance += variance
 	
 		count += 1
-		
+	
+	# Calculate the mean values
 	mean_square_error /= count
 	mean_absolute_error /= count
 	mean_variance /= count
 
-	
 	root_mean_square_error = math.sqrt(mean_square_error)
 	
 	r2_coefficient = 1.0 - (mean_square_error / mean_variance)
@@ -322,9 +366,11 @@ def main(argv):
 	
 	plotGraph(network, max_value, data.shape[0], data.shape[1], path, False, omit_saturated=omit_saturated)
 	
-	plotDifferenceGraph(network, data, max_value, data.shape[0], data.shape[1], path + " (difference)", block=True, omit_saturated=omit_saturated)
-		
+	plotDifferenceGraph(network, data, max_value, data.shape[0], data.shape[1], path + " (difference)", block=False, omit_saturated=omit_saturated)
+	
 	(x_train, y_train) = training_data.generateDataset(data)
+	
+	plotHistogram(network, x_train, y_train, max_value, block=True, omit_saturated=omit_saturated)
 	
 	calculateMetrics(network, x_train, y_train, max_value, omit_saturated=omit_saturated)
 
