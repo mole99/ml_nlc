@@ -7,12 +7,12 @@ NLC table replacement based on ML
 
 To run most of the programs install the following dependencies:
 
-- Python > 3.5
-- Tensorflow > 2.3.0
+- Python >= 3.5
+- Tensorflow >= 2.3.0
 - NumPy
 - Matplotlib
 
-Install [spfpm](https://pypi.org/project/spfpm/) to run the script for quantizing the Neural Network.
+Install [spfpm](https://pypi.org/project/spfpm/) to run the script for quantizing the Neural Network in Python via fixed point arithmetic.
 
 ### Linux
 
@@ -27,7 +27,7 @@ Install the python modules via pip:
 
 ### ReluNetwork
 
-Contains everything to train a Neural Network via train\_network.py and run multiple tests for comparing different network sizes with test\_configurations.py.
+Contains everything to train a Neural Network via train\_network.py and run multiple tests for comparing different network sizes with test\_configurations.py. <br> quantize\_network.py trains a network, applies post-quantization (quantization aware training will follow) to it and saves it in the .tflite format.
 
 ### TrainingData
 
@@ -35,4 +35,8 @@ This includes both curves in .csv format and training\_data.py to load and proce
 
 ### ReferenceImplementation
 
-Loads the weights of an already trained network in .json format and runs the Neural Network in pure Python.
+Loads the weights of an already trained network in .json format and runs the Neural Network in pure Python. Only dense layers are supported as of now.
+
+### QuantizationScheme
+
+A small reference implementation in C for the quantization scheme described here: [arXiv:1712.05877](https://arxiv.org/abs/1712.05877)
