@@ -122,8 +122,8 @@ Min Error: -39.328125 	 Max Error: 56.859375
 """
 
 globalFXfamily = FXfamily(3, 5)#(3, 5)
-biasFXfamily = FXfamily(5, 8)#(6, 10)
-activationFXfamily = FXfamily(6, 10)#(6, 10)
+biasFXfamily = FXfamily(16, 16)#(6, 10)
+activationFXfamily = FXfamily(16, 16)#(6, 10)
 
 def ReLu(value):
 	if value < 0:
@@ -173,7 +173,9 @@ class Network:
 	def predict(self, x, y):
 
 		#print("Calculating: ")
-		xy = np.array([x, y], dtype=np.float32)
+		#xy = np.array([x, y], dtype=np.float32)
+		
+		xy = [FXnum(x, activationFXfamily), FXnum(y, activationFXfamily)]
 
 		input_array = xy
 
@@ -189,9 +191,10 @@ class Network:
 				neuron.calculate(input_array)
 				#print("Result: {}".format(neuron.result))
 			
-			input_array = np.empty([0], dtype=np.float32)
+			input_array = []
 			for neuron in layer.neurons:
-				input_array = np.append(input_array, neuron.result)
+				input_array.append(neuron.result)
+				
 				
 		#print("End Result:")
 		#print(input_array)
@@ -208,7 +211,7 @@ def plotGraph(network, max_value, rows, columns, name, block=True, omit_saturate
 
 	for my_x in range(columns):
 		for my_y in range(rows):
-			prediction = float(network.predict(x[my_x], y[my_y]))
+			prediction = float(network.predict(x[my_x], y[my_y])[0])
 			if omit_saturated:
 				if prediction > max_value:
 					prediction = max_value
@@ -231,7 +234,7 @@ def plotDifferenceGraph(network, trainingData, max_value, rows, columns, name, b
 
 	for my_x in range(columns):
 		for my_y in range(rows):
-			prediction = float(network.predict(x[my_x], y[my_y]))
+			prediction = float(network.predict(x[my_x], y[my_y])[0])
 			if omit_saturated:
 				if prediction > max_value:
 					prediction = max_value
