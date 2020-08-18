@@ -40,7 +40,7 @@ def main(argv):
 		model.load_weights(CHECKPOINT_NAME)
 
 	# Train the model
-	trainModel(training_data_path=training_data_path, omit_saturated=True, epochs=1000, batch_size=64, save_best=True, early_stopping=True, patience=10, model=model)
+	trainModel(training_data_path=training_data_path, omit_saturated=True, epochs=500, batch_size=64, save_best=False, early_stopping=False, tensorboard=False, patience=8, model=model)
 
 
 def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturated=False, epochs=100, batch_size=64, save_best=True, early_stopping=True, tensorboard=True, patience=10, verbose=True, model=None, name="network"):
@@ -145,7 +145,7 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 
 	saveLayers(model, complete_name)
 
-	return loss, mean_absolute_error, trained_epochs
+	return loss, mean_absolute_error, trained_epochs, model
 
 def predictFunction(model, rows, columns, blocking=True, text=""):
 

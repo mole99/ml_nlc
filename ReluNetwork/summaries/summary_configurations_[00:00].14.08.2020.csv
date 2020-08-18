@@ -1,0 +1,2 @@
+training_data_path;omit_saturated_values;batch_size;num_epochs;early_stopping;patience;num_iterations_per_config;relu_max_value;relu_negative_slope;layer_configuration;trainable_count;non_trainable_count;loss;mean_absolute_error;trained_epochs;min_loss;min_mean_absolute_error;max_trained_epochs
+../TrainingData/ideal_dchg.csv;True;64;1000;False;8;3;6;0.0;[16, 8, 4, 1];225;0.0;[827.5057983398438, 827.5054321289062, 827.50537109375];[22.0128231048584, 22.016878128051758, 22.018911361694336];[1000, 1000, 1000];827.50537109375;22.0128231048584;1000

@@ -38,10 +38,10 @@ class ReluNetwork(keras.Model):
 		    'use_bias': self.use_bias
 		}
 
-class TwoPartNetwork(keras.Model):
+class TwoPathNetwork(keras.Model):
 
 	def __init__(self, name=None, neurons_per_path=8, neurons_per_layer=8, path_layer_count=1, layer_count=2, use_bias=True, **kwargs,):
-		super(TwoPartNetwork, self).__init__(name=name)
+		super(TwoPathNetwork, self).__init__(name=name)
 
 		self.relu_layers = []
 		self.path_layers = [[], []]
@@ -103,4 +103,37 @@ def get_model(layer_count=3, neurons_per_layer=16, use_bias=True):
 	return ReluNetwork(name='ReluNetwork', neurons_per_layer=neurons_per_layer, layer_count=layer_count, use_bias=use_bias)
 	
 def getTwoPath_model(neurons_per_path=4, neurons_per_layer=8, path_layer_count=2, layer_count=2, use_bias=True):
-	return TwoPartNetwork(name='TwoPartNetwork', neurons_per_path=neurons_per_path, neurons_per_layer=neurons_per_layer, path_layer_count=path_layer_count, layer_count=layer_count, use_bias=use_bias)
+	return TwoPathNetwork(name='TwoPathNetwork', neurons_per_path=neurons_per_path, neurons_per_layer=neurons_per_layer, path_layer_count=path_layer_count, layer_count=layer_count, use_bias=use_bias)
+	
+def getSequential_model(configuration, relu_max_value=None, relu_negative_slope=0.0):
+	layers = []
+	
+	# Create dense layers with the "relu" function
+	count = 0
+	last_neurons_per_layer = 0		
+	for neurons_per_layer in configuration:	
+		# First Layer
+		if count == 0:
+			layers.append(keras.layers.Dense(neurons_per_layer, activation='linear', use_bias=True, name='dense_' + str(count), input_shape=(2,)))
+			layers.append(keras.layers.ReLU(max_value=relu_max_value, negative_slope=relu_negative_slope))
+		# Last Layer
+		elif (count == len(configuration) - 1):
+			layers.append(keras.layers.Dense(neurons_per_layer, activation='linear', use_bias=True, name='dense_' + str(count)))
+		# Average Pooling Layer
+		elif neurons_per_layer == 'pa':
+			layers.append(keras.layers.Reshape((last_neurons_per_layer, 1)))
+			layers.append(keras.layers.AveragePooling1D(pool_size=2, strides=None, padding='valid'))
+			layers.append(keras.layers.Flatten())
+		# Max Pooling Layer
+		elif neurons_per_layer == 'pm':
+			layers.append(keras.layers.Reshape((last_neurons_per_layer, 1)))
+			layers.append(keras.layers.MaxPooling1D(pool_size=2, strides=None, padding='valid'))
+			layers.append(keras.layers.Flatten())
+		# Middle Layers
+		else:
+			layers.append(keras.layers.Dense(neurons_per_layer, activation='linear', use_bias=True, name='dense_' + str(count)))
+			layers.append(keras.layers.ReLU(max_value=relu_max_value, negative_slope=relu_negative_slope))
+		last_neurons_per_layer = neurons_per_layer
+		count += 1
+	
+	return keras.models.Sequential(layers)
