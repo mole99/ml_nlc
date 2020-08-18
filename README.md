@@ -8,7 +8,7 @@ NLC table replacement based on ML
 To run most of the programs install the following dependencies:
 
 - Python > 3.5
-- Tensorflow > 2
+- Tensorflow > 2.3.0
 - NumPy
 - Matplotlib
 
