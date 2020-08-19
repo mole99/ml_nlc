@@ -40,7 +40,7 @@ def main(argv):
 		model.load_weights(CHECKPOINT_NAME)
 
 	# Train the model
-	trainModel(training_data_path=training_data_path, omit_saturated=True, epochs=500, batch_size=64, save_best=False, early_stopping=False, tensorboard=False, patience=8, model=model)
+	trainModel(training_data_path=training_data_path, omit_saturated=True, epochs=100, batch_size=64, save_best=False, early_stopping=False, tensorboard=False, patience=8, model=model)
 
 
 def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturated=False, epochs=100, batch_size=64, save_best=True, early_stopping=True, tensorboard=True, patience=10, verbose=True, model=None, name="network"):
@@ -100,30 +100,31 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 		            shuffle=True,
 		            callbacks = callbacks)
 
-	loss = history.history['loss']
+	training_loss = history.history['loss']
 
-	if verbose:
-		plt.figure(figsize=(8, 8))
-		plt.plot(loss, label='Training Loss')
-		plt.legend(loc='upper right')
-		plt.ylabel('Cross Entropy')
-		plt.title('Training and Validation Loss')
-		plt.xlabel('epoch')
-		plt.show(block=False)
-
-	print(history.history.keys())
-	loss = history.history['loss'][-1]
-	mean_absolute_error = history.history['mean_absolute_error'][-1]
+	value_training_loss = history.history['loss'][-1]
+	value_training_mean_absolute_error = history.history['mean_absolute_error'][-1]
 	trained_epochs = len(history.history['loss'])
 	
-	print("Training summary\n loss: {}, mean_absolute_error: {}, epochs: {}".format(loss, mean_absolute_error, trained_epochs))
+	print("Training summary\n loss: {}, mean_absolute_error: {}, epochs: {}".format(value_training_loss, value_training_mean_absolute_error, trained_epochs))
+	
+	if verbose:
+		plt.figure()
+		plt.plot(training_loss, label='Training Loss')
+		plt.legend(loc='upper right')
+		plt.ylabel('Mean Square Error')
+		plt.xlabel('Epoch')
+		plt.show(block=False)
 	
 	print("Evaluate on test data")
-	results = model.evaluate(x_train, y_train)
-	loss = results[0]
-	mean_absolute_error = results[1]
-	print("test loss, test mean_absolute_error: {}, {}".format(loss, mean_absolute_error))
+	result = model.evaluate(x_train, y_train)
+		
+	value_validation_loss = result[0]
+	value_validation_mean_absolute_error = result[1]
+	
+	print("Validation summary\n  loss: {}, mean_absolute_error: {}".format(value_validation_loss, value_validation_mean_absolute_error))
 
+	
 	# Print a summary
 	model.summary()
 	
@@ -141,11 +142,11 @@ def trainModel(training_data_path='../TrainingData/ideal_dchg.csv', omit_saturat
 	if verbose:
 		printLayers(model)
 
-	complete_name = name + "_variables={}_loss={:.3f}".format(trainable_count, loss)
+	complete_name = name + "_variables={}_loss={:.3f}".format(trainable_count, value_validation_loss)
 
 	saveLayers(model, complete_name)
 
-	return loss, mean_absolute_error, trained_epochs, model
+	return value_validation_loss, value_validation_mean_absolute_error, trained_epochs, model
 
 def predictFunction(model, rows, columns, blocking=True, text=""):
 
@@ -180,8 +181,9 @@ def predictFunction(model, rows, columns, blocking=True, text=""):
 
 	plt.figure()
 	ax = plt.axes(projection='3d')
-	ax.plot_surface(X, Y, Z_new, rstride=1, cstride=1,
-			cmap='viridis', edgecolor='none')
+	ax.plot_surface(X, Y, Z_new, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
+	ax.set_ylabel("Y") #TODO
+	ax.set_xlabel("X") #TODO
 	ax.set_title(text);
 	plt.show(block=blocking)
 

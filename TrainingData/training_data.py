@@ -21,8 +21,9 @@ def displayData3D(data, name='none', block=True):
 
 	plt.figure()
 	ax = plt.axes(projection='3d')
-	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
-		        cmap='viridis', edgecolor='none')
+	ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
+	ax.set_ylabel("Y") #TODO
+	ax.set_xlabel("X") #TODO
 	ax.set_title(name);
 	plt.show(block=block)
 

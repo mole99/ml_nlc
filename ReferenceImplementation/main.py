@@ -5,7 +5,6 @@ output = activation(dot(input, kernel) + bias)
 
 from matplotlib import pyplot as plt
 from matplotlib import colors
-from matplotlib.ticker import PercentFormatter
 import numpy as np
 import sys, getopt
 import json
@@ -94,8 +93,9 @@ def plotGraph(network, max_value, rows, columns, name, block=True, omit_saturate
 
 	plt.figure()
 	ax = plt.axes(projection='3d')
-	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
-			cmap='viridis', edgecolor='none')
+	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,	cmap='viridis', edgecolor='none')
+	ax.set_ylabel("Y") #TODO
+	ax.set_xlabel("X") #TODO
 	ax.set_title(name);
 	plt.show(block=block)
 	
@@ -117,8 +117,9 @@ def plotDifferenceGraph(network, trainingData, max_value, rows, columns, name, b
 
 	plt.figure()
 	ax = plt.axes(projection='3d')
-	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
-			cmap='viridis', edgecolor='none')
+	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,	cmap='viridis', edgecolor='none')
+	ax.set_ylabel("Y") #TODO
+	ax.set_xlabel("X") #TODO
 	ax.set_title(name);
 	plt.show(block=block)
 	
@@ -163,6 +164,9 @@ def plotHistogram(network, x_train, y_train, max_value, block=True, omit_saturat
 	# Normalize the inputs by the total number of counts
 	ax.hist(histogram_data, bins=n_bins, density=True)
 
+	ax.set_ylabel("Absolute Frequency")
+	ax.set_xlabel("Absolute Error")
+	
 	plt.show(block=block)
 	
 def calculateMetrics(network, x_train, y_train, max_value, omit_saturated=False):
