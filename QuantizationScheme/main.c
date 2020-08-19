@@ -148,72 +148,6 @@ void quantizeList(float real_values[], int length, int8_t quantized_values[], in
 	printf("\tmean_abs_relative_error: %f\n", mean_abs_relative_error);
 }
 
-void fixedPointQuantizeList(float real_values[], int length, char quantized_values[])
-{
-	// [a; b] is the quantization range
-	float a = real_values[0];
-	float b = real_values[0];
-	
-
-
-	for (int i = 0; i < length; i++)
-	{
-		printf("Current weight: %f\n", real_values[i]);
-	
-		if (real_values[i] < a)
-		{
-			a = real_values[i];
-		}
-		
-		if (real_values[i] > b)
-		{
-			b = real_values[i];
-		}
-	}
-	
-	printf("Quantization range = [%f; %f]\n", a, b);
-	
-	float max_value = max(abs_f(a), abs_f(b));
-	
-	int bits_integer_part = log(max_value) / log(2) + 1;
-	
-	printf("bits_integer_part: %d\n", bits_integer_part);
-	
-	float mean_abs_error = 0.f;
-	float mean_abs_relative_error = 0.f;
-
-	for (int i = 0; i < length; i++)
-	{
-		float r = real_values[i];
-		
-		printf("Quantizing %f\n", r);
-		
-		char quantized_value = (char)(r * pow(2, bits_integer_part) + 0.5);
-
-		
-		float requantized_value = (float)quantized_value / pow(2, bits_integer_part);
-		
-		printf("\tRequantized value: %f\n", requantized_value);
-		
-		float abs_error = abs_f(requantized_value - r);
-		float abs_relative_error = abs_error / r;
-		
-		mean_abs_error += abs_error;
-		mean_abs_relative_error += abs_relative_error;
-		
-		printf("\tabs_error: %f\n", abs_error);
-		printf("\tabs_relative_error: %f\n", abs_relative_error);
-	}
-	
-	mean_abs_error /= length;
-	mean_abs_relative_error /= length;
-	
-	printf("Summary\n");
-	printf("\tmean_abs_error: %f\n", mean_abs_error);
-	printf("\tmean_abs_relative_error: %f\n", mean_abs_relative_error);
-	
-}
-
 float calculateRealValues(float weights[], float input[], int length)
 {
 	float sum = 0;
@@ -228,7 +162,10 @@ float calculateRealValues(float weights[], float input[], int length)
 
 float calculateQuantizedValues(int8_t quantized_weights[], int8_t quantized_input[], int length, uint16_t fixedpoint_M)
 {
-	int32_t sum = 0; // TODO overflow
+	// Needs to be greater than 16 bit
+	// 8 bit * 8 bit = 16 bit
+	// 16 bit + bias > 16 bit
+	int32_t sum = 0;
 
 	for (int i = 0; i < length; i++)
 	{
@@ -412,7 +349,7 @@ int main()
 	float real_output = calculateRealValues(real_weights, real_input, length_weights);
 
 
-	quantizeList(real_input, length_input, quantized_input, n, &S_input, &Z_input, true); // TODO precalculated S_input, Z_input?
+	quantizeList(real_input, length_input, quantized_input, n, &S_input, &Z_input, true);
 	
 	float M = S_weights * S_input / S_output;
 	
