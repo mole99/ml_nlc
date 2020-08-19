@@ -1,0 +1,105 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx_vitis/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Klaus Strohmayer' on host 'gnb-kstr' (Windows NT_amd64 version 6.2) on Wed Aug 19 15:18:26 +0200 2020
+INFO: [HLS 200-10] In directory 'C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter'
+Sourcing Tcl script 'C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter/filter/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project 'C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter/filter'.
+INFO: [HLS 200-10] Opening solution 'C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter/filter/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 100ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx_vitis/Vivado/2019.2/common/technology/xilinx/aartix7/aartix7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/aartix7/aartix7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx_vitis/Vivado/2019.2/common/technology/xilinx/aartix7/aartix7_fpv6.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/aartix7/aartix7_fpv6'.
+INFO: [HLS 200-10] Setting target device to 'xa7a12t-csg325-1Q'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../filter_c_tb.cpp in debug mode
+   Compiling ../../../../../filter_c_top_helper.cpp in debug mode
+   Compiling ../../../../../filter_c_top.cpp in debug mode
+   Generating csim.exe
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top_helper.h:35,
+                 from ../../../../../filter_c_tb.cpp:38:
+C:/Xilinx_vitis/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top_helper.h:35,
+                 from ../../../../../filter_c_tb.cpp:38:
+C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top_helper.h:35,
+                 from ../../../../../filter_c_top_helper.cpp:33:
+C:/Xilinx_vitis/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top_helper.h:35,
+                 from ../../../../../filter_c_top_helper.cpp:33:
+C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top.h:43,
+                 from ../../../../../filter_c_top.cpp:32:
+C:/Xilinx_vitis/Vivado/2019.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx_vitis/Vivado/2019.2/include/hls_fpo.h:186:0,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/hls_half.h:44,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_common.h:641,
+                 from C:/Xilinx_vitis/Vivado/2019.2/include/ap_fixed.h:54,
+                 from ../../../../../filter_c_top.h:43,
+                 from ../../../../../filter_c_top.cpp:32:
+C:/Xilinx_vitis/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+x = -2.5 -->  -2
+x = -2.0 -->  -2
+x = -1.5 -->  -1.5
+x = -1.0 -->  -1
+x = -0.5 -->  -0.5
+x =  0.5 -->  0.5
+x =  1.0 -->  1
+x =  1.5 -->  1.5
+x =  2.0 -->  1.99993896484375
+x =  2.5 -->  1.99993896484375
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter/filter/solution1/csim.tcl"
+    invoked from within
+"hls::main C:/kstrohma/Projects/Leda1/2v0/filter/hls/filter/filter/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
