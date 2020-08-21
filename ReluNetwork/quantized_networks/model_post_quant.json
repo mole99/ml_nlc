@@ -1,0 +1,100 @@
+{
+	"dense_0_input": {
+		"layer_index": "0",
+		"shape": "[1 2]",
+		"tensor": "(1, 2)",
+		"tensor_type": "int8",
+		"values": "[[-112, -75]]",
+		"quantization_parameters": {
+			"scales": "[0.003921568859368563]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[-128]",
+			"quantized_dimension": "0"
+		}
+	},
+	"sequential/dense_0/BiasAdd/ReadVariableOp/resource": {
+		"layer_index": "1",
+		"shape": "[4]",
+		"tensor": "(4,)",
+		"tensor_type": "int32",
+		"values": "[23675, -3548, -450, 23677]",
+		"quantization_parameters": {
+			"scales": "[9.990354010369629e-05]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[0]",
+			"quantized_dimension": "0"
+		}
+	},
+	"sequential/dense_1/BiasAdd/ReadVariableOp/resource": {
+		"layer_index": "2",
+		"shape": "[1]",
+		"tensor": "(1,)",
+		"tensor_type": "int32",
+		"values": "[2980]",
+		"quantization_parameters": {
+			"scales": "[0.0007884062360972166]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[0]",
+			"quantized_dimension": "0"
+		}
+	},
+	"sequential/dense_0/MatMul": {
+		"layer_index": "3",
+		"shape": "[4 2]",
+		"tensor": "(4, 2)",
+		"tensor_type": "int8",
+		"values": "[[101, 80], [19, -42], [-2, 2], [68, 127]]",
+		"quantization_parameters": {
+			"scales": "[0.025475401431322098]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[0]",
+			"quantized_dimension": "0"
+		}
+	},
+	"sequential/dense_1/MatMul": {
+		"layer_index": "4",
+		"shape": "[1 4]",
+		"tensor": "(1, 4)",
+		"tensor_type": "int8",
+		"values": "[[127, -9, -31, 124]]",
+		"quantization_parameters": {
+			"scales": "[0.027435997501015663]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[0]",
+			"quantized_dimension": "0"
+		}
+	},
+	"sequential/dense_0/Relu;sequential/dense_0/BiasAdd": {
+		"layer_index": "5",
+		"shape": "[1 4]",
+		"tensor": "(1, 4)",
+		"tensor_type": "int8",
+		"values": "[[-128, -35, 47, 2]]",
+		"quantization_parameters": {
+			"scales": "[0.02873619645833969]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[-128]",
+			"quantized_dimension": "0"
+		}
+	},
+	"Identity": {
+		"layer_index": "6",
+		"shape": "[1 1]",
+		"tensor": "(1, 1)",
+		"tensor_type": "int8",
+		"values": "[[-80]]",
+		"quantization_parameters": {
+			"scales": "[0.20209836959838867]",
+			"scales_shape": "(1,)",
+			"scales_type": "float32",
+			"zero_points": "[-128]",
+			"quantized_dimension": "0"
+		}
+	}
+}

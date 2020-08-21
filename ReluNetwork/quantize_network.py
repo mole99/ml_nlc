@@ -9,6 +9,7 @@ import time
 import csv
 import numpy as np
 import os
+import pathlib
 
 import network
 
@@ -20,7 +21,7 @@ sys.path.append('../')
 from TrainingData import training_data
 
 global_configuration = {
-	'training_data_path' : '../TrainingData/ideal_dchg.csv',
+	'training_data_path' : '../TrainingData/ideal_chg.csv',
 	'omit_saturated_values' : True,
 	'batch_size' : 64,
 	'num_epochs' : 500,
@@ -29,7 +30,7 @@ global_configuration = {
 	'num_iterations_per_config' : 3,
 	'relu_max_value' : 6,
 	'relu_negative_slope' : 0.0,
-	'verbose' : False,
+	'verbose' : True,
 	'quantization_aware_training' : False
 }
 
@@ -51,6 +52,8 @@ if global_configuration['verbose']:
 	
 (x_train, y_train) = training_data.generateDataset(data, omit_saturated=True)
 
+# TODO Also include saturated samples
+# TODO Try to feed [0, 0] and [1, 1]
 def representative_dataset_gen():
 	for i in range(x_train.shape[0]):
 		x = tf.expand_dims(x_train[i].astype(np.float32), 0)
@@ -277,8 +280,8 @@ def main():
 
 		converter.inference_type = tf.uint8
 
-		converter.inference_input_type = tf.uint8
-		converter.inference_output_type = tf.uint8
+		converter.inference_input_type = tf.int8
+		converter.inference_output_type = tf.int8
 		
 		
 	quantized_tflite_model = converter.convert()
@@ -296,13 +299,18 @@ def main():
 		print('quant_aware_model_mean_absolute_error:', quant_aware_model_mean_absolute_error)
 	print('tflite_mean_absolute_error:', tflite_mean_absolute_error)
 
-	import pathlib
-	tflite_model_file = pathlib.Path('model.tflite')
+	if global_configuration['quantization_aware_training'] == True:
+		tflite_model_file = pathlib.Path('model_quant_aware.tflite')
+	else:
+		tflite_model_file = pathlib.Path('model_post_quant.tflite')
+			
 	tflite_model_file.write_bytes(quantized_tflite_model)
 	
 	plotGrap(interpreter, data.shape[0], data.shape[1], block=False, text="tflite model")
 	
 	plotHistogram(interpreter, x_train, y_train, max_value, block=True, omit_saturated=True)
+	
+	
 
 if __name__ == "__main__":
 	main()
