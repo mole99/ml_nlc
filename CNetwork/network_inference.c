@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define NETWORK_ARCH 1
+#define NETWORK_ARCH 0
 
 #if NETWORK_ARCH == 0
 
@@ -81,9 +81,9 @@ void calculateNetwork(int8_t input[NUM_INPUT], int8_t output[NUM_OUTPUT])
 				buffer[i] = 127;
 			}
 			
-			if (buffer[i] < -128)
+			if (buffer[i] < -127)
 			{
-				buffer[i] = -128;
+				buffer[i] = -127;
 			}
 			
 		}
@@ -132,10 +132,22 @@ void testNetwork(float input[NUM_INPUT], float output[NUM_OUTPUT])
 	}
 }
 
+float abs_f(float a)
+{
+	if (a < 0)
+	{
+		return -a;
+	}
+	
+	return a;
+}
+
 void testDataset()
 {
 	FILE* fp;
 	fp = fopen("test_results.csv", "w+");
+	
+	float mean_absolute_error = 0;
 	
 	for (int i=0; i<NUM_IDEAL_ENTRIES; i++)
 	{
@@ -162,10 +174,16 @@ void testDataset()
 		
 		float error = output[0] - correct_output[0];
 		
+		mean_absolute_error += abs_f(error);
+		
 		DEBUG(printf("Error: %f\n", error));
 		
 		fprintf(fp, "%f\n", error);
 	}
+	
+	mean_absolute_error /= NUM_IDEAL_ENTRIES;
+	
+	printf("mean_absolute_error: %f\n", mean_absolute_error);
 	
 	fclose(fp);
 }
