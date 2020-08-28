@@ -94,8 +94,9 @@ def plotGraph(network, max_value, rows, columns, name, block=True, omit_saturate
 	plt.figure()
 	ax = plt.axes(projection='3d')
 	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,	cmap='viridis', edgecolor='none')
-	ax.set_ylabel("Y") #TODO
-	ax.set_xlabel("X") #TODO
+	ax.set_ylabel("vcn")
+	ax.set_xlabel("dvc")
+	ax.set_zlabel("tchl")
 	ax.set_title(name);
 	plt.show(block=block)
 	
@@ -118,8 +119,9 @@ def plotDifferenceGraph(network, trainingData, max_value, rows, columns, name, b
 	plt.figure()
 	ax = plt.axes(projection='3d')
 	ax.plot_surface(X, Y, Z, rstride=1, cstride=1,	cmap='viridis', edgecolor='none')
-	ax.set_ylabel("Y") #TODO
-	ax.set_xlabel("X") #TODO
+	ax.set_ylabel("vcn")
+	ax.set_xlabel("dvc")
+	ax.set_zlabel("tchl")
 	ax.set_title(name);
 	plt.show(block=block)
 	
