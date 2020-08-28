@@ -22,8 +22,9 @@ def displayData3D(data, name='none', block=True):
 	plt.figure()
 	ax = plt.axes(projection='3d')
 	ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
-	ax.set_ylabel("Y") #TODO
-	ax.set_xlabel("X") #TODO
+	ax.set_ylabel("vcn")
+	ax.set_xlabel("dvc")
+	ax.set_zlabel("tchl")
 	ax.set_title(name);
 	plt.show(block=block)
 
@@ -86,7 +87,7 @@ def generateDataset(data, omit_saturated=False):
 	return (dataset_x, dataset_y)
 
 if __name__ == "__main__":
-	filename = 'Training_Data/ideal_dchg.csv'
+	filename = 'ideal_dchg.csv'
 	data = load_data(filename)
 	displayData3D(data, filename)
 	generateDataset(data, omit_saturated=True)

@@ -330,7 +330,7 @@ def loadNetwork(path):
 	return network
 
 def main(argv):
-	path = "network.json"
+	path = "networks/network_dchg.json"
 	training_data_path = '../TrainingData/ideal_dchg.csv'
 	omit_saturated = True
 	
