@@ -21,14 +21,14 @@ sys.path.append('../')
 from TrainingData import training_data
 
 global_configuration = {
-	'training_data_path' : '../TrainingData/ideal_chg.csv',
+	'training_data_path' : '../TrainingData/ideal_dchg.csv',
 	'omit_saturated_values' : True,
 	'batch_size' : 64,
 	'num_epochs' : 500,
 	'early_stopping' : False,
 	'patience' : 8,
 	'num_iterations_per_config' : 3,
-	'relu_max_value' : 6,
+	'relu_max_value' : None,
 	'relu_negative_slope' : 0.0,
 	'verbose' : True,
 	'quantization_aware_training' : False
@@ -51,12 +51,14 @@ if global_configuration['verbose']:
 	training_data.displayData3D(data, global_configuration['training_data_path'], False)
 	
 (x_train, y_train) = training_data.generateDataset(data, omit_saturated=True)
+(x_train_saturated, _) = training_data.generateDataset(data, omit_saturated=False)
 
-# TODO Also include saturated samples
-# TODO Try to feed [0, 0] and [1, 1]
 def representative_dataset_gen():
-	for i in range(x_train.shape[0]):
-		x = tf.expand_dims(x_train[i].astype(np.float32), 0)
+	# Use the training input data with saturated values
+	representative_dataset = np.array([[0, 0], [1, 1]])
+
+	for i in range(x_train_saturated.shape[0]): #x_train.shape[0]):
+		x = tf.expand_dims(x_train_saturated[i].astype(np.float32), 0)
 		yield [x]
 
 
