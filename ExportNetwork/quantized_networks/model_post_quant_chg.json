@@ -4,7 +4,7 @@
 		"shape": "[1 2]",
 		"tensor": "(1, 2)",
 		"tensor_type": "int8",
-		"values": "[[112, 114]]",
+		"values": "[[16, 26]]",
 		"quantization_parameters": {
 			"scales": "[0.003921568859368563]",
 			"scales_shape": "(1,)",
@@ -130,7 +130,7 @@
 		"shape": "[ 1 16]",
 		"tensor": "(1, 16)",
 		"tensor_type": "int8",
-		"values": "[[111, 110, 116, 101, 110, 116, 115, 95, 116, 120, 116, 95, 114, 97, 119, 58]]",
+		"values": "[[-110, -128, -128, -24, -128, -128, -128, -128, -128, -128, -69, 0, -90, 8, -128, -128]]",
 		"quantization_parameters": {
 			"scales": "[0.015565451234579086]",
 			"scales_shape": "(1,)",
@@ -144,7 +144,7 @@
 		"shape": "[1 8]",
 		"tensor": "(1, 8)",
 		"tensor_type": "int8",
-		"values": "[[102, 111, 95, 116, 120, 116, 95, 114]]",
+		"values": "[[-39, -52, -128, -128, -96, -128, -128, -128]]",
 		"quantization_parameters": {
 			"scales": "[0.11711186915636063]",
 			"scales_shape": "(1,)",
@@ -158,7 +158,7 @@
 		"shape": "[1 4]",
 		"tensor": "(1, 4)",
 		"tensor_type": "int8",
-		"values": "[[111, 110, 116, 101]]",
+		"values": "[[-110, -128, -128, -24]]",
 		"quantization_parameters": {
 			"scales": "[0.21476490795612335]",
 			"scales_shape": "(1,)",
@@ -172,7 +172,7 @@
 		"shape": "[1 1]",
 		"tensor": "(1, 1)",
 		"tensor_type": "int8",
-		"values": "[[102]]",
+		"values": "[[-39]]",
 		"quantization_parameters": {
 			"scales": "[1.404667615890503]",
 			"scales_shape": "(1,)",

@@ -4,7 +4,7 @@
 		"shape": "[1 2]",
 		"tensor": "(1, 2)",
 		"tensor_type": "int8",
-		"values": "[[16, -67]]",
+		"values": "[[-48, -60]]",
 		"quantization_parameters": {
 			"scales": "[0.003921568859368563]",
 			"scales_shape": "(1,)",
@@ -144,7 +144,7 @@
 		"shape": "[1 8]",
 		"tensor": "(1, 8)",
 		"tensor_type": "int8",
-		"values": "[[0, -67, -69, 3, 0, 0, 0, 0]]",
+		"values": "[[80, -70, 40, 2, 0, 0, 0, 0]]",
 		"quantization_parameters": {
 			"scales": "[0.06240713596343994]",
 			"scales_shape": "(1,)",
@@ -172,7 +172,7 @@
 		"shape": "[1 1]",
 		"tensor": "(1, 1)",
 		"tensor_type": "int8",
-		"values": "[[0]]",
+		"values": "[[80]]",
 		"quantization_parameters": {
 			"scales": "[0.6022921800613403]",
 			"scales_shape": "(1,)",

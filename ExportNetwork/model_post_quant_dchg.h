@@ -31,22 +31,22 @@ const int32_t bias_3[1] = {82};
 
 
 struct layer
-{
-	// Layer data
-	
-	int8_t* weights;	
-	int32_t* bias;
-	
-	int dimension_0;
-	int dimension_1;
-	
-	// Input Quantization
-	int8_t input_zero_point; // TODO remove?	
-	
-	// Output Quantization
-	float output_conversion_scale;
-	int8_t output_zero_point;
-} typedef layer_t;
+	{
+		// Layer data
+		
+		int8_t* weights;	
+		int32_t* bias;
+		
+		int dimension_0;
+		int dimension_1;
+		
+		// Input Quantization
+		// int8_t input_zero_point;
+		
+		// Output Quantization
+		uint16_t output_conversion_scale;
+		int8_t output_zero_point;
+	} typedef layer_t;
 
 const layer_t layer_0 = {
 	.weights = (int8_t*)weights_0,
@@ -55,9 +55,7 @@ const layer_t layer_0 = {
 	.dimension_0 = 16,
 	.dimension_1 = 2,
 
-	.input_zero_point = -128,
-
-	.output_conversion_scale = 0.007259442005306482,
+	.output_conversion_scale = 952, // / 2^17
 	.output_zero_point = -128
 };
 
@@ -68,9 +66,7 @@ const layer_t layer_1 = {
 	.dimension_0 = 8,
 	.dimension_1 = 16,
 
-	.input_zero_point = -128,
-
-	.output_conversion_scale = 0.012142951600253582,
+	.output_conversion_scale = 1592, // / 2^17
 	.output_zero_point = -128
 };
 
@@ -81,9 +77,7 @@ const layer_t layer_2 = {
 	.dimension_0 = 4,
 	.dimension_1 = 8,
 
-	.input_zero_point = -128,
-
-	.output_conversion_scale = 0.009247004985809326,
+	.output_conversion_scale = 1212, // / 2^17
 	.output_zero_point = -128
 };
 
@@ -94,9 +88,7 @@ const layer_t layer_3 = {
 	.dimension_0 = 1,
 	.dimension_1 = 4,
 
-	.input_zero_point = -128,
-
-	.output_conversion_scale = 0.02284950576722622,
+	.output_conversion_scale = 2995, // / 2^17
 	.output_zero_point = -128
 };
 
