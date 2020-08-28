@@ -132,8 +132,9 @@ def plotGrap(interpreter, rows, columns, block=True, text=""):
 	ax = plt.axes(projection='3d')
 	ax.plot_surface(X, Y, Z_new, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
 	ax.set_title(text);
-	ax.set_ylabel("Y") #TODO
-	ax.set_xlabel("X") #TODO
+	ax.set_ylabel("vcn")
+	ax.set_xlabel("dvc")
+	ax.set_zlabel("tchl")
 	plt.show(block=block)
 
 def plotHistogram(interpreter, x_train, y_train, max_value, block=True, omit_saturated=False):
