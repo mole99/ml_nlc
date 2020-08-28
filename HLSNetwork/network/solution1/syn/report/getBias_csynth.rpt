@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vivado HLS Report for 'getBias'
+================================================================
+* Date:           Fri Aug 28 10:09:54 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        network
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 0.10 us | 3.107 ns |  12.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|     167|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       0|      63|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       0|     230|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     2060|   2800|  607200|  303600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|       0|   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |network_top_mux_1bkb_U1  |network_top_mux_1bkb  |        0|      0|  0|  21|    0|
+    |network_top_mux_4dEe_U3  |network_top_mux_4dEe  |        0|      0|  0|  21|    0|
+    |network_top_mux_8cud_U2  |network_top_mux_8cud  |        0|      0|  0|  21|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |Total                    |                      |        0|      0|  0|  63|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |icmp_ln30_1_fu_366_p2    |   icmp   |      0|  0|   9|           2|           3|
+    |icmp_ln30_2_fu_372_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln30_3_fu_378_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln30_fu_360_p2      |   icmp   |      0|  0|   8|           2|           2|
+    |or_ln30_1_fu_406_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln30_2_fu_420_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln30_fu_392_p2        |    or    |      0|  0|   2|           1|           1|
+    |ap_return                |  select  |      0|  0|  32|           1|          32|
+    |select_ln30_1_fu_398_p3  |  select  |      0|  0|  32|           1|          32|
+    |select_ln30_2_fu_412_p3  |  select  |      0|  0|  32|           1|          32|
+    |select_ln30_fu_384_p3    |  select  |      0|  0|  32|           1|          32|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0| 167|          15|         138|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|ap_ready                  | out |    1| ap_ctrl_hs |          getBias         | return value |
+|ap_return                 | out |   32| ap_ctrl_hs |          getBias         | return value |
+|network_weights_bias      |  in |   32|   ap_none  |   network_weights_bias   |    scalar    |
+|network_weights_bias_86   |  in |   32|   ap_none  |  network_weights_bias_86 |    scalar    |
+|network_weights_bias_87   |  in |   32|   ap_none  |  network_weights_bias_87 |    scalar    |
+|network_weights_bias_88   |  in |   32|   ap_none  |  network_weights_bias_88 |    scalar    |
+|network_weights_bias_89   |  in |   32|   ap_none  |  network_weights_bias_89 |    scalar    |
+|network_weights_bias_90   |  in |   32|   ap_none  |  network_weights_bias_90 |    scalar    |
+|network_weights_bias_91   |  in |   32|   ap_none  |  network_weights_bias_91 |    scalar    |
+|network_weights_bias_92   |  in |   32|   ap_none  |  network_weights_bias_92 |    scalar    |
+|network_weights_bias_93   |  in |   32|   ap_none  |  network_weights_bias_93 |    scalar    |
+|network_weights_bias_94   |  in |   32|   ap_none  |  network_weights_bias_94 |    scalar    |
+|network_weights_bias_95   |  in |   32|   ap_none  |  network_weights_bias_95 |    scalar    |
+|network_weights_bias_96   |  in |   32|   ap_none  |  network_weights_bias_96 |    scalar    |
+|network_weights_bias_97   |  in |   32|   ap_none  |  network_weights_bias_97 |    scalar    |
+|network_weights_bias_98   |  in |   32|   ap_none  |  network_weights_bias_98 |    scalar    |
+|network_weights_bias_99   |  in |   32|   ap_none  |  network_weights_bias_99 |    scalar    |
+|network_weights_bias_100  |  in |   32|   ap_none  | network_weights_bias_100 |    scalar    |
+|network_weights_bias_101  |  in |   32|   ap_none  | network_weights_bias_101 |    scalar    |
+|network_weights_bias_102  |  in |   32|   ap_none  | network_weights_bias_102 |    scalar    |
+|network_weights_bias_103  |  in |   32|   ap_none  | network_weights_bias_103 |    scalar    |
+|network_weights_bias_104  |  in |   32|   ap_none  | network_weights_bias_104 |    scalar    |
+|network_weights_bias_105  |  in |   32|   ap_none  | network_weights_bias_105 |    scalar    |
+|network_weights_bias_106  |  in |   32|   ap_none  | network_weights_bias_106 |    scalar    |
+|network_weights_bias_107  |  in |   32|   ap_none  | network_weights_bias_107 |    scalar    |
+|network_weights_bias_108  |  in |   32|   ap_none  | network_weights_bias_108 |    scalar    |
+|network_weights_bias_109  |  in |   32|   ap_none  | network_weights_bias_109 |    scalar    |
+|network_weights_bias_110  |  in |   32|   ap_none  | network_weights_bias_110 |    scalar    |
+|network_weights_bias_111  |  in |   32|   ap_none  | network_weights_bias_111 |    scalar    |
+|network_weights_bias_112  |  in |   32|   ap_none  | network_weights_bias_112 |    scalar    |
+|network_weights_bias_113  |  in |   32|   ap_none  | network_weights_bias_113 |    scalar    |
+|layer                     |  in |    4|   ap_none  |           layer          |    scalar    |
+|index                     |  in |    5|   ap_none  |           index          |    scalar    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+

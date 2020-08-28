@@ -1,0 +1,324 @@
+
+
+================================================================
+== Vivado HLS Report for 'getWeight'
+================================================================
+* Date:           Fri Aug 28 10:09:54 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        network
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 0.10 us | 3.610 ns |  12.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      71|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       0|      84|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       0|     155|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     2060|   2800|  607200|  303600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|       0|   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |         Instance         |        Module        | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |network_top_mux_1fYi_U39  |network_top_mux_1fYi  |        0|      0|  0|  21|    0|
+    |network_top_mux_3eOg_U38  |network_top_mux_3eOg  |        0|      0|  0|  21|    0|
+    |network_top_mux_3eOg_U40  |network_top_mux_3eOg  |        0|      0|  0|  21|    0|
+    |network_top_mux_4g8j_U41  |network_top_mux_4g8j  |        0|      0|  0|  21|    0|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |Total                     |                      |        0|      0|  0|  84|    0|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |icmp_ln9_1_fu_2110_p2    |   icmp   |      0|  0|   9|           2|           3|
+    |icmp_ln9_2_fu_2116_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln9_3_fu_2122_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln9_fu_2104_p2      |   icmp   |      0|  0|   8|           2|           2|
+    |or_ln9_1_fu_2150_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln9_2_fu_2164_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln9_fu_2136_p2        |    or    |      0|  0|   2|           1|           1|
+    |ap_return                |  select  |      0|  0|   8|           1|           8|
+    |select_ln9_1_fu_2142_p3  |  select  |      0|  0|   8|           1|           8|
+    |select_ln9_2_fu_2156_p3  |  select  |      0|  0|   8|           1|           8|
+    |select_ln9_fu_2128_p3    |  select  |      0|  0|   8|           1|           8|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0|  71|          15|          42|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|ap_ready                  | out |    1| ap_ctrl_hs |         getWeight        | return value |
+|ap_return                 | out |    8| ap_ctrl_hs |         getWeight        | return value |
+|network_weights_weig      |  in |    8|   ap_none  |   network_weights_weig   |    scalar    |
+|network_weights_weig_587  |  in |    8|   ap_none  | network_weights_weig_587 |    scalar    |
+|network_weights_weig_588  |  in |    8|   ap_none  | network_weights_weig_588 |    scalar    |
+|network_weights_weig_589  |  in |    8|   ap_none  | network_weights_weig_589 |    scalar    |
+|network_weights_weig_590  |  in |    8|   ap_none  | network_weights_weig_590 |    scalar    |
+|network_weights_weig_591  |  in |    8|   ap_none  | network_weights_weig_591 |    scalar    |
+|network_weights_weig_592  |  in |    8|   ap_none  | network_weights_weig_592 |    scalar    |
+|network_weights_weig_593  |  in |    8|   ap_none  | network_weights_weig_593 |    scalar    |
+|network_weights_weig_594  |  in |    8|   ap_none  | network_weights_weig_594 |    scalar    |
+|network_weights_weig_595  |  in |    8|   ap_none  | network_weights_weig_595 |    scalar    |
+|network_weights_weig_596  |  in |    8|   ap_none  | network_weights_weig_596 |    scalar    |
+|network_weights_weig_597  |  in |    8|   ap_none  | network_weights_weig_597 |    scalar    |
+|network_weights_weig_598  |  in |    8|   ap_none  | network_weights_weig_598 |    scalar    |
+|network_weights_weig_599  |  in |    8|   ap_none  | network_weights_weig_599 |    scalar    |
+|network_weights_weig_600  |  in |    8|   ap_none  | network_weights_weig_600 |    scalar    |
+|network_weights_weig_601  |  in |    8|   ap_none  | network_weights_weig_601 |    scalar    |
+|network_weights_weig_602  |  in |    8|   ap_none  | network_weights_weig_602 |    scalar    |
+|network_weights_weig_603  |  in |    8|   ap_none  | network_weights_weig_603 |    scalar    |
+|network_weights_weig_604  |  in |    8|   ap_none  | network_weights_weig_604 |    scalar    |
+|network_weights_weig_605  |  in |    8|   ap_none  | network_weights_weig_605 |    scalar    |
+|network_weights_weig_606  |  in |    8|   ap_none  | network_weights_weig_606 |    scalar    |
+|network_weights_weig_607  |  in |    8|   ap_none  | network_weights_weig_607 |    scalar    |
+|network_weights_weig_608  |  in |    8|   ap_none  | network_weights_weig_608 |    scalar    |
+|network_weights_weig_609  |  in |    8|   ap_none  | network_weights_weig_609 |    scalar    |
+|network_weights_weig_610  |  in |    8|   ap_none  | network_weights_weig_610 |    scalar    |
+|network_weights_weig_611  |  in |    8|   ap_none  | network_weights_weig_611 |    scalar    |
+|network_weights_weig_612  |  in |    8|   ap_none  | network_weights_weig_612 |    scalar    |
+|network_weights_weig_613  |  in |    8|   ap_none  | network_weights_weig_613 |    scalar    |
+|network_weights_weig_614  |  in |    8|   ap_none  | network_weights_weig_614 |    scalar    |
+|network_weights_weig_615  |  in |    8|   ap_none  | network_weights_weig_615 |    scalar    |
+|network_weights_weig_616  |  in |    8|   ap_none  | network_weights_weig_616 |    scalar    |
+|network_weights_weig_617  |  in |    8|   ap_none  | network_weights_weig_617 |    scalar    |
+|network_weights_weig_618  |  in |    8|   ap_none  | network_weights_weig_618 |    scalar    |
+|network_weights_weig_619  |  in |    8|   ap_none  | network_weights_weig_619 |    scalar    |
+|network_weights_weig_620  |  in |    8|   ap_none  | network_weights_weig_620 |    scalar    |
+|network_weights_weig_621  |  in |    8|   ap_none  | network_weights_weig_621 |    scalar    |
+|network_weights_weig_622  |  in |    8|   ap_none  | network_weights_weig_622 |    scalar    |
+|network_weights_weig_623  |  in |    8|   ap_none  | network_weights_weig_623 |    scalar    |
+|network_weights_weig_624  |  in |    8|   ap_none  | network_weights_weig_624 |    scalar    |
+|network_weights_weig_625  |  in |    8|   ap_none  | network_weights_weig_625 |    scalar    |
+|network_weights_weig_626  |  in |    8|   ap_none  | network_weights_weig_626 |    scalar    |
+|network_weights_weig_627  |  in |    8|   ap_none  | network_weights_weig_627 |    scalar    |
+|network_weights_weig_628  |  in |    8|   ap_none  | network_weights_weig_628 |    scalar    |
+|network_weights_weig_629  |  in |    8|   ap_none  | network_weights_weig_629 |    scalar    |
+|network_weights_weig_630  |  in |    8|   ap_none  | network_weights_weig_630 |    scalar    |
+|network_weights_weig_631  |  in |    8|   ap_none  | network_weights_weig_631 |    scalar    |
+|network_weights_weig_632  |  in |    8|   ap_none  | network_weights_weig_632 |    scalar    |
+|network_weights_weig_633  |  in |    8|   ap_none  | network_weights_weig_633 |    scalar    |
+|network_weights_weig_634  |  in |    8|   ap_none  | network_weights_weig_634 |    scalar    |
+|network_weights_weig_635  |  in |    8|   ap_none  | network_weights_weig_635 |    scalar    |
+|network_weights_weig_636  |  in |    8|   ap_none  | network_weights_weig_636 |    scalar    |
+|network_weights_weig_637  |  in |    8|   ap_none  | network_weights_weig_637 |    scalar    |
+|network_weights_weig_638  |  in |    8|   ap_none  | network_weights_weig_638 |    scalar    |
+|network_weights_weig_639  |  in |    8|   ap_none  | network_weights_weig_639 |    scalar    |
+|network_weights_weig_640  |  in |    8|   ap_none  | network_weights_weig_640 |    scalar    |
+|network_weights_weig_641  |  in |    8|   ap_none  | network_weights_weig_641 |    scalar    |
+|network_weights_weig_642  |  in |    8|   ap_none  | network_weights_weig_642 |    scalar    |
+|network_weights_weig_643  |  in |    8|   ap_none  | network_weights_weig_643 |    scalar    |
+|network_weights_weig_644  |  in |    8|   ap_none  | network_weights_weig_644 |    scalar    |
+|network_weights_weig_645  |  in |    8|   ap_none  | network_weights_weig_645 |    scalar    |
+|network_weights_weig_646  |  in |    8|   ap_none  | network_weights_weig_646 |    scalar    |
+|network_weights_weig_647  |  in |    8|   ap_none  | network_weights_weig_647 |    scalar    |
+|network_weights_weig_648  |  in |    8|   ap_none  | network_weights_weig_648 |    scalar    |
+|network_weights_weig_649  |  in |    8|   ap_none  | network_weights_weig_649 |    scalar    |
+|network_weights_weig_650  |  in |    8|   ap_none  | network_weights_weig_650 |    scalar    |
+|network_weights_weig_651  |  in |    8|   ap_none  | network_weights_weig_651 |    scalar    |
+|network_weights_weig_652  |  in |    8|   ap_none  | network_weights_weig_652 |    scalar    |
+|network_weights_weig_653  |  in |    8|   ap_none  | network_weights_weig_653 |    scalar    |
+|network_weights_weig_654  |  in |    8|   ap_none  | network_weights_weig_654 |    scalar    |
+|network_weights_weig_655  |  in |    8|   ap_none  | network_weights_weig_655 |    scalar    |
+|network_weights_weig_656  |  in |    8|   ap_none  | network_weights_weig_656 |    scalar    |
+|network_weights_weig_657  |  in |    8|   ap_none  | network_weights_weig_657 |    scalar    |
+|network_weights_weig_658  |  in |    8|   ap_none  | network_weights_weig_658 |    scalar    |
+|network_weights_weig_659  |  in |    8|   ap_none  | network_weights_weig_659 |    scalar    |
+|network_weights_weig_660  |  in |    8|   ap_none  | network_weights_weig_660 |    scalar    |
+|network_weights_weig_661  |  in |    8|   ap_none  | network_weights_weig_661 |    scalar    |
+|network_weights_weig_662  |  in |    8|   ap_none  | network_weights_weig_662 |    scalar    |
+|network_weights_weig_663  |  in |    8|   ap_none  | network_weights_weig_663 |    scalar    |
+|network_weights_weig_664  |  in |    8|   ap_none  | network_weights_weig_664 |    scalar    |
+|network_weights_weig_665  |  in |    8|   ap_none  | network_weights_weig_665 |    scalar    |
+|network_weights_weig_666  |  in |    8|   ap_none  | network_weights_weig_666 |    scalar    |
+|network_weights_weig_667  |  in |    8|   ap_none  | network_weights_weig_667 |    scalar    |
+|network_weights_weig_668  |  in |    8|   ap_none  | network_weights_weig_668 |    scalar    |
+|network_weights_weig_669  |  in |    8|   ap_none  | network_weights_weig_669 |    scalar    |
+|network_weights_weig_670  |  in |    8|   ap_none  | network_weights_weig_670 |    scalar    |
+|network_weights_weig_671  |  in |    8|   ap_none  | network_weights_weig_671 |    scalar    |
+|network_weights_weig_672  |  in |    8|   ap_none  | network_weights_weig_672 |    scalar    |
+|network_weights_weig_673  |  in |    8|   ap_none  | network_weights_weig_673 |    scalar    |
+|network_weights_weig_674  |  in |    8|   ap_none  | network_weights_weig_674 |    scalar    |
+|network_weights_weig_675  |  in |    8|   ap_none  | network_weights_weig_675 |    scalar    |
+|network_weights_weig_676  |  in |    8|   ap_none  | network_weights_weig_676 |    scalar    |
+|network_weights_weig_677  |  in |    8|   ap_none  | network_weights_weig_677 |    scalar    |
+|network_weights_weig_678  |  in |    8|   ap_none  | network_weights_weig_678 |    scalar    |
+|network_weights_weig_679  |  in |    8|   ap_none  | network_weights_weig_679 |    scalar    |
+|network_weights_weig_680  |  in |    8|   ap_none  | network_weights_weig_680 |    scalar    |
+|network_weights_weig_681  |  in |    8|   ap_none  | network_weights_weig_681 |    scalar    |
+|network_weights_weig_682  |  in |    8|   ap_none  | network_weights_weig_682 |    scalar    |
+|network_weights_weig_683  |  in |    8|   ap_none  | network_weights_weig_683 |    scalar    |
+|network_weights_weig_684  |  in |    8|   ap_none  | network_weights_weig_684 |    scalar    |
+|network_weights_weig_685  |  in |    8|   ap_none  | network_weights_weig_685 |    scalar    |
+|network_weights_weig_686  |  in |    8|   ap_none  | network_weights_weig_686 |    scalar    |
+|network_weights_weig_687  |  in |    8|   ap_none  | network_weights_weig_687 |    scalar    |
+|network_weights_weig_688  |  in |    8|   ap_none  | network_weights_weig_688 |    scalar    |
+|network_weights_weig_689  |  in |    8|   ap_none  | network_weights_weig_689 |    scalar    |
+|network_weights_weig_690  |  in |    8|   ap_none  | network_weights_weig_690 |    scalar    |
+|network_weights_weig_691  |  in |    8|   ap_none  | network_weights_weig_691 |    scalar    |
+|network_weights_weig_692  |  in |    8|   ap_none  | network_weights_weig_692 |    scalar    |
+|network_weights_weig_693  |  in |    8|   ap_none  | network_weights_weig_693 |    scalar    |
+|network_weights_weig_694  |  in |    8|   ap_none  | network_weights_weig_694 |    scalar    |
+|network_weights_weig_695  |  in |    8|   ap_none  | network_weights_weig_695 |    scalar    |
+|network_weights_weig_696  |  in |    8|   ap_none  | network_weights_weig_696 |    scalar    |
+|network_weights_weig_697  |  in |    8|   ap_none  | network_weights_weig_697 |    scalar    |
+|network_weights_weig_698  |  in |    8|   ap_none  | network_weights_weig_698 |    scalar    |
+|network_weights_weig_699  |  in |    8|   ap_none  | network_weights_weig_699 |    scalar    |
+|network_weights_weig_700  |  in |    8|   ap_none  | network_weights_weig_700 |    scalar    |
+|network_weights_weig_701  |  in |    8|   ap_none  | network_weights_weig_701 |    scalar    |
+|network_weights_weig_702  |  in |    8|   ap_none  | network_weights_weig_702 |    scalar    |
+|network_weights_weig_703  |  in |    8|   ap_none  | network_weights_weig_703 |    scalar    |
+|network_weights_weig_704  |  in |    8|   ap_none  | network_weights_weig_704 |    scalar    |
+|network_weights_weig_705  |  in |    8|   ap_none  | network_weights_weig_705 |    scalar    |
+|network_weights_weig_706  |  in |    8|   ap_none  | network_weights_weig_706 |    scalar    |
+|network_weights_weig_707  |  in |    8|   ap_none  | network_weights_weig_707 |    scalar    |
+|network_weights_weig_708  |  in |    8|   ap_none  | network_weights_weig_708 |    scalar    |
+|network_weights_weig_709  |  in |    8|   ap_none  | network_weights_weig_709 |    scalar    |
+|network_weights_weig_710  |  in |    8|   ap_none  | network_weights_weig_710 |    scalar    |
+|network_weights_weig_711  |  in |    8|   ap_none  | network_weights_weig_711 |    scalar    |
+|network_weights_weig_712  |  in |    8|   ap_none  | network_weights_weig_712 |    scalar    |
+|network_weights_weig_713  |  in |    8|   ap_none  | network_weights_weig_713 |    scalar    |
+|network_weights_weig_714  |  in |    8|   ap_none  | network_weights_weig_714 |    scalar    |
+|network_weights_weig_715  |  in |    8|   ap_none  | network_weights_weig_715 |    scalar    |
+|network_weights_weig_716  |  in |    8|   ap_none  | network_weights_weig_716 |    scalar    |
+|network_weights_weig_717  |  in |    8|   ap_none  | network_weights_weig_717 |    scalar    |
+|network_weights_weig_718  |  in |    8|   ap_none  | network_weights_weig_718 |    scalar    |
+|network_weights_weig_719  |  in |    8|   ap_none  | network_weights_weig_719 |    scalar    |
+|network_weights_weig_720  |  in |    8|   ap_none  | network_weights_weig_720 |    scalar    |
+|network_weights_weig_721  |  in |    8|   ap_none  | network_weights_weig_721 |    scalar    |
+|network_weights_weig_722  |  in |    8|   ap_none  | network_weights_weig_722 |    scalar    |
+|network_weights_weig_723  |  in |    8|   ap_none  | network_weights_weig_723 |    scalar    |
+|network_weights_weig_724  |  in |    8|   ap_none  | network_weights_weig_724 |    scalar    |
+|network_weights_weig_725  |  in |    8|   ap_none  | network_weights_weig_725 |    scalar    |
+|network_weights_weig_726  |  in |    8|   ap_none  | network_weights_weig_726 |    scalar    |
+|network_weights_weig_727  |  in |    8|   ap_none  | network_weights_weig_727 |    scalar    |
+|network_weights_weig_728  |  in |    8|   ap_none  | network_weights_weig_728 |    scalar    |
+|network_weights_weig_729  |  in |    8|   ap_none  | network_weights_weig_729 |    scalar    |
+|network_weights_weig_730  |  in |    8|   ap_none  | network_weights_weig_730 |    scalar    |
+|network_weights_weig_731  |  in |    8|   ap_none  | network_weights_weig_731 |    scalar    |
+|network_weights_weig_732  |  in |    8|   ap_none  | network_weights_weig_732 |    scalar    |
+|network_weights_weig_733  |  in |    8|   ap_none  | network_weights_weig_733 |    scalar    |
+|network_weights_weig_734  |  in |    8|   ap_none  | network_weights_weig_734 |    scalar    |
+|network_weights_weig_735  |  in |    8|   ap_none  | network_weights_weig_735 |    scalar    |
+|network_weights_weig_736  |  in |    8|   ap_none  | network_weights_weig_736 |    scalar    |
+|network_weights_weig_737  |  in |    8|   ap_none  | network_weights_weig_737 |    scalar    |
+|network_weights_weig_738  |  in |    8|   ap_none  | network_weights_weig_738 |    scalar    |
+|network_weights_weig_739  |  in |    8|   ap_none  | network_weights_weig_739 |    scalar    |
+|network_weights_weig_740  |  in |    8|   ap_none  | network_weights_weig_740 |    scalar    |
+|network_weights_weig_741  |  in |    8|   ap_none  | network_weights_weig_741 |    scalar    |
+|network_weights_weig_742  |  in |    8|   ap_none  | network_weights_weig_742 |    scalar    |
+|network_weights_weig_743  |  in |    8|   ap_none  | network_weights_weig_743 |    scalar    |
+|network_weights_weig_744  |  in |    8|   ap_none  | network_weights_weig_744 |    scalar    |
+|network_weights_weig_745  |  in |    8|   ap_none  | network_weights_weig_745 |    scalar    |
+|network_weights_weig_746  |  in |    8|   ap_none  | network_weights_weig_746 |    scalar    |
+|network_weights_weig_747  |  in |    8|   ap_none  | network_weights_weig_747 |    scalar    |
+|network_weights_weig_748  |  in |    8|   ap_none  | network_weights_weig_748 |    scalar    |
+|network_weights_weig_749  |  in |    8|   ap_none  | network_weights_weig_749 |    scalar    |
+|network_weights_weig_750  |  in |    8|   ap_none  | network_weights_weig_750 |    scalar    |
+|network_weights_weig_751  |  in |    8|   ap_none  | network_weights_weig_751 |    scalar    |
+|network_weights_weig_752  |  in |    8|   ap_none  | network_weights_weig_752 |    scalar    |
+|network_weights_weig_753  |  in |    8|   ap_none  | network_weights_weig_753 |    scalar    |
+|network_weights_weig_754  |  in |    8|   ap_none  | network_weights_weig_754 |    scalar    |
+|network_weights_weig_755  |  in |    8|   ap_none  | network_weights_weig_755 |    scalar    |
+|network_weights_weig_756  |  in |    8|   ap_none  | network_weights_weig_756 |    scalar    |
+|network_weights_weig_757  |  in |    8|   ap_none  | network_weights_weig_757 |    scalar    |
+|network_weights_weig_758  |  in |    8|   ap_none  | network_weights_weig_758 |    scalar    |
+|network_weights_weig_759  |  in |    8|   ap_none  | network_weights_weig_759 |    scalar    |
+|network_weights_weig_760  |  in |    8|   ap_none  | network_weights_weig_760 |    scalar    |
+|network_weights_weig_761  |  in |    8|   ap_none  | network_weights_weig_761 |    scalar    |
+|network_weights_weig_762  |  in |    8|   ap_none  | network_weights_weig_762 |    scalar    |
+|network_weights_weig_763  |  in |    8|   ap_none  | network_weights_weig_763 |    scalar    |
+|network_weights_weig_764  |  in |    8|   ap_none  | network_weights_weig_764 |    scalar    |
+|network_weights_weig_765  |  in |    8|   ap_none  | network_weights_weig_765 |    scalar    |
+|network_weights_weig_766  |  in |    8|   ap_none  | network_weights_weig_766 |    scalar    |
+|network_weights_weig_767  |  in |    8|   ap_none  | network_weights_weig_767 |    scalar    |
+|network_weights_weig_768  |  in |    8|   ap_none  | network_weights_weig_768 |    scalar    |
+|network_weights_weig_769  |  in |    8|   ap_none  | network_weights_weig_769 |    scalar    |
+|network_weights_weig_770  |  in |    8|   ap_none  | network_weights_weig_770 |    scalar    |
+|network_weights_weig_771  |  in |    8|   ap_none  | network_weights_weig_771 |    scalar    |
+|network_weights_weig_772  |  in |    8|   ap_none  | network_weights_weig_772 |    scalar    |
+|network_weights_weig_773  |  in |    8|   ap_none  | network_weights_weig_773 |    scalar    |
+|network_weights_weig_774  |  in |    8|   ap_none  | network_weights_weig_774 |    scalar    |
+|network_weights_weig_775  |  in |    8|   ap_none  | network_weights_weig_775 |    scalar    |
+|network_weights_weig_776  |  in |    8|   ap_none  | network_weights_weig_776 |    scalar    |
+|network_weights_weig_777  |  in |    8|   ap_none  | network_weights_weig_777 |    scalar    |
+|network_weights_weig_778  |  in |    8|   ap_none  | network_weights_weig_778 |    scalar    |
+|network_weights_weig_779  |  in |    8|   ap_none  | network_weights_weig_779 |    scalar    |
+|network_weights_weig_780  |  in |    8|   ap_none  | network_weights_weig_780 |    scalar    |
+|network_weights_weig_781  |  in |    8|   ap_none  | network_weights_weig_781 |    scalar    |
+|layer                     |  in |    4|   ap_none  |           layer          |    scalar    |
+|index_0                   |  in |    5|   ap_none  |          index_0         |    scalar    |
+|index_1                   |  in |    5|   ap_none  |          index_1         |    scalar    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+

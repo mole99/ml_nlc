@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'network_top/output' to 'network_top/output_r' to avoid the conflict with HDL keywords or other object names." projectName="network" solutionName="solution1" date="2020-08-28T10:09:32.667+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'network_top/input' to 'network_top/input_r' to avoid the conflict with HDL keywords or other object names." projectName="network" solutionName="solution1" date="2020-08-28T10:09:32.661+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="network" solutionName="solution1" date="2020-08-28T10:07:01.923+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="network" solutionName="solution1" date="2020-08-28T10:07:01.902+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="network" solutionName="solution1" date="2020-08-28T10:07:01.555+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/home/leo/Media/Programs/Vivado/Vivado/2019.2/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="network" solutionName="solution1" date="2020-08-28T10:07:00.374+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

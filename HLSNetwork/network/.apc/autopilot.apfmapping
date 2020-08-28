@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="network_top.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)/network/network_top.h"/>
+    <originFiles name="network_top.cpp" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)/network/network_top.cpp"/>
+    <originFiles name="model_post_quant_dchg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)/network/networks/model_post_quant_dchg.h"/>
+  </source>
+  <testbench>
+    <originFiles name="ideal_dchg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)/network/test_data/ideal_dchg.h"/>
+    <originFiles name="network_tb.cpp" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)/network/network_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
