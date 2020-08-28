@@ -3,7 +3,6 @@
 
 #include "network_top.h"
 
-
 int8_t getWeight(network_weights_t* network_weights, int layer, int index_0, int index_1)
 {
 	switch (layer)
@@ -51,42 +50,26 @@ struct layer
 	// Layer data
 	const int dimension_0;
 	const int dimension_1;
-
-	// Output Quantization
-	const uint16_t output_conversion_scale;
-	const int8_t output_zero_point;
 } typedef layer_t;
 
 static const layer_t layer_0 = {
 	.dimension_0 = 16,
 	.dimension_1 = 2,
-
-	.output_conversion_scale = 952, // / 2^17
-	.output_zero_point = -128
 };
 
 static const layer_t layer_1 = {
 	.dimension_0 = 8,
 	.dimension_1 = 16,
-
-	.output_conversion_scale = 1592, // / 2^17
-	.output_zero_point = -128
 };
 
 static const layer_t layer_2 = {
 	.dimension_0 = 4,
 	.dimension_1 = 8,
-
-	.output_conversion_scale = 1212, // / 2^17
-	.output_zero_point = -128
 };
 
 static const layer_t layer_3 = {
 	.dimension_0 = 1,
 	.dimension_1 = 4,
-
-	.output_conversion_scale = 2995, // / 2^17
-	.output_zero_point = -128
 };
 
 const layer_t network[] = {layer_0, layer_1, layer_2, layer_3};
@@ -106,6 +89,8 @@ void network_top(int8_t input[NUM_INPUT], network_weights_t* network_weights, in
 	#pragma HLS ARRAY_PARTITION variable=network_weights.bias_1 complete dim=1
 	#pragma HLS ARRAY_PARTITION variable=network_weights.bias_2 complete dim=1
 	#pragma HLS ARRAY_PARTITION variable=network_weights.bias_3 complete dim=1
+
+	#pragma HLS ARRAY_PARTITION variable=network_weights.output_conversion_scale complete dim=1
 
 	//#pragma HLS ALLOCATION instances=mul limit=100 operation
 	//#pragma HLS ALLOCATION instances=add limit=100 operation
@@ -152,27 +137,13 @@ void network_top(int8_t input[NUM_INPUT], network_weights_t* network_weights, in
 
 				DEBUG(printf("\t%d\n", buffer[i]));
 				
-				int8_t input_zero_point;
-
-				if (current_layer == 0)
-				{
-					input_zero_point = NETWORK_INPUT_ZERO_POINT;
-				}
-				else
-				{
-					input_zero_point = network[current_layer - 1].output_zero_point;
-				}
-
-				if (input_zero_point != 0)
-				{
-					buffer[i] -= (int16_t)getWeight(network_weights, current_layer, i, j) * input_zero_point;
-				}
+				buffer[i] -= (int16_t)getWeight(network_weights, current_layer, i, j) * (int8_t)-128; //input_zero_point;
 				
 				DEBUG(printf("\t%d\n", buffer[i]));
 			}
 			
 			// TODO Check for overflow in fixed point conversion
-			buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network[current_layer].output_conversion_scale))>>17) + network[current_layer].output_zero_point;
+			buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network_weights->output_conversion_scale[current_layer]))>>17) + (int8_t)-128; //output_zero_point;
 			
 			// Saturating cast
 			if (buffer[i] > 127)

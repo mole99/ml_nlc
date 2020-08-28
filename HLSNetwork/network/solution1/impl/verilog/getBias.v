@@ -81,20 +81,20 @@ output  [31:0] ap_return;
 wire   [3:0] tmp_fu_274_p17;
 wire   [2:0] tmp_4_fu_316_p9;
 wire   [1:0] tmp_5_fu_342_p5;
-wire   [1:0] trunc_ln30_fu_356_p1;
-wire   [0:0] icmp_ln30_3_fu_378_p2;
+wire   [1:0] trunc_ln29_fu_356_p1;
+wire   [0:0] icmp_ln29_3_fu_378_p2;
 wire   [31:0] tmp_fu_274_p18;
 wire   [31:0] tmp_4_fu_316_p10;
-wire   [0:0] icmp_ln30_2_fu_372_p2;
-wire   [0:0] icmp_ln30_1_fu_366_p2;
+wire   [0:0] icmp_ln29_2_fu_372_p2;
+wire   [0:0] icmp_ln29_1_fu_366_p2;
 wire   [31:0] tmp_5_fu_342_p6;
-wire   [0:0] icmp_ln30_fu_360_p2;
-wire   [0:0] or_ln30_fu_392_p2;
-wire   [31:0] select_ln30_fu_384_p3;
-wire   [31:0] select_ln30_1_fu_398_p3;
-wire   [0:0] or_ln30_1_fu_406_p2;
-wire   [0:0] or_ln30_2_fu_420_p2;
-wire   [31:0] select_ln30_2_fu_412_p3;
+wire   [0:0] icmp_ln29_fu_360_p2;
+wire   [0:0] or_ln29_fu_392_p2;
+wire   [31:0] select_ln29_fu_384_p3;
+wire   [31:0] select_ln29_1_fu_398_p3;
+wire   [0:0] or_ln29_1_fu_406_p2;
+wire   [0:0] or_ln29_2_fu_420_p2;
+wire   [31:0] select_ln29_2_fu_412_p3;
 
 network_top_mux_1bkb #(
     .ID( 1 ),
@@ -184,27 +184,27 @@ network_top_mux_4dEe_U3(
 
 assign ap_ready = 1'b1;
 
-assign ap_return = ((or_ln30_2_fu_420_p2[0:0] === 1'b1) ? select_ln30_2_fu_412_p3 : 32'd0);
+assign ap_return = ((or_ln29_2_fu_420_p2[0:0] === 1'b1) ? select_ln29_2_fu_412_p3 : 32'd0);
 
-assign icmp_ln30_1_fu_366_p2 = ((trunc_ln30_fu_356_p1 == 2'd2) ? 1'b1 : 1'b0);
+assign icmp_ln29_1_fu_366_p2 = ((trunc_ln29_fu_356_p1 == 2'd2) ? 1'b1 : 1'b0);
 
-assign icmp_ln30_2_fu_372_p2 = ((trunc_ln30_fu_356_p1 == 2'd1) ? 1'b1 : 1'b0);
+assign icmp_ln29_2_fu_372_p2 = ((trunc_ln29_fu_356_p1 == 2'd1) ? 1'b1 : 1'b0);
 
-assign icmp_ln30_3_fu_378_p2 = ((trunc_ln30_fu_356_p1 == 2'd0) ? 1'b1 : 1'b0);
+assign icmp_ln29_3_fu_378_p2 = ((trunc_ln29_fu_356_p1 == 2'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln30_fu_360_p2 = ((trunc_ln30_fu_356_p1 == 2'd3) ? 1'b1 : 1'b0);
+assign icmp_ln29_fu_360_p2 = ((trunc_ln29_fu_356_p1 == 2'd3) ? 1'b1 : 1'b0);
 
-assign or_ln30_1_fu_406_p2 = (icmp_ln30_fu_360_p2 | icmp_ln30_1_fu_366_p2);
+assign or_ln29_1_fu_406_p2 = (icmp_ln29_fu_360_p2 | icmp_ln29_1_fu_366_p2);
 
-assign or_ln30_2_fu_420_p2 = (or_ln30_fu_392_p2 | or_ln30_1_fu_406_p2);
+assign or_ln29_2_fu_420_p2 = (or_ln29_fu_392_p2 | or_ln29_1_fu_406_p2);
 
-assign or_ln30_fu_392_p2 = (icmp_ln30_3_fu_378_p2 | icmp_ln30_2_fu_372_p2);
+assign or_ln29_fu_392_p2 = (icmp_ln29_3_fu_378_p2 | icmp_ln29_2_fu_372_p2);
 
-assign select_ln30_1_fu_398_p3 = ((icmp_ln30_1_fu_366_p2[0:0] === 1'b1) ? tmp_5_fu_342_p6 : network_weights_bias_113);
+assign select_ln29_1_fu_398_p3 = ((icmp_ln29_1_fu_366_p2[0:0] === 1'b1) ? tmp_5_fu_342_p6 : network_weights_bias_113);
 
-assign select_ln30_2_fu_412_p3 = ((or_ln30_fu_392_p2[0:0] === 1'b1) ? select_ln30_fu_384_p3 : select_ln30_1_fu_398_p3);
+assign select_ln29_2_fu_412_p3 = ((or_ln29_fu_392_p2[0:0] === 1'b1) ? select_ln29_fu_384_p3 : select_ln29_1_fu_398_p3);
 
-assign select_ln30_fu_384_p3 = ((icmp_ln30_3_fu_378_p2[0:0] === 1'b1) ? tmp_fu_274_p18 : tmp_4_fu_316_p10);
+assign select_ln29_fu_384_p3 = ((icmp_ln29_3_fu_378_p2[0:0] === 1'b1) ? tmp_fu_274_p18 : tmp_4_fu_316_p10);
 
 assign tmp_4_fu_316_p9 = index[2:0];
 
@@ -212,6 +212,6 @@ assign tmp_5_fu_342_p5 = index[1:0];
 
 assign tmp_fu_274_p17 = index[3:0];
 
-assign trunc_ln30_fu_356_p1 = layer[1:0];
+assign trunc_ln29_fu_356_p1 = layer[1:0];
 
 endmodule //getBias

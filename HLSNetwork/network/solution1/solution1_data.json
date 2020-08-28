@@ -105,6 +105,12 @@
             "arraySizes": ["1"],
             "interfaceRef": "network_weights_bias_3_0",
             "structImpl": "field"
+          },
+          "output_conversion_scale": {
+            "order": "8",
+            "kinds": ["array"],
+            "dataType": "unsigned",
+            "arraySizes": ["4"]
           }
         }
       }
@@ -130,8 +136,8 @@
     "ClockName": "ap_clk",
     "ClockPeriod": "100",
     "IsCombLogic": "0",
-    "II": "5",
-    "Latency": "5",
+    "II": "1",
+    "Latency": "4",
     "Uncertainty": "12.5"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 100.000 [get_ports ap_clk]"]},
@@ -151,6 +157,8 @@
     "Vhdl": [
       "impl\/vhdl\/getBias.vhd",
       "impl\/vhdl\/getWeight.vhd",
+      "impl\/vhdl\/network_top_mac_mhbi.vhd",
+      "impl\/vhdl\/network_top_mac_mibs.vhd",
       "impl\/vhdl\/network_top_mux_1bkb.vhd",
       "impl\/vhdl\/network_top_mux_1fYi.vhd",
       "impl\/vhdl\/network_top_mux_3eOg.vhd",
@@ -162,6 +170,8 @@
     "Verilog": [
       "impl\/verilog\/getBias.v",
       "impl\/verilog\/getWeight.v",
+      "impl\/verilog\/network_top_mac_mhbi.v",
+      "impl\/verilog\/network_top_mac_mibs.v",
       "impl\/verilog\/network_top_mux_1bkb.v",
       "impl\/verilog\/network_top_mux_1fYi.v",
       "impl\/verilog\/network_top_mux_3eOg.v",
@@ -171,9 +181,9 @@
       "impl\/verilog\/network_top.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork(parameter)\/network\/solution1\/.autopilot\/db\/network_top.design.xml",
-    "DebugDir": "\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork(parameter)\/network\/solution1\/.debug",
-    "ProtoInst": ["\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork(parameter)\/network\/solution1\/.debug\/network_top.protoinst"]
+    "DesignXml": "\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork\/network\/solution1\/.autopilot\/db\/network_top.design.xml",
+    "DebugDir": "\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork\/network\/solution1\/.debug",
+    "ProtoInst": ["\/home\/leo\/Nextcloud\/Fachhochschule\/Praktikum\/ml_nlc\/HLSNetwork\/network\/solution1\/.debug\/network_top.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -566,6 +576,50 @@
           "Width": "32"
         }},
       "bundle_name": "network_weights_bias_3_0",
+      "bundle_role": "default"
+    },
+    "network_weights_output_conversion_scale_0": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "network_weights_output_conversion_scale_0",
+      "bundle_role": "default"
+    },
+    "network_weights_output_conversion_scale_1": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "network_weights_output_conversion_scale_1",
+      "bundle_role": "default"
+    },
+    "network_weights_output_conversion_scale_2": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "network_weights_output_conversion_scale_2",
+      "bundle_role": "default"
+    },
+    "network_weights_output_conversion_scale_3": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "network_weights_output_conversion_scale_3",
       "bundle_role": "default"
     },
     "network_weights_weights_0_0_0": {
@@ -3698,6 +3752,22 @@
       "dir": "in",
       "width": "32"
     },
+    "network_weights_output_conversion_scale_0": {
+      "dir": "in",
+      "width": "16"
+    },
+    "network_weights_output_conversion_scale_1": {
+      "dir": "in",
+      "width": "16"
+    },
+    "network_weights_output_conversion_scale_2": {
+      "dir": "in",
+      "width": "16"
+    },
+    "network_weights_output_conversion_scale_3": {
+      "dir": "in",
+      "width": "16"
+    },
     "output_r_address0": {
       "dir": "out",
       "width": "1",
@@ -3722,307 +3792,903 @@
       "Instances": [
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_133236"
+          "InstanceName": "tmp_1_0_0_s_getWeight_fu_1983"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_133638"
+          "InstanceName": "tmp_1_0_0_1_getWeight_fu_2385"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_134040"
+          "InstanceName": "tmp_1_0_1_s_getWeight_fu_2787"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_134442"
+          "InstanceName": "tmp_1_0_1_1_getWeight_fu_3189"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_134844"
+          "InstanceName": "tmp_1_0_2_s_getWeight_fu_3591"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_135246"
+          "InstanceName": "tmp_1_0_2_1_getWeight_fu_3993"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_135648"
+          "InstanceName": "tmp_1_0_3_s_getWeight_fu_4395"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_136050"
+          "InstanceName": "tmp_1_0_3_1_getWeight_fu_4797"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_136452"
+          "InstanceName": "tmp_1_0_4_s_getWeight_fu_5199"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_136854"
+          "InstanceName": "tmp_1_0_4_1_getWeight_fu_5601"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_137256"
+          "InstanceName": "tmp_1_0_5_s_getWeight_fu_6003"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_137658"
+          "InstanceName": "tmp_1_0_5_1_getWeight_fu_6405"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_138060"
+          "InstanceName": "tmp_1_0_6_s_getWeight_fu_6807"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_138462"
+          "InstanceName": "tmp_1_0_6_1_getWeight_fu_7209"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_138864"
+          "InstanceName": "tmp_1_0_7_s_getWeight_fu_7611"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_139266"
+          "InstanceName": "tmp_1_0_7_1_getWeight_fu_8013"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_139668"
+          "InstanceName": "tmp_1_0_8_s_getWeight_fu_8415"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_140070"
+          "InstanceName": "tmp_1_0_8_1_getWeight_fu_8817"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_140472"
+          "InstanceName": "tmp_1_0_9_s_getWeight_fu_9219"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_140874"
+          "InstanceName": "tmp_1_0_9_1_getWeight_fu_9621"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_141276"
+          "InstanceName": "tmp_1_0_10_s_getWeight_fu_10023"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_141678"
+          "InstanceName": "tmp_1_0_10_1_getWeight_fu_10425"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_142080"
+          "InstanceName": "tmp_1_0_11_s_getWeight_fu_10827"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_142482"
+          "InstanceName": "tmp_1_0_11_1_getWeight_fu_11229"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_142884"
+          "InstanceName": "tmp_1_0_12_s_getWeight_fu_11631"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_143286"
+          "InstanceName": "tmp_1_0_12_1_getWeight_fu_12033"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_143688"
+          "InstanceName": "tmp_1_0_13_s_getWeight_fu_12435"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_144090"
+          "InstanceName": "tmp_1_0_13_1_getWeight_fu_12837"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_144492"
+          "InstanceName": "tmp_1_0_14_s_getWeight_fu_13239"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_144894"
+          "InstanceName": "tmp_1_0_14_1_getWeight_fu_13641"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_145296"
+          "InstanceName": "tmp_1_0_15_s_getWeight_fu_14043"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_145698"
+          "InstanceName": "tmp_1_0_15_1_getWeight_fu_14445"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_146100"
+          "InstanceName": "tmp_1_1_0_s_getWeight_fu_14847"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_146502"
+          "InstanceName": "tmp_1_1_0_1_getWeight_fu_15249"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_146904"
+          "InstanceName": "tmp_1_1_0_2_getWeight_fu_15651"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_147306"
+          "InstanceName": "tmp_1_1_0_3_getWeight_fu_16053"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_147708"
+          "InstanceName": "tmp_1_1_0_4_getWeight_fu_16455"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_148110"
+          "InstanceName": "tmp_1_1_0_5_getWeight_fu_16857"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_148512"
+          "InstanceName": "tmp_1_1_0_6_getWeight_fu_17259"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_148914"
+          "InstanceName": "tmp_1_1_0_7_getWeight_fu_17661"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_149495"
+          "InstanceName": "tmp_1_1_0_8_getWeight_fu_18063"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_149701"
+          "InstanceName": "tmp_1_1_0_9_getWeight_fu_18465"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_1_6_7_getWeight_fu_149936"
+          "InstanceName": "tmp_1_1_0_10_getWeight_fu_18867"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_1_6_8_getWeight_fu_150142"
+          "InstanceName": "tmp_1_1_0_11_getWeight_fu_19269"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_1_6_9_getWeight_fu_150348"
+          "InstanceName": "tmp_1_1_0_12_getWeight_fu_19671"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_1_6_10_getWeight_fu_150554"
+          "InstanceName": "tmp_1_1_0_13_getWeight_fu_20073"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_150760"
+          "InstanceName": "tmp_1_1_0_14_getWeight_fu_20475"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_150979"
+          "InstanceName": "tmp_1_1_0_15_getWeight_fu_20877"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_151383"
+          "InstanceName": "tmp_1_1_1_s_getWeight_fu_21279"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_151785"
+          "InstanceName": "tmp_1_1_1_1_getWeight_fu_21681"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_152187"
+          "InstanceName": "tmp_1_1_1_2_getWeight_fu_22083"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_152589"
+          "InstanceName": "tmp_1_1_1_3_getWeight_fu_22485"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_152991"
+          "InstanceName": "tmp_1_1_1_4_getWeight_fu_22887"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_153393"
+          "InstanceName": "tmp_1_1_1_5_getWeight_fu_23289"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_153795"
+          "InstanceName": "tmp_1_1_1_6_getWeight_fu_23691"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_154199"
+          "InstanceName": "tmp_1_1_1_7_getWeight_fu_24093"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "grp_getWeight_fu_154601"
+          "InstanceName": "tmp_1_1_1_8_getWeight_fu_24495"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_0_6_getWeight_fu_155019"
+          "InstanceName": "tmp_1_1_1_9_getWeight_fu_24897"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_0_7_getWeight_fu_155225"
+          "InstanceName": "tmp_1_1_1_10_getWeight_fu_25299"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_1_s_getWeight_fu_155431"
+          "InstanceName": "tmp_1_1_1_11_getWeight_fu_25701"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_1_5_getWeight_fu_155649"
+          "InstanceName": "tmp_1_1_1_12_getWeight_fu_26103"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_1_6_getWeight_fu_155855"
+          "InstanceName": "tmp_1_1_1_13_getWeight_fu_26505"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_1_7_getWeight_fu_156061"
+          "InstanceName": "tmp_1_1_1_14_getWeight_fu_26907"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_2_5_getWeight_fu_156282"
+          "InstanceName": "tmp_1_1_1_15_getWeight_fu_27309"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_2_6_getWeight_fu_156488"
+          "InstanceName": "tmp_1_1_2_s_getWeight_fu_27711"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_2_7_getWeight_fu_156694"
+          "InstanceName": "tmp_1_1_2_1_getWeight_fu_28113"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_3_s_getWeight_fu_156900"
+          "InstanceName": "tmp_1_1_2_2_getWeight_fu_28515"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_3_1_getWeight_fu_157106"
+          "InstanceName": "tmp_1_1_2_3_getWeight_fu_28917"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_3_2_getWeight_fu_157312"
+          "InstanceName": "tmp_1_1_2_4_getWeight_fu_29319"
         },
         {
           "ModuleName": "getWeight",
-          "InstanceName": "tmp_1_2_3_3_getWeight_fu_157518"
+          "InstanceName": "tmp_1_1_2_5_getWeight_fu_29721"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_6_getWeight_fu_30123"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_7_getWeight_fu_30525"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_8_getWeight_fu_30927"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_9_getWeight_fu_31329"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_10_getWeight_fu_31731"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_11_getWeight_fu_32133"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_12_getWeight_fu_32535"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_13_getWeight_fu_32937"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_14_getWeight_fu_33339"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_2_15_getWeight_fu_33741"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_s_getWeight_fu_34143"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_1_getWeight_fu_34545"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_2_getWeight_fu_34947"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_3_getWeight_fu_35349"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_4_getWeight_fu_35751"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_5_getWeight_fu_36153"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_6_getWeight_fu_36555"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_7_getWeight_fu_36957"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_8_getWeight_fu_37359"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_9_getWeight_fu_37761"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_10_getWeight_fu_38163"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_11_getWeight_fu_38565"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_12_getWeight_fu_38967"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_13_getWeight_fu_39369"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_14_getWeight_fu_39771"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_3_15_getWeight_fu_40173"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_s_getWeight_fu_40575"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_1_getWeight_fu_40977"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_2_getWeight_fu_41379"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_3_getWeight_fu_41781"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_4_getWeight_fu_42183"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_5_getWeight_fu_42585"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_6_getWeight_fu_42987"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_7_getWeight_fu_43389"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_8_getWeight_fu_43791"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_9_getWeight_fu_44193"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_10_getWeight_fu_44595"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_11_getWeight_fu_44997"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_12_getWeight_fu_45399"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_13_getWeight_fu_45801"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_14_getWeight_fu_46203"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_4_15_getWeight_fu_46605"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_s_getWeight_fu_47007"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_1_getWeight_fu_47409"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_2_getWeight_fu_47811"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_3_getWeight_fu_48213"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_4_getWeight_fu_48615"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_5_getWeight_fu_49017"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_6_getWeight_fu_49419"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_7_getWeight_fu_49821"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_8_getWeight_fu_50223"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_9_getWeight_fu_50625"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_10_getWeight_fu_51027"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_11_getWeight_fu_51429"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_12_getWeight_fu_51831"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_13_getWeight_fu_52233"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_14_getWeight_fu_52635"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_5_15_getWeight_fu_53037"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_s_getWeight_fu_53439"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_1_getWeight_fu_53841"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_2_getWeight_fu_54243"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_3_getWeight_fu_54645"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_4_getWeight_fu_55047"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_5_getWeight_fu_55449"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_6_getWeight_fu_55851"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_7_getWeight_fu_56253"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_8_getWeight_fu_56655"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_9_getWeight_fu_57057"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_10_getWeight_fu_57459"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_11_getWeight_fu_57861"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_12_getWeight_fu_58263"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_13_getWeight_fu_58665"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_14_getWeight_fu_59067"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_6_15_getWeight_fu_59469"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_s_getWeight_fu_59871"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_1_getWeight_fu_60273"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_2_getWeight_fu_60675"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_3_getWeight_fu_61077"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_4_getWeight_fu_61479"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_5_getWeight_fu_61881"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_6_getWeight_fu_62283"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_7_getWeight_fu_62685"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_8_getWeight_fu_63087"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_9_getWeight_fu_63489"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_10_getWeight_fu_63891"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_11_getWeight_fu_64293"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_12_getWeight_fu_64695"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_13_getWeight_fu_65097"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_14_getWeight_fu_65499"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_1_7_15_getWeight_fu_65901"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_s_getWeight_fu_66303"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_1_getWeight_fu_66705"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_2_getWeight_fu_67107"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_3_getWeight_fu_67509"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_4_getWeight_fu_67911"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_5_getWeight_fu_68313"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_6_getWeight_fu_68715"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_0_7_getWeight_fu_69117"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_s_getWeight_fu_69519"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_1_getWeight_fu_69921"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_2_getWeight_fu_70323"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_3_getWeight_fu_70725"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_4_getWeight_fu_71127"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_5_getWeight_fu_71529"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_6_getWeight_fu_71931"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_1_7_getWeight_fu_72333"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_s_getWeight_fu_72735"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_1_getWeight_fu_73137"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_2_getWeight_fu_73539"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_3_getWeight_fu_73941"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_4_getWeight_fu_74343"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_5_getWeight_fu_74745"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_6_getWeight_fu_75147"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_2_7_getWeight_fu_75549"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_s_getWeight_fu_75951"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_1_getWeight_fu_76353"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_2_getWeight_fu_76755"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_3_getWeight_fu_77157"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_4_getWeight_fu_77559"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_5_getWeight_fu_77961"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_6_getWeight_fu_78363"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_2_3_7_getWeight_fu_78765"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_3_0_s_getWeight_fu_79167"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_3_0_1_getWeight_fu_79569"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_3_0_2_getWeight_fu_79971"
+        },
+        {
+          "ModuleName": "getWeight",
+          "InstanceName": "tmp_1_3_0_3_getWeight_fu_80373"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_157740"
+          "InstanceName": "buffer_0_getBias_fu_80775"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_157806"
+          "InstanceName": "buffer_1_getBias_fu_80841"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_157872"
+          "InstanceName": "buffer_2_getBias_fu_80907"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_157938"
+          "InstanceName": "buffer_3_getBias_fu_80973"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_158004"
+          "InstanceName": "buffer_4_getBias_fu_81039"
         },
         {
           "ModuleName": "getBias",
-          "InstanceName": "grp_getBias_fu_158070"
+          "InstanceName": "buffer_5_getBias_fu_81105"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_6_getBias_fu_81171"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_7_getBias_fu_81237"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_8_getBias_fu_81303"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_9_getBias_fu_81369"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_10_getBias_fu_81435"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_11_getBias_fu_81501"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_12_getBias_fu_81567"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_13_getBias_fu_81633"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_14_getBias_fu_81699"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_15_getBias_fu_81765"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_0_3_getBias_fu_81831"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_1_3_getBias_fu_81897"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_2_3_getBias_fu_81963"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_3_3_getBias_fu_82029"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_4_3_getBias_fu_82095"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_5_3_getBias_fu_82161"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_6_3_getBias_fu_82227"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_7_3_getBias_fu_82293"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_0_6_getBias_fu_82359"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_1_6_getBias_fu_82425"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_2_6_getBias_fu_82491"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_3_6_getBias_fu_82557"
+        },
+        {
+          "ModuleName": "getBias",
+          "InstanceName": "buffer_0_9_getBias_fu_82623"
         }
       ]
     },
@@ -4096,22 +4762,22 @@
       },
       "network_top": {
         "Latency": {
-          "LatencyBest": "5",
-          "LatencyAvg": "5",
-          "LatencyWorst": "5",
-          "PipelineII": "5",
-          "PipelineDepth": "6",
+          "LatencyBest": "4",
+          "LatencyAvg": "4",
+          "LatencyWorst": "4",
+          "PipelineII": "1",
+          "PipelineDepth": "5",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "100.00",
           "Uncertainty": "12.50",
-          "Estimate": "47.485"
+          "Estimate": "84.986"
         },
         "Area": {
-          "DSP48E": "58",
-          "FF": "4964",
-          "LUT": "184248",
+          "DSP48E": "254",
+          "FF": "2629",
+          "LUT": "45168",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -4128,7 +4794,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-08-28 09:51:31 CEST",
+    "Time": "2020-08-28 18:32:04 CEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

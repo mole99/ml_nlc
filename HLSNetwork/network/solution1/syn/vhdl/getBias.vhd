@@ -60,20 +60,20 @@ architecture behav of getBias is
     signal tmp_fu_274_p17 : STD_LOGIC_VECTOR (3 downto 0);
     signal tmp_4_fu_316_p9 : STD_LOGIC_VECTOR (2 downto 0);
     signal tmp_5_fu_342_p5 : STD_LOGIC_VECTOR (1 downto 0);
-    signal trunc_ln30_fu_356_p1 : STD_LOGIC_VECTOR (1 downto 0);
-    signal icmp_ln30_3_fu_378_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal trunc_ln29_fu_356_p1 : STD_LOGIC_VECTOR (1 downto 0);
+    signal icmp_ln29_3_fu_378_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_fu_274_p18 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_4_fu_316_p10 : STD_LOGIC_VECTOR (31 downto 0);
-    signal icmp_ln30_2_fu_372_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln30_1_fu_366_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln29_2_fu_372_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln29_1_fu_366_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_5_fu_342_p6 : STD_LOGIC_VECTOR (31 downto 0);
-    signal icmp_ln30_fu_360_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal or_ln30_fu_392_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln30_fu_384_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal select_ln30_1_fu_398_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal or_ln30_1_fu_406_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal or_ln30_2_fu_420_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln30_2_fu_412_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal icmp_ln29_fu_360_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal or_ln29_fu_392_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal select_ln29_fu_384_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal select_ln29_1_fu_398_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal or_ln29_1_fu_406_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal or_ln29_2_fu_420_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal select_ln29_2_fu_412_p3 : STD_LOGIC_VECTOR (31 downto 0);
 
     component network_top_mux_1bkb IS
     generic (
@@ -260,26 +260,26 @@ begin
 
     ap_ready <= ap_const_logic_1;
     ap_return <= 
-        select_ln30_2_fu_412_p3 when (or_ln30_2_fu_420_p2(0) = '1') else 
+        select_ln29_2_fu_412_p3 when (or_ln29_2_fu_420_p2(0) = '1') else 
         ap_const_lv32_0;
-    icmp_ln30_1_fu_366_p2 <= "1" when (trunc_ln30_fu_356_p1 = ap_const_lv2_2) else "0";
-    icmp_ln30_2_fu_372_p2 <= "1" when (trunc_ln30_fu_356_p1 = ap_const_lv2_1) else "0";
-    icmp_ln30_3_fu_378_p2 <= "1" when (trunc_ln30_fu_356_p1 = ap_const_lv2_0) else "0";
-    icmp_ln30_fu_360_p2 <= "1" when (trunc_ln30_fu_356_p1 = ap_const_lv2_3) else "0";
-    or_ln30_1_fu_406_p2 <= (icmp_ln30_fu_360_p2 or icmp_ln30_1_fu_366_p2);
-    or_ln30_2_fu_420_p2 <= (or_ln30_fu_392_p2 or or_ln30_1_fu_406_p2);
-    or_ln30_fu_392_p2 <= (icmp_ln30_3_fu_378_p2 or icmp_ln30_2_fu_372_p2);
-    select_ln30_1_fu_398_p3 <= 
-        tmp_5_fu_342_p6 when (icmp_ln30_1_fu_366_p2(0) = '1') else 
+    icmp_ln29_1_fu_366_p2 <= "1" when (trunc_ln29_fu_356_p1 = ap_const_lv2_2) else "0";
+    icmp_ln29_2_fu_372_p2 <= "1" when (trunc_ln29_fu_356_p1 = ap_const_lv2_1) else "0";
+    icmp_ln29_3_fu_378_p2 <= "1" when (trunc_ln29_fu_356_p1 = ap_const_lv2_0) else "0";
+    icmp_ln29_fu_360_p2 <= "1" when (trunc_ln29_fu_356_p1 = ap_const_lv2_3) else "0";
+    or_ln29_1_fu_406_p2 <= (icmp_ln29_fu_360_p2 or icmp_ln29_1_fu_366_p2);
+    or_ln29_2_fu_420_p2 <= (or_ln29_fu_392_p2 or or_ln29_1_fu_406_p2);
+    or_ln29_fu_392_p2 <= (icmp_ln29_3_fu_378_p2 or icmp_ln29_2_fu_372_p2);
+    select_ln29_1_fu_398_p3 <= 
+        tmp_5_fu_342_p6 when (icmp_ln29_1_fu_366_p2(0) = '1') else 
         network_weights_bias_113;
-    select_ln30_2_fu_412_p3 <= 
-        select_ln30_fu_384_p3 when (or_ln30_fu_392_p2(0) = '1') else 
-        select_ln30_1_fu_398_p3;
-    select_ln30_fu_384_p3 <= 
-        tmp_fu_274_p18 when (icmp_ln30_3_fu_378_p2(0) = '1') else 
+    select_ln29_2_fu_412_p3 <= 
+        select_ln29_fu_384_p3 when (or_ln29_fu_392_p2(0) = '1') else 
+        select_ln29_1_fu_398_p3;
+    select_ln29_fu_384_p3 <= 
+        tmp_fu_274_p18 when (icmp_ln29_3_fu_378_p2(0) = '1') else 
         tmp_4_fu_316_p10;
     tmp_4_fu_316_p9 <= index(3 - 1 downto 0);
     tmp_5_fu_342_p5 <= index(2 - 1 downto 0);
     tmp_fu_274_p17 <= index(4 - 1 downto 0);
-    trunc_ln30_fu_356_p1 <= layer(2 - 1 downto 0);
+    trunc_ln29_fu_356_p1 <= layer(2 - 1 downto 0);
 end behav;

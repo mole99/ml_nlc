@@ -2,25 +2,16 @@
 #include <stdint.h>
 #include <string.h>
 
-
 #include "network_top.h"
-
-#define NETWORK_ARCH 1
 
 #if NETWORK_ARCH == 0
 	#include "networks/model_post_quant_dchg.h"
+	#include "test_data/ideal_dchg.h"
 #endif
 
 #if NETWORK_ARCH == 1
 	#include "networks/model_post_quant_chg.h"
-#endif
-
-#include "test_data/ideal_dchg.h"
-
-#ifdef DEBUG_BUILD
-#  define DEBUG(x) x
-#else
-#  define DEBUG(x) do {} while (0)
+	#include "test_data/ideal_chg.h"
 #endif
 
 void testNetwork(float input[NUM_INPUT], float output[NUM_OUTPUT])
@@ -40,12 +31,13 @@ void testNetwork(float input[NUM_INPUT], float output[NUM_OUTPUT])
 	memcpy(network_weights.bias_2, bias_2, sizeof(bias_2));
 	memcpy(network_weights.bias_3, bias_3, sizeof(bias_3));
 
+	memcpy(network_weights.output_conversion_scale, output_conversion_scale, sizeof(output_conversion_scale));
+
 	// Quantize input
 	for (int i=0; i<NUM_INPUT; i++)
 	{
 		float tmp = input[i] / NETWORK_INPUT_SCALE + NETWORK_INPUT_ZERO_POINT;
 		
-		// Round to nearest integer TODO check
 		if (tmp > 0)
 		{
 			quantized_input[i] = (int8_t)(tmp + 0.5);
@@ -152,6 +144,7 @@ int main()
 [0.5 0.5] = 53.604004\n\
 [0.75 0.75] = 53.604004\n\n");
 	
+	printf("NUM_IDEAL_ENTRIES: %d\n", NUM_IDEAL_ENTRIES);
 	
 	printf("Output:\n\n");
 	for (int i=0; i<7; i++)

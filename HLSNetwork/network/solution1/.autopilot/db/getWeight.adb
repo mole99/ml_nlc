@@ -5594,13 +5594,13 @@
               <name>index_1_read</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5609,7 +5609,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5643,13 +5643,13 @@
               <name>index_0_read</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5658,7 +5658,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5692,13 +5692,13 @@
               <name>layer_read</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5707,7 +5707,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5741,13 +5741,13 @@
               <name>network_weights_weig_782</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5756,7 +5756,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5790,13 +5790,13 @@
               <name>network_weights_weig_783</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5805,7 +5805,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5839,13 +5839,13 @@
               <name>network_weights_weig_784</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5854,7 +5854,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5888,13 +5888,13 @@
               <name>network_weights_weig_785</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5903,7 +5903,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5937,13 +5937,13 @@
               <name>network_weights_weig_786</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5952,7 +5952,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -5986,13 +5986,13 @@
               <name>network_weights_weig_787</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6001,7 +6001,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6035,13 +6035,13 @@
               <name>network_weights_weig_788</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6050,7 +6050,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6084,13 +6084,13 @@
               <name>network_weights_weig_789</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6099,7 +6099,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6133,13 +6133,13 @@
               <name>network_weights_weig_790</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6148,7 +6148,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6182,13 +6182,13 @@
               <name>network_weights_weig_791</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6197,7 +6197,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6231,13 +6231,13 @@
               <name>network_weights_weig_792</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6246,7 +6246,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6280,13 +6280,13 @@
               <name>network_weights_weig_793</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6295,7 +6295,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6329,13 +6329,13 @@
               <name>network_weights_weig_794</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6344,7 +6344,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6378,13 +6378,13 @@
               <name>network_weights_weig_795</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6393,7 +6393,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6427,13 +6427,13 @@
               <name>network_weights_weig_796</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6442,7 +6442,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6476,13 +6476,13 @@
               <name>network_weights_weig_797</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6491,7 +6491,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6525,13 +6525,13 @@
               <name>network_weights_weig_798</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6540,7 +6540,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6574,13 +6574,13 @@
               <name>network_weights_weig_799</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6589,7 +6589,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6623,13 +6623,13 @@
               <name>network_weights_weig_800</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6638,7 +6638,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6672,13 +6672,13 @@
               <name>network_weights_weig_801</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6687,7 +6687,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6721,13 +6721,13 @@
               <name>network_weights_weig_802</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6736,7 +6736,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6770,13 +6770,13 @@
               <name>network_weights_weig_803</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6785,7 +6785,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6819,13 +6819,13 @@
               <name>network_weights_weig_804</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6834,7 +6834,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6868,13 +6868,13 @@
               <name>network_weights_weig_805</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6883,7 +6883,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6917,13 +6917,13 @@
               <name>network_weights_weig_806</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6932,7 +6932,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -6966,13 +6966,13 @@
               <name>network_weights_weig_807</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6981,7 +6981,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7015,13 +7015,13 @@
               <name>network_weights_weig_808</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7030,7 +7030,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7064,13 +7064,13 @@
               <name>network_weights_weig_809</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7079,7 +7079,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7113,13 +7113,13 @@
               <name>network_weights_weig_810</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7128,7 +7128,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7162,13 +7162,13 @@
               <name>network_weights_weig_811</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7177,7 +7177,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7211,13 +7211,13 @@
               <name>network_weights_weig_812</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7226,7 +7226,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7260,13 +7260,13 @@
               <name>network_weights_weig_813</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7275,7 +7275,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7309,13 +7309,13 @@
               <name>network_weights_weig_814</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7324,7 +7324,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7358,13 +7358,13 @@
               <name>network_weights_weig_815</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7373,7 +7373,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7407,13 +7407,13 @@
               <name>network_weights_weig_816</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7422,7 +7422,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7456,13 +7456,13 @@
               <name>network_weights_weig_817</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7471,7 +7471,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7505,13 +7505,13 @@
               <name>network_weights_weig_818</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7520,7 +7520,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7554,13 +7554,13 @@
               <name>network_weights_weig_819</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7569,7 +7569,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7603,13 +7603,13 @@
               <name>network_weights_weig_820</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7618,7 +7618,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7652,13 +7652,13 @@
               <name>network_weights_weig_821</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7667,7 +7667,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7701,13 +7701,13 @@
               <name>network_weights_weig_822</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7716,7 +7716,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7750,13 +7750,13 @@
               <name>network_weights_weig_823</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7765,7 +7765,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7799,13 +7799,13 @@
               <name>network_weights_weig_824</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7814,7 +7814,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7848,13 +7848,13 @@
               <name>network_weights_weig_825</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7863,7 +7863,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7897,13 +7897,13 @@
               <name>network_weights_weig_826</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7912,7 +7912,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7946,13 +7946,13 @@
               <name>network_weights_weig_827</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7961,7 +7961,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -7995,13 +7995,13 @@
               <name>network_weights_weig_828</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8010,7 +8010,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8044,13 +8044,13 @@
               <name>network_weights_weig_829</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8059,7 +8059,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8093,13 +8093,13 @@
               <name>network_weights_weig_830</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8108,7 +8108,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8142,13 +8142,13 @@
               <name>network_weights_weig_831</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8157,7 +8157,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8191,13 +8191,13 @@
               <name>network_weights_weig_832</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8206,7 +8206,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8240,13 +8240,13 @@
               <name>network_weights_weig_833</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8255,7 +8255,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8289,13 +8289,13 @@
               <name>network_weights_weig_834</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8304,7 +8304,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8338,13 +8338,13 @@
               <name>network_weights_weig_835</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8353,7 +8353,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8387,13 +8387,13 @@
               <name>network_weights_weig_836</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8402,7 +8402,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8436,13 +8436,13 @@
               <name>network_weights_weig_837</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8451,7 +8451,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8485,13 +8485,13 @@
               <name>network_weights_weig_838</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8500,7 +8500,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8534,13 +8534,13 @@
               <name>network_weights_weig_839</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8549,7 +8549,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8583,13 +8583,13 @@
               <name>network_weights_weig_840</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8598,7 +8598,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8632,13 +8632,13 @@
               <name>network_weights_weig_841</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8647,7 +8647,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8681,13 +8681,13 @@
               <name>network_weights_weig_842</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8696,7 +8696,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8730,13 +8730,13 @@
               <name>network_weights_weig_843</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8745,7 +8745,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8779,13 +8779,13 @@
               <name>network_weights_weig_844</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8794,7 +8794,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8828,13 +8828,13 @@
               <name>network_weights_weig_845</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8843,7 +8843,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8877,13 +8877,13 @@
               <name>network_weights_weig_846</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8892,7 +8892,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8926,13 +8926,13 @@
               <name>network_weights_weig_847</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8941,7 +8941,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -8975,13 +8975,13 @@
               <name>network_weights_weig_848</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8990,7 +8990,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9024,13 +9024,13 @@
               <name>network_weights_weig_849</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9039,7 +9039,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9073,13 +9073,13 @@
               <name>network_weights_weig_850</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9088,7 +9088,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9122,13 +9122,13 @@
               <name>network_weights_weig_851</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9137,7 +9137,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9171,13 +9171,13 @@
               <name>network_weights_weig_852</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9186,7 +9186,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9220,13 +9220,13 @@
               <name>network_weights_weig_853</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9235,7 +9235,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9269,13 +9269,13 @@
               <name>network_weights_weig_854</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9284,7 +9284,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9318,13 +9318,13 @@
               <name>network_weights_weig_855</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9333,7 +9333,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9367,13 +9367,13 @@
               <name>network_weights_weig_856</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9382,7 +9382,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9416,13 +9416,13 @@
               <name>network_weights_weig_857</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9431,7 +9431,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9465,13 +9465,13 @@
               <name>network_weights_weig_858</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9480,7 +9480,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9514,13 +9514,13 @@
               <name>network_weights_weig_859</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9529,7 +9529,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9563,13 +9563,13 @@
               <name>network_weights_weig_860</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9578,7 +9578,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9612,13 +9612,13 @@
               <name>network_weights_weig_861</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9627,7 +9627,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9661,13 +9661,13 @@
               <name>network_weights_weig_862</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9676,7 +9676,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9710,13 +9710,13 @@
               <name>network_weights_weig_863</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9725,7 +9725,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9759,13 +9759,13 @@
               <name>network_weights_weig_864</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9774,7 +9774,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9808,13 +9808,13 @@
               <name>network_weights_weig_865</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9823,7 +9823,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9857,13 +9857,13 @@
               <name>network_weights_weig_866</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9872,7 +9872,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9906,13 +9906,13 @@
               <name>network_weights_weig_867</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9921,7 +9921,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -9955,13 +9955,13 @@
               <name>network_weights_weig_868</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9970,7 +9970,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10004,13 +10004,13 @@
               <name>network_weights_weig_869</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10019,7 +10019,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10053,13 +10053,13 @@
               <name>network_weights_weig_870</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10068,7 +10068,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10102,13 +10102,13 @@
               <name>network_weights_weig_871</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10117,7 +10117,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10151,13 +10151,13 @@
               <name>network_weights_weig_872</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10166,7 +10166,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10200,13 +10200,13 @@
               <name>network_weights_weig_873</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10215,7 +10215,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10249,13 +10249,13 @@
               <name>network_weights_weig_874</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10264,7 +10264,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10298,13 +10298,13 @@
               <name>network_weights_weig_875</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10313,7 +10313,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10347,13 +10347,13 @@
               <name>network_weights_weig_876</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10362,7 +10362,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10396,13 +10396,13 @@
               <name>network_weights_weig_877</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10411,7 +10411,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10445,13 +10445,13 @@
               <name>network_weights_weig_878</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10460,7 +10460,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10494,13 +10494,13 @@
               <name>network_weights_weig_879</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10509,7 +10509,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10543,13 +10543,13 @@
               <name>network_weights_weig_880</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10558,7 +10558,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10592,13 +10592,13 @@
               <name>network_weights_weig_881</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10607,7 +10607,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10641,13 +10641,13 @@
               <name>network_weights_weig_882</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10656,7 +10656,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10690,13 +10690,13 @@
               <name>network_weights_weig_883</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10705,7 +10705,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10739,13 +10739,13 @@
               <name>network_weights_weig_884</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10754,7 +10754,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10788,13 +10788,13 @@
               <name>network_weights_weig_885</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10803,7 +10803,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10837,13 +10837,13 @@
               <name>network_weights_weig_886</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10852,7 +10852,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10886,13 +10886,13 @@
               <name>network_weights_weig_887</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10901,7 +10901,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10935,13 +10935,13 @@
               <name>network_weights_weig_888</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10950,7 +10950,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -10984,13 +10984,13 @@
               <name>network_weights_weig_889</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10999,7 +10999,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11033,13 +11033,13 @@
               <name>network_weights_weig_890</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11048,7 +11048,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11082,13 +11082,13 @@
               <name>network_weights_weig_891</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11097,7 +11097,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11131,13 +11131,13 @@
               <name>network_weights_weig_892</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11146,7 +11146,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11180,13 +11180,13 @@
               <name>network_weights_weig_893</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11195,7 +11195,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11229,13 +11229,13 @@
               <name>network_weights_weig_894</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11244,7 +11244,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11278,13 +11278,13 @@
               <name>network_weights_weig_895</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11293,7 +11293,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11327,13 +11327,13 @@
               <name>network_weights_weig_896</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11342,7 +11342,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11376,13 +11376,13 @@
               <name>network_weights_weig_897</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11391,7 +11391,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11425,13 +11425,13 @@
               <name>network_weights_weig_898</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11440,7 +11440,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11474,13 +11474,13 @@
               <name>network_weights_weig_899</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11489,7 +11489,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11523,13 +11523,13 @@
               <name>network_weights_weig_900</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11538,7 +11538,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11572,13 +11572,13 @@
               <name>network_weights_weig_901</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11587,7 +11587,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11621,13 +11621,13 @@
               <name>network_weights_weig_902</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11636,7 +11636,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11670,13 +11670,13 @@
               <name>network_weights_weig_903</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11685,7 +11685,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11719,13 +11719,13 @@
               <name>network_weights_weig_904</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11734,7 +11734,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11768,13 +11768,13 @@
               <name>network_weights_weig_905</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11783,7 +11783,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11817,13 +11817,13 @@
               <name>network_weights_weig_906</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11832,7 +11832,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11866,13 +11866,13 @@
               <name>network_weights_weig_907</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11881,7 +11881,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11915,13 +11915,13 @@
               <name>network_weights_weig_908</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11930,7 +11930,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -11964,13 +11964,13 @@
               <name>network_weights_weig_909</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11979,7 +11979,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12013,13 +12013,13 @@
               <name>network_weights_weig_910</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12028,7 +12028,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12062,13 +12062,13 @@
               <name>network_weights_weig_911</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12077,7 +12077,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12111,13 +12111,13 @@
               <name>network_weights_weig_912</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12126,7 +12126,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12160,13 +12160,13 @@
               <name>network_weights_weig_913</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12175,7 +12175,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12209,13 +12209,13 @@
               <name>network_weights_weig_914</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12224,7 +12224,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12258,13 +12258,13 @@
               <name>network_weights_weig_915</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12273,7 +12273,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12307,13 +12307,13 @@
               <name>network_weights_weig_916</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12322,7 +12322,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12356,13 +12356,13 @@
               <name>network_weights_weig_917</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12371,7 +12371,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12405,13 +12405,13 @@
               <name>network_weights_weig_918</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12420,7 +12420,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12454,13 +12454,13 @@
               <name>network_weights_weig_919</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12469,7 +12469,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12503,13 +12503,13 @@
               <name>network_weights_weig_920</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12518,7 +12518,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12552,13 +12552,13 @@
               <name>network_weights_weig_921</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12567,7 +12567,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12601,13 +12601,13 @@
               <name>network_weights_weig_922</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12616,7 +12616,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12650,13 +12650,13 @@
               <name>network_weights_weig_923</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12665,7 +12665,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12699,13 +12699,13 @@
               <name>network_weights_weig_924</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12714,7 +12714,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12748,13 +12748,13 @@
               <name>network_weights_weig_925</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12763,7 +12763,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12797,13 +12797,13 @@
               <name>network_weights_weig_926</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12812,7 +12812,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12846,13 +12846,13 @@
               <name>network_weights_weig_927</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12861,7 +12861,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12895,13 +12895,13 @@
               <name>network_weights_weig_928</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12910,7 +12910,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12944,13 +12944,13 @@
               <name>network_weights_weig_929</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12959,7 +12959,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -12993,13 +12993,13 @@
               <name>network_weights_weig_930</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13008,7 +13008,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13042,13 +13042,13 @@
               <name>network_weights_weig_931</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13057,7 +13057,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13091,13 +13091,13 @@
               <name>network_weights_weig_932</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13106,7 +13106,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13140,13 +13140,13 @@
               <name>network_weights_weig_933</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13155,7 +13155,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13189,13 +13189,13 @@
               <name>network_weights_weig_934</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13204,7 +13204,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13238,13 +13238,13 @@
               <name>network_weights_weig_935</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13253,7 +13253,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13287,13 +13287,13 @@
               <name>network_weights_weig_936</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13302,7 +13302,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13336,13 +13336,13 @@
               <name>network_weights_weig_937</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13351,7 +13351,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13385,13 +13385,13 @@
               <name>network_weights_weig_938</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13400,7 +13400,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13434,13 +13434,13 @@
               <name>network_weights_weig_939</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13449,7 +13449,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13483,13 +13483,13 @@
               <name>network_weights_weig_940</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13498,7 +13498,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13532,13 +13532,13 @@
               <name>network_weights_weig_941</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13547,7 +13547,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13581,13 +13581,13 @@
               <name>network_weights_weig_942</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13596,7 +13596,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13630,13 +13630,13 @@
               <name>network_weights_weig_943</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13645,7 +13645,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13679,13 +13679,13 @@
               <name>network_weights_weig_944</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13694,7 +13694,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13728,13 +13728,13 @@
               <name>network_weights_weig_945</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13743,7 +13743,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13777,13 +13777,13 @@
               <name>network_weights_weig_946</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13792,7 +13792,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13826,13 +13826,13 @@
               <name>network_weights_weig_947</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13841,7 +13841,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13875,13 +13875,13 @@
               <name>network_weights_weig_948</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13890,7 +13890,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13924,13 +13924,13 @@
               <name>network_weights_weig_949</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13939,7 +13939,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -13973,13 +13973,13 @@
               <name>network_weights_weig_950</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13988,7 +13988,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14022,13 +14022,13 @@
               <name>network_weights_weig_951</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14037,7 +14037,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14071,13 +14071,13 @@
               <name>network_weights_weig_952</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14086,7 +14086,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14120,13 +14120,13 @@
               <name>network_weights_weig_953</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14135,7 +14135,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14169,13 +14169,13 @@
               <name>network_weights_weig_954</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14184,7 +14184,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14218,13 +14218,13 @@
               <name>network_weights_weig_955</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14233,7 +14233,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14267,13 +14267,13 @@
               <name>network_weights_weig_956</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14282,7 +14282,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14316,13 +14316,13 @@
               <name>network_weights_weig_957</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14331,7 +14331,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14365,13 +14365,13 @@
               <name>network_weights_weig_958</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14380,7 +14380,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14414,13 +14414,13 @@
               <name>network_weights_weig_959</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14429,7 +14429,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14463,13 +14463,13 @@
               <name>network_weights_weig_960</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14478,7 +14478,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14512,13 +14512,13 @@
               <name>network_weights_weig_961</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14527,7 +14527,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14561,13 +14561,13 @@
               <name>network_weights_weig_962</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14576,7 +14576,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14610,13 +14610,13 @@
               <name>network_weights_weig_963</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14625,7 +14625,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14659,13 +14659,13 @@
               <name>network_weights_weig_964</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14674,7 +14674,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14708,13 +14708,13 @@
               <name>network_weights_weig_965</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14723,7 +14723,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14757,13 +14757,13 @@
               <name>network_weights_weig_966</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14772,7 +14772,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14806,13 +14806,13 @@
               <name>network_weights_weig_967</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14821,7 +14821,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14855,13 +14855,13 @@
               <name>network_weights_weig_968</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14870,7 +14870,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14904,13 +14904,13 @@
               <name>network_weights_weig_969</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14919,7 +14919,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -14953,13 +14953,13 @@
               <name>network_weights_weig_970</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14968,7 +14968,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15002,13 +15002,13 @@
               <name>network_weights_weig_971</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15017,7 +15017,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15051,13 +15051,13 @@
               <name>network_weights_weig_972</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15066,7 +15066,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15100,13 +15100,13 @@
               <name>network_weights_weig_973</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15115,7 +15115,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15149,13 +15149,13 @@
               <name>network_weights_weig_974</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15164,7 +15164,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15198,13 +15198,13 @@
               <name>network_weights_weig_975</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15213,7 +15213,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15247,13 +15247,13 @@
               <name>network_weights_weig_976</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15262,7 +15262,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15296,13 +15296,13 @@
               <name>network_weights_weig_977</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>7</lineNumber>
+              <lineNumber>6</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15311,7 +15311,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>7</second>
+                      <second>6</second>
                     </item>
                   </second>
                 </item>
@@ -15342,16 +15342,16 @@
             <Obj>
               <type>0</type>
               <id>399</id>
-              <name>trunc_ln12</name>
+              <name>trunc_ln11</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>12</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15360,13 +15360,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>12</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln12_fu_1620_p1</rtlName>
+              <rtlName>trunc_ln11_fu_1620_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -15390,16 +15390,16 @@
             <Obj>
               <type>0</type>
               <id>400</id>
-              <name>trunc_ln12_1</name>
+              <name>trunc_ln11_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>12</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15408,13 +15408,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>12</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln12_1_fu_1624_p1</rtlName>
+              <rtlName>trunc_ln11_1_fu_1624_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -15441,13 +15441,13 @@
               <name>tmp_4</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>12</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15456,7 +15456,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>12</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
@@ -15488,16 +15488,16 @@
             <Obj>
               <type>0</type>
               <id>402</id>
-              <name>zext_ln12</name>
+              <name>zext_ln11</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>12</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15506,7 +15506,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>12</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
@@ -15539,13 +15539,13 @@
               <name>tmp</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>12</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15554,7 +15554,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>12</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
@@ -15617,16 +15617,16 @@
             <Obj>
               <type>0</type>
               <id>404</id>
-              <name>trunc_ln15</name>
+              <name>trunc_ln14</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15635,13 +15635,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln15_fu_1710_p1</rtlName>
+              <rtlName>trunc_ln14_fu_1710_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -15665,16 +15665,16 @@
             <Obj>
               <type>0</type>
               <id>405</id>
-              <name>trunc_ln15_1</name>
+              <name>trunc_ln14_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15683,13 +15683,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln15_1_fu_1714_p1</rtlName>
+              <rtlName>trunc_ln14_1_fu_1714_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -15716,13 +15716,13 @@
               <name>tmp_5</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15731,7 +15731,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
@@ -15763,16 +15763,16 @@
             <Obj>
               <type>0</type>
               <id>407</id>
-              <name>zext_ln15</name>
+              <name>zext_ln14</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15781,7 +15781,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
@@ -15814,13 +15814,13 @@
               <name>tmp_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15829,7 +15829,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
@@ -15988,16 +15988,16 @@
             <Obj>
               <type>0</type>
               <id>409</id>
-              <name>trunc_ln18</name>
+              <name>trunc_ln17</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>18</lineNumber>
+              <lineNumber>17</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16006,13 +16006,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>18</second>
+                      <second>17</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln18_fu_1992_p1</rtlName>
+              <rtlName>trunc_ln17_fu_1992_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -16036,16 +16036,16 @@
             <Obj>
               <type>0</type>
               <id>410</id>
-              <name>trunc_ln18_1</name>
+              <name>trunc_ln17_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>18</lineNumber>
+              <lineNumber>17</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16054,13 +16054,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>18</second>
+                      <second>17</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln18_1_fu_1996_p1</rtlName>
+              <rtlName>trunc_ln17_1_fu_1996_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -16087,13 +16087,13 @@
               <name>tmp_6</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>18</lineNumber>
+              <lineNumber>17</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16102,7 +16102,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>18</second>
+                      <second>17</second>
                     </item>
                   </second>
                 </item>
@@ -16134,16 +16134,16 @@
             <Obj>
               <type>0</type>
               <id>412</id>
-              <name>zext_ln18</name>
+              <name>zext_ln17</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>18</lineNumber>
+              <lineNumber>17</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16152,7 +16152,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>18</second>
+                      <second>17</second>
                     </item>
                   </second>
                 </item>
@@ -16185,13 +16185,13 @@
               <name>tmp_2</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>18</lineNumber>
+              <lineNumber>17</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16200,7 +16200,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>18</second>
+                      <second>17</second>
                     </item>
                   </second>
                 </item>
@@ -16263,16 +16263,16 @@
             <Obj>
               <type>0</type>
               <id>414</id>
-              <name>trunc_ln21</name>
+              <name>trunc_ln20</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
+              <lineNumber>20</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16281,7 +16281,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>21</second>
+                      <second>20</second>
                     </item>
                   </second>
                 </item>
@@ -16314,13 +16314,13 @@
               <name>tmp_3</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
+              <lineNumber>20</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16329,7 +16329,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>21</second>
+                      <second>20</second>
                     </item>
                   </second>
                 </item>
@@ -16364,16 +16364,16 @@
             <Obj>
               <type>0</type>
               <id>416</id>
-              <name>trunc_ln9</name>
+              <name>trunc_ln8</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16382,13 +16382,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln9_fu_2100_p1</rtlName>
+              <rtlName>trunc_ln8_fu_2100_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -16412,16 +16412,16 @@
             <Obj>
               <type>0</type>
               <id>417</id>
-              <name>icmp_ln9</name>
+              <name>icmp_ln8</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16430,13 +16430,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln9_fu_2104_p2</rtlName>
+              <rtlName>icmp_ln8_fu_2104_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16461,16 +16461,16 @@
             <Obj>
               <type>0</type>
               <id>418</id>
-              <name>icmp_ln9_1</name>
+              <name>icmp_ln8_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16479,13 +16479,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln9_1_fu_2110_p2</rtlName>
+              <rtlName>icmp_ln8_1_fu_2110_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16510,16 +16510,16 @@
             <Obj>
               <type>0</type>
               <id>419</id>
-              <name>icmp_ln9_2</name>
+              <name>icmp_ln8_2</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16528,13 +16528,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln9_2_fu_2116_p2</rtlName>
+              <rtlName>icmp_ln8_2_fu_2116_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16559,16 +16559,16 @@
             <Obj>
               <type>0</type>
               <id>420</id>
-              <name>icmp_ln9_3</name>
+              <name>icmp_ln8_3</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16577,13 +16577,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln9_3_fu_2122_p2</rtlName>
+              <rtlName>icmp_ln8_3_fu_2122_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16608,16 +16608,16 @@
             <Obj>
               <type>0</type>
               <id>421</id>
-              <name>select_ln9</name>
+              <name>select_ln8</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16626,13 +16626,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln9_fu_2128_p3</rtlName>
+              <rtlName>select_ln8_fu_2128_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -16658,16 +16658,16 @@
             <Obj>
               <type>0</type>
               <id>422</id>
-              <name>or_ln9</name>
+              <name>or_ln8</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16676,13 +16676,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln9_fu_2136_p2</rtlName>
+              <rtlName>or_ln8_fu_2136_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16707,16 +16707,16 @@
             <Obj>
               <type>0</type>
               <id>423</id>
-              <name>select_ln9_1</name>
+              <name>select_ln8_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16725,13 +16725,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln9_1_fu_2142_p3</rtlName>
+              <rtlName>select_ln8_1_fu_2142_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -16757,16 +16757,16 @@
             <Obj>
               <type>0</type>
               <id>424</id>
-              <name>or_ln9_1</name>
+              <name>or_ln8_1</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16775,13 +16775,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln9_1_fu_2150_p2</rtlName>
+              <rtlName>or_ln8_1_fu_2150_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16806,16 +16806,16 @@
             <Obj>
               <type>0</type>
               <id>425</id>
-              <name>select_ln9_2</name>
+              <name>select_ln8_2</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16824,13 +16824,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln9_2_fu_2156_p3</rtlName>
+              <rtlName>select_ln8_2_fu_2156_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -16856,16 +16856,16 @@
             <Obj>
               <type>0</type>
               <id>426</id>
-              <name>or_ln9_2</name>
+              <name>or_ln8_2</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16874,13 +16874,13 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln9_2_fu_2164_p2</rtlName>
+              <rtlName>or_ln8_2_fu_2164_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -16905,16 +16905,16 @@
             <Obj>
               <type>0</type>
               <id>427</id>
-              <name>select_ln9_3</name>
+              <name>select_ln8_3</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>8</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16923,7 +16923,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>9</second>
+                      <second>8</second>
                     </item>
                   </second>
                 </item>
@@ -16955,16 +16955,16 @@
             <Obj>
               <type>0</type>
               <id>428</id>
-              <name>_ln26</name>
+              <name>_ln25</name>
               <fileName>network/network_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>26</lineNumber>
+              <lineNumber>25</lineNumber>
               <contextFuncName>getWeight</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork(parameter)</first>
+                  <first>/home/leo/Nextcloud/Fachhochschule/Praktikum/ml_nlc/HLSNetwork</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16973,7 +16973,7 @@
                         <first>network/network_top.cpp</first>
                         <second>getWeight</second>
                       </first>
-                      <second>26</second>
+                      <second>25</second>
                     </item>
                   </second>
                 </item>
@@ -21763,7 +21763,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_1_fu_2110_p2 ( icmp ) </first>
+          <first>icmp_ln8_1_fu_2110_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21786,7 +21786,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_2_fu_2116_p2 ( icmp ) </first>
+          <first>icmp_ln8_2_fu_2116_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21809,7 +21809,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_3_fu_2122_p2 ( icmp ) </first>
+          <first>icmp_ln8_3_fu_2122_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21832,7 +21832,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_fu_2104_p2 ( icmp ) </first>
+          <first>icmp_ln8_fu_2104_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21855,7 +21855,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_1_fu_2150_p2 ( or ) </first>
+          <first>or_ln8_1_fu_2150_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21878,7 +21878,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_2_fu_2164_p2 ( or ) </first>
+          <first>or_ln8_2_fu_2164_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21901,7 +21901,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_fu_2136_p2 ( or ) </first>
+          <first>or_ln8_fu_2136_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -21924,7 +21924,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_1_fu_2142_p3 ( select ) </first>
+          <first>select_ln8_1_fu_2142_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -21951,7 +21951,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_2_fu_2156_p3 ( select ) </first>
+          <first>select_ln8_2_fu_2156_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -21978,7 +21978,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_fu_2128_p3 ( select ) </first>
+          <first>select_ln8_fu_2128_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -22101,7 +22101,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_1_fu_2110_p2 ( icmp ) </first>
+          <first>icmp_ln8_1_fu_2110_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22109,7 +22109,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_2_fu_2116_p2 ( icmp ) </first>
+          <first>icmp_ln8_2_fu_2116_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22117,7 +22117,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_3_fu_2122_p2 ( icmp ) </first>
+          <first>icmp_ln8_3_fu_2122_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22125,7 +22125,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln9_fu_2104_p2 ( icmp ) </first>
+          <first>icmp_ln8_fu_2104_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22133,7 +22133,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_1_fu_2150_p2 ( or ) </first>
+          <first>or_ln8_1_fu_2150_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22141,7 +22141,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_2_fu_2164_p2 ( or ) </first>
+          <first>or_ln8_2_fu_2164_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22149,7 +22149,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln9_fu_2136_p2 ( or ) </first>
+          <first>or_ln8_fu_2136_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22157,7 +22157,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_1_fu_2142_p3 ( select ) </first>
+          <first>select_ln8_1_fu_2142_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22165,7 +22165,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_2_fu_2156_p3 ( select ) </first>
+          <first>select_ln8_2_fu_2156_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22173,7 +22173,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln9_fu_2128_p3 ( select ) </first>
+          <first>select_ln8_fu_2128_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -25660,7 +25660,7 @@
       <count>29</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>icmp_ln9_1_fu_2110</first>
+        <first>icmp_ln8_1_fu_2110</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25668,7 +25668,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln9_2_fu_2116</first>
+        <first>icmp_ln8_2_fu_2116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25676,7 +25676,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln9_3_fu_2122</first>
+        <first>icmp_ln8_3_fu_2122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25684,7 +25684,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln9_fu_2104</first>
+        <first>icmp_ln8_fu_2104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25692,7 +25692,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln9_1_fu_2150</first>
+        <first>or_ln8_1_fu_2150</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25700,7 +25700,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln9_2_fu_2164</first>
+        <first>or_ln8_2_fu_2164</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25708,7 +25708,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln9_fu_2136</first>
+        <first>or_ln8_fu_2136</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25716,7 +25716,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln9_1_fu_2142</first>
+        <first>select_ln8_1_fu_2142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25724,7 +25724,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln9_2_fu_2156</first>
+        <first>select_ln8_2_fu_2156</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25732,7 +25732,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln9_3_fu_2170</first>
+        <first>select_ln8_3_fu_2170</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25740,7 +25740,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln9_fu_2128</first>
+        <first>select_ln8_fu_2128</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25804,7 +25804,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln12_1_fu_1624</first>
+        <first>trunc_ln11_1_fu_1624</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25812,7 +25812,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln12_fu_1620</first>
+        <first>trunc_ln11_fu_1620</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25820,7 +25820,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln15_1_fu_1714</first>
+        <first>trunc_ln14_1_fu_1714</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25828,7 +25828,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln15_fu_1710</first>
+        <first>trunc_ln14_fu_1710</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25836,7 +25836,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln18_1_fu_1996</first>
+        <first>trunc_ln17_1_fu_1996</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25844,7 +25844,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln18_fu_1992</first>
+        <first>trunc_ln17_fu_1992</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25852,7 +25852,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln21_fu_2082</first>
+        <first>trunc_ln20_fu_2082</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25860,7 +25860,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln9_fu_2100</first>
+        <first>trunc_ln8_fu_2100</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25868,7 +25868,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln12_fu_1636</first>
+        <first>zext_ln11_fu_1636</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25876,7 +25876,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln15_fu_1726</first>
+        <first>zext_ln14_fu_1726</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -25884,7 +25884,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln18_fu_2008</first>
+        <first>zext_ln17_fu_2008</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

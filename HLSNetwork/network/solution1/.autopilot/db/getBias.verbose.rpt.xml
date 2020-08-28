@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'getBias'" level="0">
-<item name = "Date">Fri Aug 28 10:09:54 2020
+<item name = "Date">Fri Aug 28 18:10:49 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">network</item>
@@ -80,17 +80,17 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="icmp_ln30_1_fu_366_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln30_2_fu_372_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln30_3_fu_378_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln30_fu_360_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="or_ln30_1_fu_406_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln30_2_fu_420_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln30_fu_392_p2">or, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln29_1_fu_366_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln29_2_fu_372_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln29_3_fu_378_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln29_fu_360_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="or_ln29_1_fu_406_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln29_2_fu_420_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln29_fu_392_p2">or, 0, 0, 2, 1, 1</column>
 <column name="ap_return">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln30_1_fu_398_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln30_2_fu_412_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln30_fu_384_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln29_1_fu_398_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln29_2_fu_412_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln29_fu_384_p3">select, 0, 0, 32, 1, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

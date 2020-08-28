@@ -1,17 +1,7 @@
-#ifndef NETWORK_H
-#define NETWORK_H
+#ifndef NETWORK_CHG_H
+#define NETWORK_CHG_H
 
 #include <stdint.h>
-
-#define NUM_INPUT 2
-#define NETWORK_INPUT_SCALE 0.003921568859368563
-#define NETWORK_INPUT_ZERO_POINT -128
-
-#define NUM_OUTPUT 1
-#define NETWORK_OUTPUT_SCALE 1.404667615890503
-#define NETWORK_OUTPUT_ZERO_POINT -128
-
-#define NUM_LAYERS 4
 
 const int8_t weights_0[16][2] = {{41, 54}, {-13, 2}, {36, 55}, {-8, 127}, {5, 103}, {96, 8}, {27, 79}, {-6, -12}, {-12, -16}, {8, -25}, {13, 70}, {105, 5}, {79, 22}, {-12, -3}, {17, 109}, {-12, -4}};
 
@@ -29,70 +19,7 @@ const int32_t bias_2[4] = {-107, -40, -132, -105};
 
 const int32_t bias_3[1] = {-116};
 
-
-struct layer
-	{
-		// Layer data
-		
-		int8_t* weights;	
-		int32_t* bias;
-		
-		int dimension_0;
-		int dimension_1;
-		
-		// Input Quantization
-		// int8_t input_zero_point;
-		
-		// Output Quantization
-		uint16_t output_conversion_scale;
-		int8_t output_zero_point;
-	} typedef layer_t;
-
-const layer_t layer_0 = {
-	.weights = (int8_t*)weights_0,
-	.bias = (int32_t*)bias_0,
-
-	.dimension_0 = 16,
-	.dimension_1 = 2,
-
-	.output_conversion_scale = 969, // / 2^17
-	.output_zero_point = -128
-};
-
-const layer_t layer_1 = {
-	.weights = (int8_t*)weights_1,
-	.bias = (int32_t*)bias_1,
-
-	.dimension_0 = 8,
-	.dimension_1 = 16,
-
-	.output_conversion_scale = 612, // / 2^17
-	.output_zero_point = -128
-};
-
-const layer_t layer_2 = {
-	.weights = (int8_t*)weights_2,
-	.bias = (int32_t*)bias_2,
-
-	.dimension_0 = 4,
-	.dimension_1 = 8,
-
-	.output_conversion_scale = 3034, // / 2^17
-	.output_zero_point = -128
-};
-
-const layer_t layer_3 = {
-	.weights = (int8_t*)weights_3,
-	.bias = (int32_t*)bias_3,
-
-	.dimension_0 = 1,
-	.dimension_1 = 4,
-
-	.output_conversion_scale = 422, // / 2^17
-	.output_zero_point = -128
-};
-
-layer_t network[] = {layer_0, layer_1, layer_2, layer_3};
+const uint16_t output_conversion_scale[] = {969, 612, 3034, 422};
 
 #endif
 

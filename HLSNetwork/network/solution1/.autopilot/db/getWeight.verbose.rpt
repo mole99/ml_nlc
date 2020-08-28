@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'getWeight'
 ================================================================
-* Date:           Fri Aug 28 10:09:54 2020
+* Date:           Fri Aug 28 18:10:49 2020
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        network
@@ -89,17 +89,17 @@
     +-------------------------+----------+-------+---+----+------------+------------+
     |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------+----------+-------+---+----+------------+------------+
-    |icmp_ln9_1_fu_2110_p2    |   icmp   |      0|  0|   9|           2|           3|
-    |icmp_ln9_2_fu_2116_p2    |   icmp   |      0|  0|   8|           2|           1|
-    |icmp_ln9_3_fu_2122_p2    |   icmp   |      0|  0|   8|           2|           1|
-    |icmp_ln9_fu_2104_p2      |   icmp   |      0|  0|   8|           2|           2|
-    |or_ln9_1_fu_2150_p2      |    or    |      0|  0|   2|           1|           1|
-    |or_ln9_2_fu_2164_p2      |    or    |      0|  0|   2|           1|           1|
-    |or_ln9_fu_2136_p2        |    or    |      0|  0|   2|           1|           1|
+    |icmp_ln8_1_fu_2110_p2    |   icmp   |      0|  0|   9|           2|           3|
+    |icmp_ln8_2_fu_2116_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln8_3_fu_2122_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln8_fu_2104_p2      |   icmp   |      0|  0|   8|           2|           2|
+    |or_ln8_1_fu_2150_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln8_2_fu_2164_p2      |    or    |      0|  0|   2|           1|           1|
+    |or_ln8_fu_2136_p2        |    or    |      0|  0|   2|           1|           1|
     |ap_return                |  select  |      0|  0|   8|           1|           8|
-    |select_ln9_1_fu_2142_p3  |  select  |      0|  0|   8|           1|           8|
-    |select_ln9_2_fu_2156_p3  |  select  |      0|  0|   8|           1|           8|
-    |select_ln9_fu_2128_p3    |  select  |      0|  0|   8|           1|           8|
+    |select_ln8_1_fu_2142_p3  |  select  |      0|  0|   8|           1|           8|
+    |select_ln8_2_fu_2156_p3  |  select  |      0|  0|   8|           1|           8|
+    |select_ln8_fu_2128_p3    |  select  |      0|  0|   8|           1|           8|
     +-------------------------+----------+-------+---+----+------------+------------+
     |Total                    |          |      0|  0|  71|          15|          42|
     +-------------------------+----------+-------+---+----+------------+------------+
@@ -362,235 +362,235 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.61>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%index_1_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %index_1)" [network/network_top.cpp:7]   --->   Operation 2 'read' 'index_1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%index_0_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %index_0)" [network/network_top.cpp:7]   --->   Operation 3 'read' 'index_0_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%layer_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %layer)" [network/network_top.cpp:7]   --->   Operation 4 'read' 'layer_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%network_weights_weig_782 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_781)" [network/network_top.cpp:7]   --->   Operation 5 'read' 'network_weights_weig_782' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%network_weights_weig_783 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_780)" [network/network_top.cpp:7]   --->   Operation 6 'read' 'network_weights_weig_783' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%network_weights_weig_784 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_779)" [network/network_top.cpp:7]   --->   Operation 7 'read' 'network_weights_weig_784' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%network_weights_weig_785 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_778)" [network/network_top.cpp:7]   --->   Operation 8 'read' 'network_weights_weig_785' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%network_weights_weig_786 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_777)" [network/network_top.cpp:7]   --->   Operation 9 'read' 'network_weights_weig_786' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%network_weights_weig_787 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_776)" [network/network_top.cpp:7]   --->   Operation 10 'read' 'network_weights_weig_787' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%network_weights_weig_788 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_775)" [network/network_top.cpp:7]   --->   Operation 11 'read' 'network_weights_weig_788' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%network_weights_weig_789 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_774)" [network/network_top.cpp:7]   --->   Operation 12 'read' 'network_weights_weig_789' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%network_weights_weig_790 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_773)" [network/network_top.cpp:7]   --->   Operation 13 'read' 'network_weights_weig_790' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%network_weights_weig_791 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_772)" [network/network_top.cpp:7]   --->   Operation 14 'read' 'network_weights_weig_791' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%network_weights_weig_792 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_771)" [network/network_top.cpp:7]   --->   Operation 15 'read' 'network_weights_weig_792' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%network_weights_weig_793 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_770)" [network/network_top.cpp:7]   --->   Operation 16 'read' 'network_weights_weig_793' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%network_weights_weig_794 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_769)" [network/network_top.cpp:7]   --->   Operation 17 'read' 'network_weights_weig_794' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%network_weights_weig_795 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_768)" [network/network_top.cpp:7]   --->   Operation 18 'read' 'network_weights_weig_795' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%network_weights_weig_796 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_767)" [network/network_top.cpp:7]   --->   Operation 19 'read' 'network_weights_weig_796' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%network_weights_weig_797 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_766)" [network/network_top.cpp:7]   --->   Operation 20 'read' 'network_weights_weig_797' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%network_weights_weig_798 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_765)" [network/network_top.cpp:7]   --->   Operation 21 'read' 'network_weights_weig_798' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%network_weights_weig_799 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_764)" [network/network_top.cpp:7]   --->   Operation 22 'read' 'network_weights_weig_799' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%network_weights_weig_800 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_763)" [network/network_top.cpp:7]   --->   Operation 23 'read' 'network_weights_weig_800' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%network_weights_weig_801 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_762)" [network/network_top.cpp:7]   --->   Operation 24 'read' 'network_weights_weig_801' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%network_weights_weig_802 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_761)" [network/network_top.cpp:7]   --->   Operation 25 'read' 'network_weights_weig_802' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%network_weights_weig_803 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_760)" [network/network_top.cpp:7]   --->   Operation 26 'read' 'network_weights_weig_803' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%network_weights_weig_804 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_759)" [network/network_top.cpp:7]   --->   Operation 27 'read' 'network_weights_weig_804' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%network_weights_weig_805 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_758)" [network/network_top.cpp:7]   --->   Operation 28 'read' 'network_weights_weig_805' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%network_weights_weig_806 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_757)" [network/network_top.cpp:7]   --->   Operation 29 'read' 'network_weights_weig_806' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%network_weights_weig_807 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_756)" [network/network_top.cpp:7]   --->   Operation 30 'read' 'network_weights_weig_807' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%network_weights_weig_808 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_755)" [network/network_top.cpp:7]   --->   Operation 31 'read' 'network_weights_weig_808' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%network_weights_weig_809 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_754)" [network/network_top.cpp:7]   --->   Operation 32 'read' 'network_weights_weig_809' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%network_weights_weig_810 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_753)" [network/network_top.cpp:7]   --->   Operation 33 'read' 'network_weights_weig_810' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%network_weights_weig_811 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_752)" [network/network_top.cpp:7]   --->   Operation 34 'read' 'network_weights_weig_811' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%network_weights_weig_812 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_751)" [network/network_top.cpp:7]   --->   Operation 35 'read' 'network_weights_weig_812' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%network_weights_weig_813 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_750)" [network/network_top.cpp:7]   --->   Operation 36 'read' 'network_weights_weig_813' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%network_weights_weig_814 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_749)" [network/network_top.cpp:7]   --->   Operation 37 'read' 'network_weights_weig_814' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%network_weights_weig_815 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_748)" [network/network_top.cpp:7]   --->   Operation 38 'read' 'network_weights_weig_815' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%network_weights_weig_816 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_747)" [network/network_top.cpp:7]   --->   Operation 39 'read' 'network_weights_weig_816' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%network_weights_weig_817 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_746)" [network/network_top.cpp:7]   --->   Operation 40 'read' 'network_weights_weig_817' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%network_weights_weig_818 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_745)" [network/network_top.cpp:7]   --->   Operation 41 'read' 'network_weights_weig_818' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%network_weights_weig_819 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_744)" [network/network_top.cpp:7]   --->   Operation 42 'read' 'network_weights_weig_819' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%network_weights_weig_820 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_743)" [network/network_top.cpp:7]   --->   Operation 43 'read' 'network_weights_weig_820' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%network_weights_weig_821 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_742)" [network/network_top.cpp:7]   --->   Operation 44 'read' 'network_weights_weig_821' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%network_weights_weig_822 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_741)" [network/network_top.cpp:7]   --->   Operation 45 'read' 'network_weights_weig_822' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%network_weights_weig_823 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_740)" [network/network_top.cpp:7]   --->   Operation 46 'read' 'network_weights_weig_823' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%network_weights_weig_824 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_739)" [network/network_top.cpp:7]   --->   Operation 47 'read' 'network_weights_weig_824' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%network_weights_weig_825 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_738)" [network/network_top.cpp:7]   --->   Operation 48 'read' 'network_weights_weig_825' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%network_weights_weig_826 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_737)" [network/network_top.cpp:7]   --->   Operation 49 'read' 'network_weights_weig_826' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%network_weights_weig_827 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_736)" [network/network_top.cpp:7]   --->   Operation 50 'read' 'network_weights_weig_827' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%network_weights_weig_828 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_735)" [network/network_top.cpp:7]   --->   Operation 51 'read' 'network_weights_weig_828' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%network_weights_weig_829 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_734)" [network/network_top.cpp:7]   --->   Operation 52 'read' 'network_weights_weig_829' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%network_weights_weig_830 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_733)" [network/network_top.cpp:7]   --->   Operation 53 'read' 'network_weights_weig_830' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%network_weights_weig_831 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_732)" [network/network_top.cpp:7]   --->   Operation 54 'read' 'network_weights_weig_831' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%network_weights_weig_832 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_731)" [network/network_top.cpp:7]   --->   Operation 55 'read' 'network_weights_weig_832' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%network_weights_weig_833 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_730)" [network/network_top.cpp:7]   --->   Operation 56 'read' 'network_weights_weig_833' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%network_weights_weig_834 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_729)" [network/network_top.cpp:7]   --->   Operation 57 'read' 'network_weights_weig_834' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%network_weights_weig_835 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_728)" [network/network_top.cpp:7]   --->   Operation 58 'read' 'network_weights_weig_835' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%network_weights_weig_836 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_727)" [network/network_top.cpp:7]   --->   Operation 59 'read' 'network_weights_weig_836' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%network_weights_weig_837 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_726)" [network/network_top.cpp:7]   --->   Operation 60 'read' 'network_weights_weig_837' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%network_weights_weig_838 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_725)" [network/network_top.cpp:7]   --->   Operation 61 'read' 'network_weights_weig_838' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%network_weights_weig_839 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_724)" [network/network_top.cpp:7]   --->   Operation 62 'read' 'network_weights_weig_839' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%network_weights_weig_840 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_723)" [network/network_top.cpp:7]   --->   Operation 63 'read' 'network_weights_weig_840' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%network_weights_weig_841 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_722)" [network/network_top.cpp:7]   --->   Operation 64 'read' 'network_weights_weig_841' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%network_weights_weig_842 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_721)" [network/network_top.cpp:7]   --->   Operation 65 'read' 'network_weights_weig_842' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%network_weights_weig_843 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_720)" [network/network_top.cpp:7]   --->   Operation 66 'read' 'network_weights_weig_843' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%network_weights_weig_844 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_719)" [network/network_top.cpp:7]   --->   Operation 67 'read' 'network_weights_weig_844' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%network_weights_weig_845 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_718)" [network/network_top.cpp:7]   --->   Operation 68 'read' 'network_weights_weig_845' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%network_weights_weig_846 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_717)" [network/network_top.cpp:7]   --->   Operation 69 'read' 'network_weights_weig_846' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%network_weights_weig_847 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_716)" [network/network_top.cpp:7]   --->   Operation 70 'read' 'network_weights_weig_847' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%network_weights_weig_848 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_715)" [network/network_top.cpp:7]   --->   Operation 71 'read' 'network_weights_weig_848' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%network_weights_weig_849 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_714)" [network/network_top.cpp:7]   --->   Operation 72 'read' 'network_weights_weig_849' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%network_weights_weig_850 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_713)" [network/network_top.cpp:7]   --->   Operation 73 'read' 'network_weights_weig_850' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%network_weights_weig_851 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_712)" [network/network_top.cpp:7]   --->   Operation 74 'read' 'network_weights_weig_851' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%network_weights_weig_852 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_711)" [network/network_top.cpp:7]   --->   Operation 75 'read' 'network_weights_weig_852' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%network_weights_weig_853 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_710)" [network/network_top.cpp:7]   --->   Operation 76 'read' 'network_weights_weig_853' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%network_weights_weig_854 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_709)" [network/network_top.cpp:7]   --->   Operation 77 'read' 'network_weights_weig_854' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%network_weights_weig_855 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_708)" [network/network_top.cpp:7]   --->   Operation 78 'read' 'network_weights_weig_855' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%network_weights_weig_856 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_707)" [network/network_top.cpp:7]   --->   Operation 79 'read' 'network_weights_weig_856' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%network_weights_weig_857 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_706)" [network/network_top.cpp:7]   --->   Operation 80 'read' 'network_weights_weig_857' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%network_weights_weig_858 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_705)" [network/network_top.cpp:7]   --->   Operation 81 'read' 'network_weights_weig_858' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%network_weights_weig_859 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_704)" [network/network_top.cpp:7]   --->   Operation 82 'read' 'network_weights_weig_859' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%network_weights_weig_860 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_703)" [network/network_top.cpp:7]   --->   Operation 83 'read' 'network_weights_weig_860' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%network_weights_weig_861 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_702)" [network/network_top.cpp:7]   --->   Operation 84 'read' 'network_weights_weig_861' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%network_weights_weig_862 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_701)" [network/network_top.cpp:7]   --->   Operation 85 'read' 'network_weights_weig_862' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%network_weights_weig_863 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_700)" [network/network_top.cpp:7]   --->   Operation 86 'read' 'network_weights_weig_863' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%network_weights_weig_864 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_699)" [network/network_top.cpp:7]   --->   Operation 87 'read' 'network_weights_weig_864' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%network_weights_weig_865 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_698)" [network/network_top.cpp:7]   --->   Operation 88 'read' 'network_weights_weig_865' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%network_weights_weig_866 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_697)" [network/network_top.cpp:7]   --->   Operation 89 'read' 'network_weights_weig_866' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%network_weights_weig_867 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_696)" [network/network_top.cpp:7]   --->   Operation 90 'read' 'network_weights_weig_867' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%network_weights_weig_868 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_695)" [network/network_top.cpp:7]   --->   Operation 91 'read' 'network_weights_weig_868' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%network_weights_weig_869 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_694)" [network/network_top.cpp:7]   --->   Operation 92 'read' 'network_weights_weig_869' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%network_weights_weig_870 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_693)" [network/network_top.cpp:7]   --->   Operation 93 'read' 'network_weights_weig_870' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%network_weights_weig_871 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_692)" [network/network_top.cpp:7]   --->   Operation 94 'read' 'network_weights_weig_871' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%network_weights_weig_872 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_691)" [network/network_top.cpp:7]   --->   Operation 95 'read' 'network_weights_weig_872' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%network_weights_weig_873 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_690)" [network/network_top.cpp:7]   --->   Operation 96 'read' 'network_weights_weig_873' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%network_weights_weig_874 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_689)" [network/network_top.cpp:7]   --->   Operation 97 'read' 'network_weights_weig_874' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%network_weights_weig_875 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_688)" [network/network_top.cpp:7]   --->   Operation 98 'read' 'network_weights_weig_875' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%network_weights_weig_876 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_687)" [network/network_top.cpp:7]   --->   Operation 99 'read' 'network_weights_weig_876' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%network_weights_weig_877 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_686)" [network/network_top.cpp:7]   --->   Operation 100 'read' 'network_weights_weig_877' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%network_weights_weig_878 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_685)" [network/network_top.cpp:7]   --->   Operation 101 'read' 'network_weights_weig_878' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%network_weights_weig_879 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_684)" [network/network_top.cpp:7]   --->   Operation 102 'read' 'network_weights_weig_879' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%network_weights_weig_880 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_683)" [network/network_top.cpp:7]   --->   Operation 103 'read' 'network_weights_weig_880' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%network_weights_weig_881 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_682)" [network/network_top.cpp:7]   --->   Operation 104 'read' 'network_weights_weig_881' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%network_weights_weig_882 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_681)" [network/network_top.cpp:7]   --->   Operation 105 'read' 'network_weights_weig_882' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%network_weights_weig_883 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_680)" [network/network_top.cpp:7]   --->   Operation 106 'read' 'network_weights_weig_883' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%network_weights_weig_884 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_679)" [network/network_top.cpp:7]   --->   Operation 107 'read' 'network_weights_weig_884' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%network_weights_weig_885 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_678)" [network/network_top.cpp:7]   --->   Operation 108 'read' 'network_weights_weig_885' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%network_weights_weig_886 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_677)" [network/network_top.cpp:7]   --->   Operation 109 'read' 'network_weights_weig_886' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%network_weights_weig_887 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_676)" [network/network_top.cpp:7]   --->   Operation 110 'read' 'network_weights_weig_887' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%network_weights_weig_888 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_675)" [network/network_top.cpp:7]   --->   Operation 111 'read' 'network_weights_weig_888' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%network_weights_weig_889 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_674)" [network/network_top.cpp:7]   --->   Operation 112 'read' 'network_weights_weig_889' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%network_weights_weig_890 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_673)" [network/network_top.cpp:7]   --->   Operation 113 'read' 'network_weights_weig_890' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%network_weights_weig_891 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_672)" [network/network_top.cpp:7]   --->   Operation 114 'read' 'network_weights_weig_891' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%network_weights_weig_892 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_671)" [network/network_top.cpp:7]   --->   Operation 115 'read' 'network_weights_weig_892' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%network_weights_weig_893 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_670)" [network/network_top.cpp:7]   --->   Operation 116 'read' 'network_weights_weig_893' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%network_weights_weig_894 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_669)" [network/network_top.cpp:7]   --->   Operation 117 'read' 'network_weights_weig_894' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%network_weights_weig_895 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_668)" [network/network_top.cpp:7]   --->   Operation 118 'read' 'network_weights_weig_895' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%network_weights_weig_896 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_667)" [network/network_top.cpp:7]   --->   Operation 119 'read' 'network_weights_weig_896' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%network_weights_weig_897 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_666)" [network/network_top.cpp:7]   --->   Operation 120 'read' 'network_weights_weig_897' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%network_weights_weig_898 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_665)" [network/network_top.cpp:7]   --->   Operation 121 'read' 'network_weights_weig_898' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%network_weights_weig_899 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_664)" [network/network_top.cpp:7]   --->   Operation 122 'read' 'network_weights_weig_899' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%network_weights_weig_900 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_663)" [network/network_top.cpp:7]   --->   Operation 123 'read' 'network_weights_weig_900' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%network_weights_weig_901 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_662)" [network/network_top.cpp:7]   --->   Operation 124 'read' 'network_weights_weig_901' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%network_weights_weig_902 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_661)" [network/network_top.cpp:7]   --->   Operation 125 'read' 'network_weights_weig_902' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%network_weights_weig_903 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_660)" [network/network_top.cpp:7]   --->   Operation 126 'read' 'network_weights_weig_903' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%network_weights_weig_904 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_659)" [network/network_top.cpp:7]   --->   Operation 127 'read' 'network_weights_weig_904' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%network_weights_weig_905 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_658)" [network/network_top.cpp:7]   --->   Operation 128 'read' 'network_weights_weig_905' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%network_weights_weig_906 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_657)" [network/network_top.cpp:7]   --->   Operation 129 'read' 'network_weights_weig_906' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%network_weights_weig_907 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_656)" [network/network_top.cpp:7]   --->   Operation 130 'read' 'network_weights_weig_907' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%network_weights_weig_908 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_655)" [network/network_top.cpp:7]   --->   Operation 131 'read' 'network_weights_weig_908' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%network_weights_weig_909 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_654)" [network/network_top.cpp:7]   --->   Operation 132 'read' 'network_weights_weig_909' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%network_weights_weig_910 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_653)" [network/network_top.cpp:7]   --->   Operation 133 'read' 'network_weights_weig_910' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%network_weights_weig_911 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_652)" [network/network_top.cpp:7]   --->   Operation 134 'read' 'network_weights_weig_911' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%network_weights_weig_912 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_651)" [network/network_top.cpp:7]   --->   Operation 135 'read' 'network_weights_weig_912' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%network_weights_weig_913 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_650)" [network/network_top.cpp:7]   --->   Operation 136 'read' 'network_weights_weig_913' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%network_weights_weig_914 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_649)" [network/network_top.cpp:7]   --->   Operation 137 'read' 'network_weights_weig_914' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%network_weights_weig_915 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_648)" [network/network_top.cpp:7]   --->   Operation 138 'read' 'network_weights_weig_915' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%network_weights_weig_916 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_647)" [network/network_top.cpp:7]   --->   Operation 139 'read' 'network_weights_weig_916' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%network_weights_weig_917 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_646)" [network/network_top.cpp:7]   --->   Operation 140 'read' 'network_weights_weig_917' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%network_weights_weig_918 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_645)" [network/network_top.cpp:7]   --->   Operation 141 'read' 'network_weights_weig_918' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%network_weights_weig_919 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_644)" [network/network_top.cpp:7]   --->   Operation 142 'read' 'network_weights_weig_919' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%network_weights_weig_920 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_643)" [network/network_top.cpp:7]   --->   Operation 143 'read' 'network_weights_weig_920' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%network_weights_weig_921 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_642)" [network/network_top.cpp:7]   --->   Operation 144 'read' 'network_weights_weig_921' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%network_weights_weig_922 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_641)" [network/network_top.cpp:7]   --->   Operation 145 'read' 'network_weights_weig_922' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%network_weights_weig_923 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_640)" [network/network_top.cpp:7]   --->   Operation 146 'read' 'network_weights_weig_923' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%network_weights_weig_924 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_639)" [network/network_top.cpp:7]   --->   Operation 147 'read' 'network_weights_weig_924' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%network_weights_weig_925 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_638)" [network/network_top.cpp:7]   --->   Operation 148 'read' 'network_weights_weig_925' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%network_weights_weig_926 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_637)" [network/network_top.cpp:7]   --->   Operation 149 'read' 'network_weights_weig_926' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%network_weights_weig_927 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_636)" [network/network_top.cpp:7]   --->   Operation 150 'read' 'network_weights_weig_927' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%network_weights_weig_928 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_635)" [network/network_top.cpp:7]   --->   Operation 151 'read' 'network_weights_weig_928' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%network_weights_weig_929 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_634)" [network/network_top.cpp:7]   --->   Operation 152 'read' 'network_weights_weig_929' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%network_weights_weig_930 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_633)" [network/network_top.cpp:7]   --->   Operation 153 'read' 'network_weights_weig_930' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%network_weights_weig_931 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_632)" [network/network_top.cpp:7]   --->   Operation 154 'read' 'network_weights_weig_931' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%network_weights_weig_932 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_631)" [network/network_top.cpp:7]   --->   Operation 155 'read' 'network_weights_weig_932' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%network_weights_weig_933 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_630)" [network/network_top.cpp:7]   --->   Operation 156 'read' 'network_weights_weig_933' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 157 [1/1] (0.00ns)   --->   "%network_weights_weig_934 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_629)" [network/network_top.cpp:7]   --->   Operation 157 'read' 'network_weights_weig_934' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%network_weights_weig_935 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_628)" [network/network_top.cpp:7]   --->   Operation 158 'read' 'network_weights_weig_935' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%network_weights_weig_936 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_627)" [network/network_top.cpp:7]   --->   Operation 159 'read' 'network_weights_weig_936' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 160 [1/1] (0.00ns)   --->   "%network_weights_weig_937 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_626)" [network/network_top.cpp:7]   --->   Operation 160 'read' 'network_weights_weig_937' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%network_weights_weig_938 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_625)" [network/network_top.cpp:7]   --->   Operation 161 'read' 'network_weights_weig_938' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%network_weights_weig_939 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_624)" [network/network_top.cpp:7]   --->   Operation 162 'read' 'network_weights_weig_939' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 163 [1/1] (0.00ns)   --->   "%network_weights_weig_940 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_623)" [network/network_top.cpp:7]   --->   Operation 163 'read' 'network_weights_weig_940' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%network_weights_weig_941 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_622)" [network/network_top.cpp:7]   --->   Operation 164 'read' 'network_weights_weig_941' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 165 [1/1] (0.00ns)   --->   "%network_weights_weig_942 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_621)" [network/network_top.cpp:7]   --->   Operation 165 'read' 'network_weights_weig_942' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%network_weights_weig_943 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_620)" [network/network_top.cpp:7]   --->   Operation 166 'read' 'network_weights_weig_943' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 167 [1/1] (0.00ns)   --->   "%network_weights_weig_944 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_619)" [network/network_top.cpp:7]   --->   Operation 167 'read' 'network_weights_weig_944' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 168 [1/1] (0.00ns)   --->   "%network_weights_weig_945 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_618)" [network/network_top.cpp:7]   --->   Operation 168 'read' 'network_weights_weig_945' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%network_weights_weig_946 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_617)" [network/network_top.cpp:7]   --->   Operation 169 'read' 'network_weights_weig_946' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 170 [1/1] (0.00ns)   --->   "%network_weights_weig_947 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_616)" [network/network_top.cpp:7]   --->   Operation 170 'read' 'network_weights_weig_947' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 171 [1/1] (0.00ns)   --->   "%network_weights_weig_948 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_615)" [network/network_top.cpp:7]   --->   Operation 171 'read' 'network_weights_weig_948' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 172 [1/1] (0.00ns)   --->   "%network_weights_weig_949 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_614)" [network/network_top.cpp:7]   --->   Operation 172 'read' 'network_weights_weig_949' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 173 [1/1] (0.00ns)   --->   "%network_weights_weig_950 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_613)" [network/network_top.cpp:7]   --->   Operation 173 'read' 'network_weights_weig_950' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 174 [1/1] (0.00ns)   --->   "%network_weights_weig_951 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_612)" [network/network_top.cpp:7]   --->   Operation 174 'read' 'network_weights_weig_951' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%network_weights_weig_952 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_611)" [network/network_top.cpp:7]   --->   Operation 175 'read' 'network_weights_weig_952' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 176 [1/1] (0.00ns)   --->   "%network_weights_weig_953 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_610)" [network/network_top.cpp:7]   --->   Operation 176 'read' 'network_weights_weig_953' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 177 [1/1] (0.00ns)   --->   "%network_weights_weig_954 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_609)" [network/network_top.cpp:7]   --->   Operation 177 'read' 'network_weights_weig_954' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 178 [1/1] (0.00ns)   --->   "%network_weights_weig_955 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_608)" [network/network_top.cpp:7]   --->   Operation 178 'read' 'network_weights_weig_955' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 179 [1/1] (0.00ns)   --->   "%network_weights_weig_956 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_607)" [network/network_top.cpp:7]   --->   Operation 179 'read' 'network_weights_weig_956' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 180 [1/1] (0.00ns)   --->   "%network_weights_weig_957 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_606)" [network/network_top.cpp:7]   --->   Operation 180 'read' 'network_weights_weig_957' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 181 [1/1] (0.00ns)   --->   "%network_weights_weig_958 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_605)" [network/network_top.cpp:7]   --->   Operation 181 'read' 'network_weights_weig_958' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 182 [1/1] (0.00ns)   --->   "%network_weights_weig_959 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_604)" [network/network_top.cpp:7]   --->   Operation 182 'read' 'network_weights_weig_959' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 183 [1/1] (0.00ns)   --->   "%network_weights_weig_960 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_603)" [network/network_top.cpp:7]   --->   Operation 183 'read' 'network_weights_weig_960' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 184 [1/1] (0.00ns)   --->   "%network_weights_weig_961 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_602)" [network/network_top.cpp:7]   --->   Operation 184 'read' 'network_weights_weig_961' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 185 [1/1] (0.00ns)   --->   "%network_weights_weig_962 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_601)" [network/network_top.cpp:7]   --->   Operation 185 'read' 'network_weights_weig_962' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 186 [1/1] (0.00ns)   --->   "%network_weights_weig_963 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_600)" [network/network_top.cpp:7]   --->   Operation 186 'read' 'network_weights_weig_963' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 187 [1/1] (0.00ns)   --->   "%network_weights_weig_964 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_599)" [network/network_top.cpp:7]   --->   Operation 187 'read' 'network_weights_weig_964' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 188 [1/1] (0.00ns)   --->   "%network_weights_weig_965 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_598)" [network/network_top.cpp:7]   --->   Operation 188 'read' 'network_weights_weig_965' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 189 [1/1] (0.00ns)   --->   "%network_weights_weig_966 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_597)" [network/network_top.cpp:7]   --->   Operation 189 'read' 'network_weights_weig_966' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 190 [1/1] (0.00ns)   --->   "%network_weights_weig_967 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_596)" [network/network_top.cpp:7]   --->   Operation 190 'read' 'network_weights_weig_967' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 191 [1/1] (0.00ns)   --->   "%network_weights_weig_968 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_595)" [network/network_top.cpp:7]   --->   Operation 191 'read' 'network_weights_weig_968' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 192 [1/1] (0.00ns)   --->   "%network_weights_weig_969 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_594)" [network/network_top.cpp:7]   --->   Operation 192 'read' 'network_weights_weig_969' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 193 [1/1] (0.00ns)   --->   "%network_weights_weig_970 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_593)" [network/network_top.cpp:7]   --->   Operation 193 'read' 'network_weights_weig_970' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 194 [1/1] (0.00ns)   --->   "%network_weights_weig_971 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_592)" [network/network_top.cpp:7]   --->   Operation 194 'read' 'network_weights_weig_971' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 195 [1/1] (0.00ns)   --->   "%network_weights_weig_972 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_591)" [network/network_top.cpp:7]   --->   Operation 195 'read' 'network_weights_weig_972' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 196 [1/1] (0.00ns)   --->   "%network_weights_weig_973 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_590)" [network/network_top.cpp:7]   --->   Operation 196 'read' 'network_weights_weig_973' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 197 [1/1] (0.00ns)   --->   "%network_weights_weig_974 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_589)" [network/network_top.cpp:7]   --->   Operation 197 'read' 'network_weights_weig_974' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 198 [1/1] (0.00ns)   --->   "%network_weights_weig_975 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_588)" [network/network_top.cpp:7]   --->   Operation 198 'read' 'network_weights_weig_975' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 199 [1/1] (0.00ns)   --->   "%network_weights_weig_976 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_587)" [network/network_top.cpp:7]   --->   Operation 199 'read' 'network_weights_weig_976' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 200 [1/1] (0.00ns)   --->   "%network_weights_weig_977 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig)" [network/network_top.cpp:7]   --->   Operation 200 'read' 'network_weights_weig_977' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 201 [1/1] (0.00ns)   --->   "%trunc_ln12 = trunc i5 %index_0_read to i4" [network/network_top.cpp:12]   --->   Operation 201 'trunc' 'trunc_ln12' <Predicate = (icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 202 [1/1] (0.00ns)   --->   "%trunc_ln12_1 = trunc i5 %index_1_read to i1" [network/network_top.cpp:12]   --->   Operation 202 'trunc' 'trunc_ln12_1' <Predicate = (icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 203 [1/1] (0.00ns)   --->   "%tmp_4 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %trunc_ln12, i1 %trunc_ln12_1)" [network/network_top.cpp:12]   --->   Operation 203 'bitconcatenate' 'tmp_4' <Predicate = (icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 204 [1/1] (0.00ns)   --->   "%zext_ln12 = zext i5 %tmp_4 to i6" [network/network_top.cpp:12]   --->   Operation 204 'zext' 'zext_ln12' <Predicate = (icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 205 [1/1] (1.91ns)   --->   "%tmp = call i8 @_ssdm_op_Mux.ap_auto.32i8.i6(i8 %network_weights_weig_977, i8 %network_weights_weig_976, i8 %network_weights_weig_975, i8 %network_weights_weig_974, i8 %network_weights_weig_973, i8 %network_weights_weig_972, i8 %network_weights_weig_971, i8 %network_weights_weig_970, i8 %network_weights_weig_969, i8 %network_weights_weig_968, i8 %network_weights_weig_967, i8 %network_weights_weig_966, i8 %network_weights_weig_965, i8 %network_weights_weig_964, i8 %network_weights_weig_963, i8 %network_weights_weig_962, i8 %network_weights_weig_961, i8 %network_weights_weig_960, i8 %network_weights_weig_959, i8 %network_weights_weig_958, i8 %network_weights_weig_957, i8 %network_weights_weig_956, i8 %network_weights_weig_955, i8 %network_weights_weig_954, i8 %network_weights_weig_953, i8 %network_weights_weig_952, i8 %network_weights_weig_951, i8 %network_weights_weig_950, i8 %network_weights_weig_949, i8 %network_weights_weig_948, i8 %network_weights_weig_947, i8 %network_weights_weig_946, i6 %zext_ln12)" [network/network_top.cpp:12]   --->   Operation 205 'mux' 'tmp' <Predicate = (icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 1.91> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 206 [1/1] (0.00ns)   --->   "%trunc_ln15 = trunc i5 %index_0_read to i3" [network/network_top.cpp:15]   --->   Operation 206 'trunc' 'trunc_ln15' <Predicate = (!icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 207 [1/1] (0.00ns)   --->   "%trunc_ln15_1 = trunc i5 %index_1_read to i4" [network/network_top.cpp:15]   --->   Operation 207 'trunc' 'trunc_ln15_1' <Predicate = (!icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 208 [1/1] (0.00ns)   --->   "%tmp_5 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %trunc_ln15, i4 %trunc_ln15_1)" [network/network_top.cpp:15]   --->   Operation 208 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 209 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i7 %tmp_5 to i8" [network/network_top.cpp:15]   --->   Operation 209 'zext' 'zext_ln15' <Predicate = (!icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 210 [1/1] (2.51ns)   --->   "%tmp_1 = call i8 @_ssdm_op_Mux.ap_auto.128i8.i8(i8 %network_weights_weig_945, i8 %network_weights_weig_944, i8 %network_weights_weig_943, i8 %network_weights_weig_942, i8 %network_weights_weig_941, i8 %network_weights_weig_940, i8 %network_weights_weig_939, i8 %network_weights_weig_938, i8 %network_weights_weig_937, i8 %network_weights_weig_936, i8 %network_weights_weig_935, i8 %network_weights_weig_934, i8 %network_weights_weig_933, i8 %network_weights_weig_932, i8 %network_weights_weig_931, i8 %network_weights_weig_930, i8 %network_weights_weig_929, i8 %network_weights_weig_928, i8 %network_weights_weig_927, i8 %network_weights_weig_926, i8 %network_weights_weig_925, i8 %network_weights_weig_924, i8 %network_weights_weig_923, i8 %network_weights_weig_922, i8 %network_weights_weig_921, i8 %network_weights_weig_920, i8 %network_weights_weig_919, i8 %network_weights_weig_918, i8 %network_weights_weig_917, i8 %network_weights_weig_916, i8 %network_weights_weig_915, i8 %network_weights_weig_914, i8 %network_weights_weig_913, i8 %network_weights_weig_912, i8 %network_weights_weig_911, i8 %network_weights_weig_910, i8 %network_weights_weig_909, i8 %network_weights_weig_908, i8 %network_weights_weig_907, i8 %network_weights_weig_906, i8 %network_weights_weig_905, i8 %network_weights_weig_904, i8 %network_weights_weig_903, i8 %network_weights_weig_902, i8 %network_weights_weig_901, i8 %network_weights_weig_900, i8 %network_weights_weig_899, i8 %network_weights_weig_898, i8 %network_weights_weig_897, i8 %network_weights_weig_896, i8 %network_weights_weig_895, i8 %network_weights_weig_894, i8 %network_weights_weig_893, i8 %network_weights_weig_892, i8 %network_weights_weig_891, i8 %network_weights_weig_890, i8 %network_weights_weig_889, i8 %network_weights_weig_888, i8 %network_weights_weig_887, i8 %network_weights_weig_886, i8 %network_weights_weig_885, i8 %network_weights_weig_884, i8 %network_weights_weig_883, i8 %network_weights_weig_882, i8 %network_weights_weig_881, i8 %network_weights_weig_880, i8 %network_weights_weig_879, i8 %network_weights_weig_878, i8 %network_weights_weig_877, i8 %network_weights_weig_876, i8 %network_weights_weig_875, i8 %network_weights_weig_874, i8 %network_weights_weig_873, i8 %network_weights_weig_872, i8 %network_weights_weig_871, i8 %network_weights_weig_870, i8 %network_weights_weig_869, i8 %network_weights_weig_868, i8 %network_weights_weig_867, i8 %network_weights_weig_866, i8 %network_weights_weig_865, i8 %network_weights_weig_864, i8 %network_weights_weig_863, i8 %network_weights_weig_862, i8 %network_weights_weig_861, i8 %network_weights_weig_860, i8 %network_weights_weig_859, i8 %network_weights_weig_858, i8 %network_weights_weig_857, i8 %network_weights_weig_856, i8 %network_weights_weig_855, i8 %network_weights_weig_854, i8 %network_weights_weig_853, i8 %network_weights_weig_852, i8 %network_weights_weig_851, i8 %network_weights_weig_850, i8 %network_weights_weig_849, i8 %network_weights_weig_848, i8 %network_weights_weig_847, i8 %network_weights_weig_846, i8 %network_weights_weig_845, i8 %network_weights_weig_844, i8 %network_weights_weig_843, i8 %network_weights_weig_842, i8 %network_weights_weig_841, i8 %network_weights_weig_840, i8 %network_weights_weig_839, i8 %network_weights_weig_838, i8 %network_weights_weig_837, i8 %network_weights_weig_836, i8 %network_weights_weig_835, i8 %network_weights_weig_834, i8 %network_weights_weig_833, i8 %network_weights_weig_832, i8 %network_weights_weig_831, i8 %network_weights_weig_830, i8 %network_weights_weig_829, i8 %network_weights_weig_828, i8 %network_weights_weig_827, i8 %network_weights_weig_826, i8 %network_weights_weig_825, i8 %network_weights_weig_824, i8 %network_weights_weig_823, i8 %network_weights_weig_822, i8 %network_weights_weig_821, i8 %network_weights_weig_820, i8 %network_weights_weig_819, i8 %network_weights_weig_818, i8 %zext_ln15)" [network/network_top.cpp:15]   --->   Operation 210 'mux' 'tmp_1' <Predicate = (!icmp_ln9_3 & or_ln9 & or_ln9_2)> <Delay = 2.51> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 211 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i5 %index_0_read to i2" [network/network_top.cpp:18]   --->   Operation 211 'trunc' 'trunc_ln18' <Predicate = (icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 212 [1/1] (0.00ns)   --->   "%trunc_ln18_1 = trunc i5 %index_1_read to i3" [network/network_top.cpp:18]   --->   Operation 212 'trunc' 'trunc_ln18_1' <Predicate = (icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 213 [1/1] (0.00ns)   --->   "%tmp_6 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %trunc_ln18, i3 %trunc_ln18_1)" [network/network_top.cpp:18]   --->   Operation 213 'bitconcatenate' 'tmp_6' <Predicate = (icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 214 [1/1] (0.00ns)   --->   "%zext_ln18 = zext i5 %tmp_6 to i6" [network/network_top.cpp:18]   --->   Operation 214 'zext' 'zext_ln18' <Predicate = (icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 215 [1/1] (1.91ns)   --->   "%tmp_2 = call i8 @_ssdm_op_Mux.ap_auto.32i8.i6(i8 %network_weights_weig_817, i8 %network_weights_weig_816, i8 %network_weights_weig_815, i8 %network_weights_weig_814, i8 %network_weights_weig_813, i8 %network_weights_weig_812, i8 %network_weights_weig_811, i8 %network_weights_weig_810, i8 %network_weights_weig_809, i8 %network_weights_weig_808, i8 %network_weights_weig_807, i8 %network_weights_weig_806, i8 %network_weights_weig_805, i8 %network_weights_weig_804, i8 %network_weights_weig_803, i8 %network_weights_weig_802, i8 %network_weights_weig_801, i8 %network_weights_weig_800, i8 %network_weights_weig_799, i8 %network_weights_weig_798, i8 %network_weights_weig_797, i8 %network_weights_weig_796, i8 %network_weights_weig_795, i8 %network_weights_weig_794, i8 %network_weights_weig_793, i8 %network_weights_weig_792, i8 %network_weights_weig_791, i8 %network_weights_weig_790, i8 %network_weights_weig_789, i8 %network_weights_weig_788, i8 %network_weights_weig_787, i8 %network_weights_weig_786, i6 %zext_ln18)" [network/network_top.cpp:18]   --->   Operation 215 'mux' 'tmp_2' <Predicate = (icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 1.91> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 216 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i5 %index_1_read to i2" [network/network_top.cpp:21]   --->   Operation 216 'trunc' 'trunc_ln21' <Predicate = (!icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 0.00>
-ST_1 : Operation 217 [1/1] (1.26ns)   --->   "%tmp_3 = call i8 @_ssdm_op_Mux.ap_auto.4i8.i2(i8 %network_weights_weig_785, i8 %network_weights_weig_784, i8 %network_weights_weig_783, i8 %network_weights_weig_782, i2 %trunc_ln21)" [network/network_top.cpp:21]   --->   Operation 217 'mux' 'tmp_3' <Predicate = (!icmp_ln9_1 & !or_ln9 & or_ln9_2)> <Delay = 1.26> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 218 [1/1] (0.00ns)   --->   "%trunc_ln9 = trunc i4 %layer_read to i2" [network/network_top.cpp:9]   --->   Operation 218 'trunc' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 219 [1/1] (0.61ns)   --->   "%icmp_ln9 = icmp eq i2 %trunc_ln9, -1" [network/network_top.cpp:9]   --->   Operation 219 'icmp' 'icmp_ln9' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 220 [1/1] (0.61ns)   --->   "%icmp_ln9_1 = icmp eq i2 %trunc_ln9, -2" [network/network_top.cpp:9]   --->   Operation 220 'icmp' 'icmp_ln9_1' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 221 [1/1] (0.61ns)   --->   "%icmp_ln9_2 = icmp eq i2 %trunc_ln9, 1" [network/network_top.cpp:9]   --->   Operation 221 'icmp' 'icmp_ln9_2' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 222 [1/1] (0.61ns)   --->   "%icmp_ln9_3 = icmp eq i2 %trunc_ln9, 0" [network/network_top.cpp:9]   --->   Operation 222 'icmp' 'icmp_ln9_3' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 223 [1/1] (0.00ns) (grouped into LUT with out node select_ln9_2)   --->   "%select_ln9 = select i1 %icmp_ln9_3, i8 %tmp, i8 %tmp_1" [network/network_top.cpp:9]   --->   Operation 223 'select' 'select_ln9' <Predicate = (or_ln9 & or_ln9_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 224 [1/1] (0.61ns)   --->   "%or_ln9 = or i1 %icmp_ln9_3, %icmp_ln9_2" [network/network_top.cpp:9]   --->   Operation 224 'or' 'or_ln9' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 225 [1/1] (0.47ns) (out node of the LUT)   --->   "%select_ln9_1 = select i1 %icmp_ln9_1, i8 %tmp_2, i8 %tmp_3" [network/network_top.cpp:9]   --->   Operation 225 'select' 'select_ln9_1' <Predicate = (!or_ln9 & or_ln9_2)> <Delay = 0.47> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 226 [1/1] (0.00ns) (grouped into LUT with out node select_ln9_3)   --->   "%or_ln9_1 = or i1 %icmp_ln9_1, %icmp_ln9" [network/network_top.cpp:9]   --->   Operation 226 'or' 'or_ln9_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 227 [1/1] (0.47ns) (out node of the LUT)   --->   "%select_ln9_2 = select i1 %or_ln9, i8 %select_ln9, i8 %select_ln9_1" [network/network_top.cpp:9]   --->   Operation 227 'select' 'select_ln9_2' <Predicate = (or_ln9_2)> <Delay = 0.47> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 228 [1/1] (0.00ns) (grouped into LUT with out node select_ln9_3)   --->   "%or_ln9_2 = or i1 %or_ln9, %or_ln9_1" [network/network_top.cpp:9]   --->   Operation 228 'or' 'or_ln9_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 229 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln9_3 = select i1 %or_ln9_2, i8 %select_ln9_2, i8 0" [network/network_top.cpp:9]   --->   Operation 229 'select' 'select_ln9_3' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 230 [1/1] (0.00ns)   --->   "ret i8 %select_ln9_3" [network/network_top.cpp:26]   --->   Operation 230 'ret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%index_1_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %index_1)" [network/network_top.cpp:6]   --->   Operation 2 'read' 'index_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%index_0_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %index_0)" [network/network_top.cpp:6]   --->   Operation 3 'read' 'index_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%layer_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %layer)" [network/network_top.cpp:6]   --->   Operation 4 'read' 'layer_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%network_weights_weig_782 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_781)" [network/network_top.cpp:6]   --->   Operation 5 'read' 'network_weights_weig_782' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%network_weights_weig_783 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_780)" [network/network_top.cpp:6]   --->   Operation 6 'read' 'network_weights_weig_783' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%network_weights_weig_784 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_779)" [network/network_top.cpp:6]   --->   Operation 7 'read' 'network_weights_weig_784' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%network_weights_weig_785 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_778)" [network/network_top.cpp:6]   --->   Operation 8 'read' 'network_weights_weig_785' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%network_weights_weig_786 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_777)" [network/network_top.cpp:6]   --->   Operation 9 'read' 'network_weights_weig_786' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%network_weights_weig_787 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_776)" [network/network_top.cpp:6]   --->   Operation 10 'read' 'network_weights_weig_787' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%network_weights_weig_788 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_775)" [network/network_top.cpp:6]   --->   Operation 11 'read' 'network_weights_weig_788' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%network_weights_weig_789 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_774)" [network/network_top.cpp:6]   --->   Operation 12 'read' 'network_weights_weig_789' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%network_weights_weig_790 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_773)" [network/network_top.cpp:6]   --->   Operation 13 'read' 'network_weights_weig_790' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%network_weights_weig_791 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_772)" [network/network_top.cpp:6]   --->   Operation 14 'read' 'network_weights_weig_791' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%network_weights_weig_792 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_771)" [network/network_top.cpp:6]   --->   Operation 15 'read' 'network_weights_weig_792' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%network_weights_weig_793 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_770)" [network/network_top.cpp:6]   --->   Operation 16 'read' 'network_weights_weig_793' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%network_weights_weig_794 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_769)" [network/network_top.cpp:6]   --->   Operation 17 'read' 'network_weights_weig_794' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%network_weights_weig_795 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_768)" [network/network_top.cpp:6]   --->   Operation 18 'read' 'network_weights_weig_795' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%network_weights_weig_796 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_767)" [network/network_top.cpp:6]   --->   Operation 19 'read' 'network_weights_weig_796' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%network_weights_weig_797 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_766)" [network/network_top.cpp:6]   --->   Operation 20 'read' 'network_weights_weig_797' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%network_weights_weig_798 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_765)" [network/network_top.cpp:6]   --->   Operation 21 'read' 'network_weights_weig_798' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%network_weights_weig_799 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_764)" [network/network_top.cpp:6]   --->   Operation 22 'read' 'network_weights_weig_799' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%network_weights_weig_800 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_763)" [network/network_top.cpp:6]   --->   Operation 23 'read' 'network_weights_weig_800' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%network_weights_weig_801 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_762)" [network/network_top.cpp:6]   --->   Operation 24 'read' 'network_weights_weig_801' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%network_weights_weig_802 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_761)" [network/network_top.cpp:6]   --->   Operation 25 'read' 'network_weights_weig_802' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%network_weights_weig_803 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_760)" [network/network_top.cpp:6]   --->   Operation 26 'read' 'network_weights_weig_803' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%network_weights_weig_804 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_759)" [network/network_top.cpp:6]   --->   Operation 27 'read' 'network_weights_weig_804' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%network_weights_weig_805 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_758)" [network/network_top.cpp:6]   --->   Operation 28 'read' 'network_weights_weig_805' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%network_weights_weig_806 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_757)" [network/network_top.cpp:6]   --->   Operation 29 'read' 'network_weights_weig_806' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%network_weights_weig_807 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_756)" [network/network_top.cpp:6]   --->   Operation 30 'read' 'network_weights_weig_807' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%network_weights_weig_808 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_755)" [network/network_top.cpp:6]   --->   Operation 31 'read' 'network_weights_weig_808' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%network_weights_weig_809 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_754)" [network/network_top.cpp:6]   --->   Operation 32 'read' 'network_weights_weig_809' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%network_weights_weig_810 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_753)" [network/network_top.cpp:6]   --->   Operation 33 'read' 'network_weights_weig_810' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%network_weights_weig_811 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_752)" [network/network_top.cpp:6]   --->   Operation 34 'read' 'network_weights_weig_811' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%network_weights_weig_812 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_751)" [network/network_top.cpp:6]   --->   Operation 35 'read' 'network_weights_weig_812' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%network_weights_weig_813 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_750)" [network/network_top.cpp:6]   --->   Operation 36 'read' 'network_weights_weig_813' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%network_weights_weig_814 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_749)" [network/network_top.cpp:6]   --->   Operation 37 'read' 'network_weights_weig_814' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%network_weights_weig_815 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_748)" [network/network_top.cpp:6]   --->   Operation 38 'read' 'network_weights_weig_815' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%network_weights_weig_816 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_747)" [network/network_top.cpp:6]   --->   Operation 39 'read' 'network_weights_weig_816' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%network_weights_weig_817 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_746)" [network/network_top.cpp:6]   --->   Operation 40 'read' 'network_weights_weig_817' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%network_weights_weig_818 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_745)" [network/network_top.cpp:6]   --->   Operation 41 'read' 'network_weights_weig_818' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%network_weights_weig_819 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_744)" [network/network_top.cpp:6]   --->   Operation 42 'read' 'network_weights_weig_819' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%network_weights_weig_820 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_743)" [network/network_top.cpp:6]   --->   Operation 43 'read' 'network_weights_weig_820' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%network_weights_weig_821 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_742)" [network/network_top.cpp:6]   --->   Operation 44 'read' 'network_weights_weig_821' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%network_weights_weig_822 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_741)" [network/network_top.cpp:6]   --->   Operation 45 'read' 'network_weights_weig_822' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%network_weights_weig_823 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_740)" [network/network_top.cpp:6]   --->   Operation 46 'read' 'network_weights_weig_823' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%network_weights_weig_824 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_739)" [network/network_top.cpp:6]   --->   Operation 47 'read' 'network_weights_weig_824' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%network_weights_weig_825 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_738)" [network/network_top.cpp:6]   --->   Operation 48 'read' 'network_weights_weig_825' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%network_weights_weig_826 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_737)" [network/network_top.cpp:6]   --->   Operation 49 'read' 'network_weights_weig_826' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%network_weights_weig_827 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_736)" [network/network_top.cpp:6]   --->   Operation 50 'read' 'network_weights_weig_827' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%network_weights_weig_828 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_735)" [network/network_top.cpp:6]   --->   Operation 51 'read' 'network_weights_weig_828' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%network_weights_weig_829 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_734)" [network/network_top.cpp:6]   --->   Operation 52 'read' 'network_weights_weig_829' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%network_weights_weig_830 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_733)" [network/network_top.cpp:6]   --->   Operation 53 'read' 'network_weights_weig_830' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%network_weights_weig_831 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_732)" [network/network_top.cpp:6]   --->   Operation 54 'read' 'network_weights_weig_831' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%network_weights_weig_832 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_731)" [network/network_top.cpp:6]   --->   Operation 55 'read' 'network_weights_weig_832' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%network_weights_weig_833 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_730)" [network/network_top.cpp:6]   --->   Operation 56 'read' 'network_weights_weig_833' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%network_weights_weig_834 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_729)" [network/network_top.cpp:6]   --->   Operation 57 'read' 'network_weights_weig_834' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%network_weights_weig_835 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_728)" [network/network_top.cpp:6]   --->   Operation 58 'read' 'network_weights_weig_835' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%network_weights_weig_836 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_727)" [network/network_top.cpp:6]   --->   Operation 59 'read' 'network_weights_weig_836' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%network_weights_weig_837 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_726)" [network/network_top.cpp:6]   --->   Operation 60 'read' 'network_weights_weig_837' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%network_weights_weig_838 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_725)" [network/network_top.cpp:6]   --->   Operation 61 'read' 'network_weights_weig_838' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%network_weights_weig_839 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_724)" [network/network_top.cpp:6]   --->   Operation 62 'read' 'network_weights_weig_839' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%network_weights_weig_840 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_723)" [network/network_top.cpp:6]   --->   Operation 63 'read' 'network_weights_weig_840' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%network_weights_weig_841 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_722)" [network/network_top.cpp:6]   --->   Operation 64 'read' 'network_weights_weig_841' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%network_weights_weig_842 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_721)" [network/network_top.cpp:6]   --->   Operation 65 'read' 'network_weights_weig_842' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%network_weights_weig_843 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_720)" [network/network_top.cpp:6]   --->   Operation 66 'read' 'network_weights_weig_843' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%network_weights_weig_844 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_719)" [network/network_top.cpp:6]   --->   Operation 67 'read' 'network_weights_weig_844' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%network_weights_weig_845 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_718)" [network/network_top.cpp:6]   --->   Operation 68 'read' 'network_weights_weig_845' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%network_weights_weig_846 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_717)" [network/network_top.cpp:6]   --->   Operation 69 'read' 'network_weights_weig_846' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%network_weights_weig_847 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_716)" [network/network_top.cpp:6]   --->   Operation 70 'read' 'network_weights_weig_847' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%network_weights_weig_848 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_715)" [network/network_top.cpp:6]   --->   Operation 71 'read' 'network_weights_weig_848' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%network_weights_weig_849 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_714)" [network/network_top.cpp:6]   --->   Operation 72 'read' 'network_weights_weig_849' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%network_weights_weig_850 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_713)" [network/network_top.cpp:6]   --->   Operation 73 'read' 'network_weights_weig_850' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%network_weights_weig_851 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_712)" [network/network_top.cpp:6]   --->   Operation 74 'read' 'network_weights_weig_851' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%network_weights_weig_852 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_711)" [network/network_top.cpp:6]   --->   Operation 75 'read' 'network_weights_weig_852' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%network_weights_weig_853 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_710)" [network/network_top.cpp:6]   --->   Operation 76 'read' 'network_weights_weig_853' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%network_weights_weig_854 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_709)" [network/network_top.cpp:6]   --->   Operation 77 'read' 'network_weights_weig_854' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%network_weights_weig_855 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_708)" [network/network_top.cpp:6]   --->   Operation 78 'read' 'network_weights_weig_855' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%network_weights_weig_856 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_707)" [network/network_top.cpp:6]   --->   Operation 79 'read' 'network_weights_weig_856' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%network_weights_weig_857 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_706)" [network/network_top.cpp:6]   --->   Operation 80 'read' 'network_weights_weig_857' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%network_weights_weig_858 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_705)" [network/network_top.cpp:6]   --->   Operation 81 'read' 'network_weights_weig_858' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%network_weights_weig_859 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_704)" [network/network_top.cpp:6]   --->   Operation 82 'read' 'network_weights_weig_859' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%network_weights_weig_860 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_703)" [network/network_top.cpp:6]   --->   Operation 83 'read' 'network_weights_weig_860' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%network_weights_weig_861 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_702)" [network/network_top.cpp:6]   --->   Operation 84 'read' 'network_weights_weig_861' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%network_weights_weig_862 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_701)" [network/network_top.cpp:6]   --->   Operation 85 'read' 'network_weights_weig_862' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%network_weights_weig_863 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_700)" [network/network_top.cpp:6]   --->   Operation 86 'read' 'network_weights_weig_863' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%network_weights_weig_864 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_699)" [network/network_top.cpp:6]   --->   Operation 87 'read' 'network_weights_weig_864' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%network_weights_weig_865 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_698)" [network/network_top.cpp:6]   --->   Operation 88 'read' 'network_weights_weig_865' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%network_weights_weig_866 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_697)" [network/network_top.cpp:6]   --->   Operation 89 'read' 'network_weights_weig_866' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%network_weights_weig_867 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_696)" [network/network_top.cpp:6]   --->   Operation 90 'read' 'network_weights_weig_867' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%network_weights_weig_868 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_695)" [network/network_top.cpp:6]   --->   Operation 91 'read' 'network_weights_weig_868' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%network_weights_weig_869 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_694)" [network/network_top.cpp:6]   --->   Operation 92 'read' 'network_weights_weig_869' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%network_weights_weig_870 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_693)" [network/network_top.cpp:6]   --->   Operation 93 'read' 'network_weights_weig_870' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%network_weights_weig_871 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_692)" [network/network_top.cpp:6]   --->   Operation 94 'read' 'network_weights_weig_871' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%network_weights_weig_872 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_691)" [network/network_top.cpp:6]   --->   Operation 95 'read' 'network_weights_weig_872' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%network_weights_weig_873 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_690)" [network/network_top.cpp:6]   --->   Operation 96 'read' 'network_weights_weig_873' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%network_weights_weig_874 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_689)" [network/network_top.cpp:6]   --->   Operation 97 'read' 'network_weights_weig_874' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%network_weights_weig_875 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_688)" [network/network_top.cpp:6]   --->   Operation 98 'read' 'network_weights_weig_875' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%network_weights_weig_876 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_687)" [network/network_top.cpp:6]   --->   Operation 99 'read' 'network_weights_weig_876' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%network_weights_weig_877 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_686)" [network/network_top.cpp:6]   --->   Operation 100 'read' 'network_weights_weig_877' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%network_weights_weig_878 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_685)" [network/network_top.cpp:6]   --->   Operation 101 'read' 'network_weights_weig_878' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%network_weights_weig_879 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_684)" [network/network_top.cpp:6]   --->   Operation 102 'read' 'network_weights_weig_879' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%network_weights_weig_880 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_683)" [network/network_top.cpp:6]   --->   Operation 103 'read' 'network_weights_weig_880' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%network_weights_weig_881 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_682)" [network/network_top.cpp:6]   --->   Operation 104 'read' 'network_weights_weig_881' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%network_weights_weig_882 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_681)" [network/network_top.cpp:6]   --->   Operation 105 'read' 'network_weights_weig_882' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%network_weights_weig_883 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_680)" [network/network_top.cpp:6]   --->   Operation 106 'read' 'network_weights_weig_883' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%network_weights_weig_884 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_679)" [network/network_top.cpp:6]   --->   Operation 107 'read' 'network_weights_weig_884' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%network_weights_weig_885 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_678)" [network/network_top.cpp:6]   --->   Operation 108 'read' 'network_weights_weig_885' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%network_weights_weig_886 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_677)" [network/network_top.cpp:6]   --->   Operation 109 'read' 'network_weights_weig_886' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%network_weights_weig_887 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_676)" [network/network_top.cpp:6]   --->   Operation 110 'read' 'network_weights_weig_887' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%network_weights_weig_888 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_675)" [network/network_top.cpp:6]   --->   Operation 111 'read' 'network_weights_weig_888' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%network_weights_weig_889 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_674)" [network/network_top.cpp:6]   --->   Operation 112 'read' 'network_weights_weig_889' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%network_weights_weig_890 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_673)" [network/network_top.cpp:6]   --->   Operation 113 'read' 'network_weights_weig_890' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%network_weights_weig_891 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_672)" [network/network_top.cpp:6]   --->   Operation 114 'read' 'network_weights_weig_891' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%network_weights_weig_892 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_671)" [network/network_top.cpp:6]   --->   Operation 115 'read' 'network_weights_weig_892' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%network_weights_weig_893 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_670)" [network/network_top.cpp:6]   --->   Operation 116 'read' 'network_weights_weig_893' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%network_weights_weig_894 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_669)" [network/network_top.cpp:6]   --->   Operation 117 'read' 'network_weights_weig_894' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%network_weights_weig_895 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_668)" [network/network_top.cpp:6]   --->   Operation 118 'read' 'network_weights_weig_895' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%network_weights_weig_896 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_667)" [network/network_top.cpp:6]   --->   Operation 119 'read' 'network_weights_weig_896' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%network_weights_weig_897 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_666)" [network/network_top.cpp:6]   --->   Operation 120 'read' 'network_weights_weig_897' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%network_weights_weig_898 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_665)" [network/network_top.cpp:6]   --->   Operation 121 'read' 'network_weights_weig_898' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%network_weights_weig_899 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_664)" [network/network_top.cpp:6]   --->   Operation 122 'read' 'network_weights_weig_899' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%network_weights_weig_900 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_663)" [network/network_top.cpp:6]   --->   Operation 123 'read' 'network_weights_weig_900' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%network_weights_weig_901 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_662)" [network/network_top.cpp:6]   --->   Operation 124 'read' 'network_weights_weig_901' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%network_weights_weig_902 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_661)" [network/network_top.cpp:6]   --->   Operation 125 'read' 'network_weights_weig_902' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%network_weights_weig_903 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_660)" [network/network_top.cpp:6]   --->   Operation 126 'read' 'network_weights_weig_903' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%network_weights_weig_904 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_659)" [network/network_top.cpp:6]   --->   Operation 127 'read' 'network_weights_weig_904' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%network_weights_weig_905 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_658)" [network/network_top.cpp:6]   --->   Operation 128 'read' 'network_weights_weig_905' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%network_weights_weig_906 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_657)" [network/network_top.cpp:6]   --->   Operation 129 'read' 'network_weights_weig_906' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%network_weights_weig_907 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_656)" [network/network_top.cpp:6]   --->   Operation 130 'read' 'network_weights_weig_907' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%network_weights_weig_908 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_655)" [network/network_top.cpp:6]   --->   Operation 131 'read' 'network_weights_weig_908' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%network_weights_weig_909 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_654)" [network/network_top.cpp:6]   --->   Operation 132 'read' 'network_weights_weig_909' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%network_weights_weig_910 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_653)" [network/network_top.cpp:6]   --->   Operation 133 'read' 'network_weights_weig_910' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%network_weights_weig_911 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_652)" [network/network_top.cpp:6]   --->   Operation 134 'read' 'network_weights_weig_911' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%network_weights_weig_912 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_651)" [network/network_top.cpp:6]   --->   Operation 135 'read' 'network_weights_weig_912' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%network_weights_weig_913 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_650)" [network/network_top.cpp:6]   --->   Operation 136 'read' 'network_weights_weig_913' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%network_weights_weig_914 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_649)" [network/network_top.cpp:6]   --->   Operation 137 'read' 'network_weights_weig_914' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%network_weights_weig_915 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_648)" [network/network_top.cpp:6]   --->   Operation 138 'read' 'network_weights_weig_915' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%network_weights_weig_916 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_647)" [network/network_top.cpp:6]   --->   Operation 139 'read' 'network_weights_weig_916' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%network_weights_weig_917 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_646)" [network/network_top.cpp:6]   --->   Operation 140 'read' 'network_weights_weig_917' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%network_weights_weig_918 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_645)" [network/network_top.cpp:6]   --->   Operation 141 'read' 'network_weights_weig_918' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%network_weights_weig_919 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_644)" [network/network_top.cpp:6]   --->   Operation 142 'read' 'network_weights_weig_919' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%network_weights_weig_920 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_643)" [network/network_top.cpp:6]   --->   Operation 143 'read' 'network_weights_weig_920' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%network_weights_weig_921 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_642)" [network/network_top.cpp:6]   --->   Operation 144 'read' 'network_weights_weig_921' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%network_weights_weig_922 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_641)" [network/network_top.cpp:6]   --->   Operation 145 'read' 'network_weights_weig_922' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%network_weights_weig_923 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_640)" [network/network_top.cpp:6]   --->   Operation 146 'read' 'network_weights_weig_923' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%network_weights_weig_924 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_639)" [network/network_top.cpp:6]   --->   Operation 147 'read' 'network_weights_weig_924' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%network_weights_weig_925 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_638)" [network/network_top.cpp:6]   --->   Operation 148 'read' 'network_weights_weig_925' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%network_weights_weig_926 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_637)" [network/network_top.cpp:6]   --->   Operation 149 'read' 'network_weights_weig_926' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%network_weights_weig_927 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_636)" [network/network_top.cpp:6]   --->   Operation 150 'read' 'network_weights_weig_927' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%network_weights_weig_928 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_635)" [network/network_top.cpp:6]   --->   Operation 151 'read' 'network_weights_weig_928' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%network_weights_weig_929 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_634)" [network/network_top.cpp:6]   --->   Operation 152 'read' 'network_weights_weig_929' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%network_weights_weig_930 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_633)" [network/network_top.cpp:6]   --->   Operation 153 'read' 'network_weights_weig_930' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%network_weights_weig_931 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_632)" [network/network_top.cpp:6]   --->   Operation 154 'read' 'network_weights_weig_931' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%network_weights_weig_932 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_631)" [network/network_top.cpp:6]   --->   Operation 155 'read' 'network_weights_weig_932' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%network_weights_weig_933 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_630)" [network/network_top.cpp:6]   --->   Operation 156 'read' 'network_weights_weig_933' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 157 [1/1] (0.00ns)   --->   "%network_weights_weig_934 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_629)" [network/network_top.cpp:6]   --->   Operation 157 'read' 'network_weights_weig_934' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%network_weights_weig_935 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_628)" [network/network_top.cpp:6]   --->   Operation 158 'read' 'network_weights_weig_935' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%network_weights_weig_936 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_627)" [network/network_top.cpp:6]   --->   Operation 159 'read' 'network_weights_weig_936' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 160 [1/1] (0.00ns)   --->   "%network_weights_weig_937 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_626)" [network/network_top.cpp:6]   --->   Operation 160 'read' 'network_weights_weig_937' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%network_weights_weig_938 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_625)" [network/network_top.cpp:6]   --->   Operation 161 'read' 'network_weights_weig_938' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%network_weights_weig_939 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_624)" [network/network_top.cpp:6]   --->   Operation 162 'read' 'network_weights_weig_939' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 163 [1/1] (0.00ns)   --->   "%network_weights_weig_940 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_623)" [network/network_top.cpp:6]   --->   Operation 163 'read' 'network_weights_weig_940' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%network_weights_weig_941 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_622)" [network/network_top.cpp:6]   --->   Operation 164 'read' 'network_weights_weig_941' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 165 [1/1] (0.00ns)   --->   "%network_weights_weig_942 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_621)" [network/network_top.cpp:6]   --->   Operation 165 'read' 'network_weights_weig_942' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%network_weights_weig_943 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_620)" [network/network_top.cpp:6]   --->   Operation 166 'read' 'network_weights_weig_943' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 167 [1/1] (0.00ns)   --->   "%network_weights_weig_944 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_619)" [network/network_top.cpp:6]   --->   Operation 167 'read' 'network_weights_weig_944' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 168 [1/1] (0.00ns)   --->   "%network_weights_weig_945 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_618)" [network/network_top.cpp:6]   --->   Operation 168 'read' 'network_weights_weig_945' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%network_weights_weig_946 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_617)" [network/network_top.cpp:6]   --->   Operation 169 'read' 'network_weights_weig_946' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 170 [1/1] (0.00ns)   --->   "%network_weights_weig_947 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_616)" [network/network_top.cpp:6]   --->   Operation 170 'read' 'network_weights_weig_947' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 171 [1/1] (0.00ns)   --->   "%network_weights_weig_948 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_615)" [network/network_top.cpp:6]   --->   Operation 171 'read' 'network_weights_weig_948' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 172 [1/1] (0.00ns)   --->   "%network_weights_weig_949 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_614)" [network/network_top.cpp:6]   --->   Operation 172 'read' 'network_weights_weig_949' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 173 [1/1] (0.00ns)   --->   "%network_weights_weig_950 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_613)" [network/network_top.cpp:6]   --->   Operation 173 'read' 'network_weights_weig_950' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 174 [1/1] (0.00ns)   --->   "%network_weights_weig_951 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_612)" [network/network_top.cpp:6]   --->   Operation 174 'read' 'network_weights_weig_951' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%network_weights_weig_952 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_611)" [network/network_top.cpp:6]   --->   Operation 175 'read' 'network_weights_weig_952' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 176 [1/1] (0.00ns)   --->   "%network_weights_weig_953 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_610)" [network/network_top.cpp:6]   --->   Operation 176 'read' 'network_weights_weig_953' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 177 [1/1] (0.00ns)   --->   "%network_weights_weig_954 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_609)" [network/network_top.cpp:6]   --->   Operation 177 'read' 'network_weights_weig_954' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 178 [1/1] (0.00ns)   --->   "%network_weights_weig_955 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_608)" [network/network_top.cpp:6]   --->   Operation 178 'read' 'network_weights_weig_955' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 179 [1/1] (0.00ns)   --->   "%network_weights_weig_956 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_607)" [network/network_top.cpp:6]   --->   Operation 179 'read' 'network_weights_weig_956' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 180 [1/1] (0.00ns)   --->   "%network_weights_weig_957 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_606)" [network/network_top.cpp:6]   --->   Operation 180 'read' 'network_weights_weig_957' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 181 [1/1] (0.00ns)   --->   "%network_weights_weig_958 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_605)" [network/network_top.cpp:6]   --->   Operation 181 'read' 'network_weights_weig_958' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 182 [1/1] (0.00ns)   --->   "%network_weights_weig_959 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_604)" [network/network_top.cpp:6]   --->   Operation 182 'read' 'network_weights_weig_959' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 183 [1/1] (0.00ns)   --->   "%network_weights_weig_960 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_603)" [network/network_top.cpp:6]   --->   Operation 183 'read' 'network_weights_weig_960' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 184 [1/1] (0.00ns)   --->   "%network_weights_weig_961 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_602)" [network/network_top.cpp:6]   --->   Operation 184 'read' 'network_weights_weig_961' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 185 [1/1] (0.00ns)   --->   "%network_weights_weig_962 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_601)" [network/network_top.cpp:6]   --->   Operation 185 'read' 'network_weights_weig_962' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 186 [1/1] (0.00ns)   --->   "%network_weights_weig_963 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_600)" [network/network_top.cpp:6]   --->   Operation 186 'read' 'network_weights_weig_963' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 187 [1/1] (0.00ns)   --->   "%network_weights_weig_964 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_599)" [network/network_top.cpp:6]   --->   Operation 187 'read' 'network_weights_weig_964' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 188 [1/1] (0.00ns)   --->   "%network_weights_weig_965 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_598)" [network/network_top.cpp:6]   --->   Operation 188 'read' 'network_weights_weig_965' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 189 [1/1] (0.00ns)   --->   "%network_weights_weig_966 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_597)" [network/network_top.cpp:6]   --->   Operation 189 'read' 'network_weights_weig_966' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 190 [1/1] (0.00ns)   --->   "%network_weights_weig_967 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_596)" [network/network_top.cpp:6]   --->   Operation 190 'read' 'network_weights_weig_967' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 191 [1/1] (0.00ns)   --->   "%network_weights_weig_968 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_595)" [network/network_top.cpp:6]   --->   Operation 191 'read' 'network_weights_weig_968' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 192 [1/1] (0.00ns)   --->   "%network_weights_weig_969 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_594)" [network/network_top.cpp:6]   --->   Operation 192 'read' 'network_weights_weig_969' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 193 [1/1] (0.00ns)   --->   "%network_weights_weig_970 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_593)" [network/network_top.cpp:6]   --->   Operation 193 'read' 'network_weights_weig_970' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 194 [1/1] (0.00ns)   --->   "%network_weights_weig_971 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_592)" [network/network_top.cpp:6]   --->   Operation 194 'read' 'network_weights_weig_971' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 195 [1/1] (0.00ns)   --->   "%network_weights_weig_972 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_591)" [network/network_top.cpp:6]   --->   Operation 195 'read' 'network_weights_weig_972' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 196 [1/1] (0.00ns)   --->   "%network_weights_weig_973 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_590)" [network/network_top.cpp:6]   --->   Operation 196 'read' 'network_weights_weig_973' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 197 [1/1] (0.00ns)   --->   "%network_weights_weig_974 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_589)" [network/network_top.cpp:6]   --->   Operation 197 'read' 'network_weights_weig_974' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 198 [1/1] (0.00ns)   --->   "%network_weights_weig_975 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_588)" [network/network_top.cpp:6]   --->   Operation 198 'read' 'network_weights_weig_975' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 199 [1/1] (0.00ns)   --->   "%network_weights_weig_976 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig_587)" [network/network_top.cpp:6]   --->   Operation 199 'read' 'network_weights_weig_976' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 200 [1/1] (0.00ns)   --->   "%network_weights_weig_977 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %network_weights_weig)" [network/network_top.cpp:6]   --->   Operation 200 'read' 'network_weights_weig_977' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 201 [1/1] (0.00ns)   --->   "%trunc_ln11 = trunc i5 %index_0_read to i4" [network/network_top.cpp:11]   --->   Operation 201 'trunc' 'trunc_ln11' <Predicate = (icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 202 [1/1] (0.00ns)   --->   "%trunc_ln11_1 = trunc i5 %index_1_read to i1" [network/network_top.cpp:11]   --->   Operation 202 'trunc' 'trunc_ln11_1' <Predicate = (icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 203 [1/1] (0.00ns)   --->   "%tmp_4 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %trunc_ln11, i1 %trunc_ln11_1)" [network/network_top.cpp:11]   --->   Operation 203 'bitconcatenate' 'tmp_4' <Predicate = (icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 204 [1/1] (0.00ns)   --->   "%zext_ln11 = zext i5 %tmp_4 to i6" [network/network_top.cpp:11]   --->   Operation 204 'zext' 'zext_ln11' <Predicate = (icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 205 [1/1] (1.91ns)   --->   "%tmp = call i8 @_ssdm_op_Mux.ap_auto.32i8.i6(i8 %network_weights_weig_977, i8 %network_weights_weig_976, i8 %network_weights_weig_975, i8 %network_weights_weig_974, i8 %network_weights_weig_973, i8 %network_weights_weig_972, i8 %network_weights_weig_971, i8 %network_weights_weig_970, i8 %network_weights_weig_969, i8 %network_weights_weig_968, i8 %network_weights_weig_967, i8 %network_weights_weig_966, i8 %network_weights_weig_965, i8 %network_weights_weig_964, i8 %network_weights_weig_963, i8 %network_weights_weig_962, i8 %network_weights_weig_961, i8 %network_weights_weig_960, i8 %network_weights_weig_959, i8 %network_weights_weig_958, i8 %network_weights_weig_957, i8 %network_weights_weig_956, i8 %network_weights_weig_955, i8 %network_weights_weig_954, i8 %network_weights_weig_953, i8 %network_weights_weig_952, i8 %network_weights_weig_951, i8 %network_weights_weig_950, i8 %network_weights_weig_949, i8 %network_weights_weig_948, i8 %network_weights_weig_947, i8 %network_weights_weig_946, i6 %zext_ln11)" [network/network_top.cpp:11]   --->   Operation 205 'mux' 'tmp' <Predicate = (icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 1.91> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 206 [1/1] (0.00ns)   --->   "%trunc_ln14 = trunc i5 %index_0_read to i3" [network/network_top.cpp:14]   --->   Operation 206 'trunc' 'trunc_ln14' <Predicate = (!icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 207 [1/1] (0.00ns)   --->   "%trunc_ln14_1 = trunc i5 %index_1_read to i4" [network/network_top.cpp:14]   --->   Operation 207 'trunc' 'trunc_ln14_1' <Predicate = (!icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 208 [1/1] (0.00ns)   --->   "%tmp_5 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %trunc_ln14, i4 %trunc_ln14_1)" [network/network_top.cpp:14]   --->   Operation 208 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 209 [1/1] (0.00ns)   --->   "%zext_ln14 = zext i7 %tmp_5 to i8" [network/network_top.cpp:14]   --->   Operation 209 'zext' 'zext_ln14' <Predicate = (!icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 210 [1/1] (2.51ns)   --->   "%tmp_1 = call i8 @_ssdm_op_Mux.ap_auto.128i8.i8(i8 %network_weights_weig_945, i8 %network_weights_weig_944, i8 %network_weights_weig_943, i8 %network_weights_weig_942, i8 %network_weights_weig_941, i8 %network_weights_weig_940, i8 %network_weights_weig_939, i8 %network_weights_weig_938, i8 %network_weights_weig_937, i8 %network_weights_weig_936, i8 %network_weights_weig_935, i8 %network_weights_weig_934, i8 %network_weights_weig_933, i8 %network_weights_weig_932, i8 %network_weights_weig_931, i8 %network_weights_weig_930, i8 %network_weights_weig_929, i8 %network_weights_weig_928, i8 %network_weights_weig_927, i8 %network_weights_weig_926, i8 %network_weights_weig_925, i8 %network_weights_weig_924, i8 %network_weights_weig_923, i8 %network_weights_weig_922, i8 %network_weights_weig_921, i8 %network_weights_weig_920, i8 %network_weights_weig_919, i8 %network_weights_weig_918, i8 %network_weights_weig_917, i8 %network_weights_weig_916, i8 %network_weights_weig_915, i8 %network_weights_weig_914, i8 %network_weights_weig_913, i8 %network_weights_weig_912, i8 %network_weights_weig_911, i8 %network_weights_weig_910, i8 %network_weights_weig_909, i8 %network_weights_weig_908, i8 %network_weights_weig_907, i8 %network_weights_weig_906, i8 %network_weights_weig_905, i8 %network_weights_weig_904, i8 %network_weights_weig_903, i8 %network_weights_weig_902, i8 %network_weights_weig_901, i8 %network_weights_weig_900, i8 %network_weights_weig_899, i8 %network_weights_weig_898, i8 %network_weights_weig_897, i8 %network_weights_weig_896, i8 %network_weights_weig_895, i8 %network_weights_weig_894, i8 %network_weights_weig_893, i8 %network_weights_weig_892, i8 %network_weights_weig_891, i8 %network_weights_weig_890, i8 %network_weights_weig_889, i8 %network_weights_weig_888, i8 %network_weights_weig_887, i8 %network_weights_weig_886, i8 %network_weights_weig_885, i8 %network_weights_weig_884, i8 %network_weights_weig_883, i8 %network_weights_weig_882, i8 %network_weights_weig_881, i8 %network_weights_weig_880, i8 %network_weights_weig_879, i8 %network_weights_weig_878, i8 %network_weights_weig_877, i8 %network_weights_weig_876, i8 %network_weights_weig_875, i8 %network_weights_weig_874, i8 %network_weights_weig_873, i8 %network_weights_weig_872, i8 %network_weights_weig_871, i8 %network_weights_weig_870, i8 %network_weights_weig_869, i8 %network_weights_weig_868, i8 %network_weights_weig_867, i8 %network_weights_weig_866, i8 %network_weights_weig_865, i8 %network_weights_weig_864, i8 %network_weights_weig_863, i8 %network_weights_weig_862, i8 %network_weights_weig_861, i8 %network_weights_weig_860, i8 %network_weights_weig_859, i8 %network_weights_weig_858, i8 %network_weights_weig_857, i8 %network_weights_weig_856, i8 %network_weights_weig_855, i8 %network_weights_weig_854, i8 %network_weights_weig_853, i8 %network_weights_weig_852, i8 %network_weights_weig_851, i8 %network_weights_weig_850, i8 %network_weights_weig_849, i8 %network_weights_weig_848, i8 %network_weights_weig_847, i8 %network_weights_weig_846, i8 %network_weights_weig_845, i8 %network_weights_weig_844, i8 %network_weights_weig_843, i8 %network_weights_weig_842, i8 %network_weights_weig_841, i8 %network_weights_weig_840, i8 %network_weights_weig_839, i8 %network_weights_weig_838, i8 %network_weights_weig_837, i8 %network_weights_weig_836, i8 %network_weights_weig_835, i8 %network_weights_weig_834, i8 %network_weights_weig_833, i8 %network_weights_weig_832, i8 %network_weights_weig_831, i8 %network_weights_weig_830, i8 %network_weights_weig_829, i8 %network_weights_weig_828, i8 %network_weights_weig_827, i8 %network_weights_weig_826, i8 %network_weights_weig_825, i8 %network_weights_weig_824, i8 %network_weights_weig_823, i8 %network_weights_weig_822, i8 %network_weights_weig_821, i8 %network_weights_weig_820, i8 %network_weights_weig_819, i8 %network_weights_weig_818, i8 %zext_ln14)" [network/network_top.cpp:14]   --->   Operation 210 'mux' 'tmp_1' <Predicate = (!icmp_ln8_3 & or_ln8 & or_ln8_2)> <Delay = 2.51> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 211 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i5 %index_0_read to i2" [network/network_top.cpp:17]   --->   Operation 211 'trunc' 'trunc_ln17' <Predicate = (icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 212 [1/1] (0.00ns)   --->   "%trunc_ln17_1 = trunc i5 %index_1_read to i3" [network/network_top.cpp:17]   --->   Operation 212 'trunc' 'trunc_ln17_1' <Predicate = (icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 213 [1/1] (0.00ns)   --->   "%tmp_6 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %trunc_ln17, i3 %trunc_ln17_1)" [network/network_top.cpp:17]   --->   Operation 213 'bitconcatenate' 'tmp_6' <Predicate = (icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 214 [1/1] (0.00ns)   --->   "%zext_ln17 = zext i5 %tmp_6 to i6" [network/network_top.cpp:17]   --->   Operation 214 'zext' 'zext_ln17' <Predicate = (icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 215 [1/1] (1.91ns)   --->   "%tmp_2 = call i8 @_ssdm_op_Mux.ap_auto.32i8.i6(i8 %network_weights_weig_817, i8 %network_weights_weig_816, i8 %network_weights_weig_815, i8 %network_weights_weig_814, i8 %network_weights_weig_813, i8 %network_weights_weig_812, i8 %network_weights_weig_811, i8 %network_weights_weig_810, i8 %network_weights_weig_809, i8 %network_weights_weig_808, i8 %network_weights_weig_807, i8 %network_weights_weig_806, i8 %network_weights_weig_805, i8 %network_weights_weig_804, i8 %network_weights_weig_803, i8 %network_weights_weig_802, i8 %network_weights_weig_801, i8 %network_weights_weig_800, i8 %network_weights_weig_799, i8 %network_weights_weig_798, i8 %network_weights_weig_797, i8 %network_weights_weig_796, i8 %network_weights_weig_795, i8 %network_weights_weig_794, i8 %network_weights_weig_793, i8 %network_weights_weig_792, i8 %network_weights_weig_791, i8 %network_weights_weig_790, i8 %network_weights_weig_789, i8 %network_weights_weig_788, i8 %network_weights_weig_787, i8 %network_weights_weig_786, i6 %zext_ln17)" [network/network_top.cpp:17]   --->   Operation 215 'mux' 'tmp_2' <Predicate = (icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 1.91> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 216 [1/1] (0.00ns)   --->   "%trunc_ln20 = trunc i5 %index_1_read to i2" [network/network_top.cpp:20]   --->   Operation 216 'trunc' 'trunc_ln20' <Predicate = (!icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 0.00>
+ST_1 : Operation 217 [1/1] (1.26ns)   --->   "%tmp_3 = call i8 @_ssdm_op_Mux.ap_auto.4i8.i2(i8 %network_weights_weig_785, i8 %network_weights_weig_784, i8 %network_weights_weig_783, i8 %network_weights_weig_782, i2 %trunc_ln20)" [network/network_top.cpp:20]   --->   Operation 217 'mux' 'tmp_3' <Predicate = (!icmp_ln8_1 & !or_ln8 & or_ln8_2)> <Delay = 1.26> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 218 [1/1] (0.00ns)   --->   "%trunc_ln8 = trunc i4 %layer_read to i2" [network/network_top.cpp:8]   --->   Operation 218 'trunc' 'trunc_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 219 [1/1] (0.61ns)   --->   "%icmp_ln8 = icmp eq i2 %trunc_ln8, -1" [network/network_top.cpp:8]   --->   Operation 219 'icmp' 'icmp_ln8' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 220 [1/1] (0.61ns)   --->   "%icmp_ln8_1 = icmp eq i2 %trunc_ln8, -2" [network/network_top.cpp:8]   --->   Operation 220 'icmp' 'icmp_ln8_1' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 221 [1/1] (0.61ns)   --->   "%icmp_ln8_2 = icmp eq i2 %trunc_ln8, 1" [network/network_top.cpp:8]   --->   Operation 221 'icmp' 'icmp_ln8_2' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 222 [1/1] (0.61ns)   --->   "%icmp_ln8_3 = icmp eq i2 %trunc_ln8, 0" [network/network_top.cpp:8]   --->   Operation 222 'icmp' 'icmp_ln8_3' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 223 [1/1] (0.00ns) (grouped into LUT with out node select_ln8_2)   --->   "%select_ln8 = select i1 %icmp_ln8_3, i8 %tmp, i8 %tmp_1" [network/network_top.cpp:8]   --->   Operation 223 'select' 'select_ln8' <Predicate = (or_ln8 & or_ln8_2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 224 [1/1] (0.61ns)   --->   "%or_ln8 = or i1 %icmp_ln8_3, %icmp_ln8_2" [network/network_top.cpp:8]   --->   Operation 224 'or' 'or_ln8' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 225 [1/1] (0.47ns) (out node of the LUT)   --->   "%select_ln8_1 = select i1 %icmp_ln8_1, i8 %tmp_2, i8 %tmp_3" [network/network_top.cpp:8]   --->   Operation 225 'select' 'select_ln8_1' <Predicate = (!or_ln8 & or_ln8_2)> <Delay = 0.47> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 226 [1/1] (0.00ns) (grouped into LUT with out node select_ln8_3)   --->   "%or_ln8_1 = or i1 %icmp_ln8_1, %icmp_ln8" [network/network_top.cpp:8]   --->   Operation 226 'or' 'or_ln8_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 227 [1/1] (0.47ns) (out node of the LUT)   --->   "%select_ln8_2 = select i1 %or_ln8, i8 %select_ln8, i8 %select_ln8_1" [network/network_top.cpp:8]   --->   Operation 227 'select' 'select_ln8_2' <Predicate = (or_ln8_2)> <Delay = 0.47> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 228 [1/1] (0.00ns) (grouped into LUT with out node select_ln8_3)   --->   "%or_ln8_2 = or i1 %or_ln8, %or_ln8_1" [network/network_top.cpp:8]   --->   Operation 228 'or' 'or_ln8_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 229 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln8_3 = select i1 %or_ln8_2, i8 %select_ln8_2, i8 0" [network/network_top.cpp:8]   --->   Operation 229 'select' 'select_ln8_3' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.47> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 230 [1/1] (0.00ns)   --->   "ret i8 %select_ln8_3" [network/network_top.cpp:25]   --->   Operation 230 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -1008,36 +1008,36 @@ network_weights_weig_974 (read          ) [ 00]
 network_weights_weig_975 (read          ) [ 00]
 network_weights_weig_976 (read          ) [ 00]
 network_weights_weig_977 (read          ) [ 00]
-trunc_ln12               (trunc         ) [ 00]
-trunc_ln12_1             (trunc         ) [ 00]
+trunc_ln11               (trunc         ) [ 00]
+trunc_ln11_1             (trunc         ) [ 00]
 tmp_4                    (bitconcatenate) [ 00]
-zext_ln12                (zext          ) [ 00]
+zext_ln11                (zext          ) [ 00]
 tmp                      (mux           ) [ 00]
-trunc_ln15               (trunc         ) [ 00]
-trunc_ln15_1             (trunc         ) [ 00]
+trunc_ln14               (trunc         ) [ 00]
+trunc_ln14_1             (trunc         ) [ 00]
 tmp_5                    (bitconcatenate) [ 00]
-zext_ln15                (zext          ) [ 00]
+zext_ln14                (zext          ) [ 00]
 tmp_1                    (mux           ) [ 00]
-trunc_ln18               (trunc         ) [ 00]
-trunc_ln18_1             (trunc         ) [ 00]
+trunc_ln17               (trunc         ) [ 00]
+trunc_ln17_1             (trunc         ) [ 00]
 tmp_6                    (bitconcatenate) [ 00]
-zext_ln18                (zext          ) [ 00]
+zext_ln17                (zext          ) [ 00]
 tmp_2                    (mux           ) [ 00]
-trunc_ln21               (trunc         ) [ 00]
+trunc_ln20               (trunc         ) [ 00]
 tmp_3                    (mux           ) [ 00]
-trunc_ln9                (trunc         ) [ 00]
-icmp_ln9                 (icmp          ) [ 00]
-icmp_ln9_1               (icmp          ) [ 01]
-icmp_ln9_2               (icmp          ) [ 00]
-icmp_ln9_3               (icmp          ) [ 01]
-select_ln9               (select        ) [ 00]
-or_ln9                   (or            ) [ 01]
-select_ln9_1             (select        ) [ 00]
-or_ln9_1                 (or            ) [ 00]
-select_ln9_2             (select        ) [ 00]
-or_ln9_2                 (or            ) [ 01]
-select_ln9_3             (select        ) [ 00]
-ret_ln26                 (ret           ) [ 00]
+trunc_ln8                (trunc         ) [ 00]
+icmp_ln8                 (icmp          ) [ 00]
+icmp_ln8_1               (icmp          ) [ 01]
+icmp_ln8_2               (icmp          ) [ 00]
+icmp_ln8_3               (icmp          ) [ 01]
+select_ln8               (select        ) [ 00]
+or_ln8                   (or            ) [ 01]
+select_ln8_1             (select        ) [ 00]
+or_ln8_1                 (or            ) [ 00]
+select_ln8_2             (select        ) [ 00]
+or_ln8_2                 (or            ) [ 01]
+select_ln8_3             (select        ) [ 00]
+ret_ln25                 (ret           ) [ 00]
 </LifeTime>
 
 <model>
@@ -5348,25 +5348,25 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="1620" class="1004" name="trunc_ln12_fu_1620">
+<comp id="1620" class="1004" name="trunc_ln11_fu_1620">
 <pin_list>
 <pin id="1621" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1622" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln12/1 "/>
+<opset="trunc_ln11/1 "/>
 </bind>
 </comp>
 
-<comp id="1624" class="1004" name="trunc_ln12_1_fu_1624">
+<comp id="1624" class="1004" name="trunc_ln11_1_fu_1624">
 <pin_list>
 <pin id="1625" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1626" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln12_1/1 "/>
+<opset="trunc_ln11_1/1 "/>
 </bind>
 </comp>
 
@@ -5383,14 +5383,14 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="1636" class="1004" name="zext_ln12_fu_1636">
+<comp id="1636" class="1004" name="zext_ln11_fu_1636">
 <pin_list>
 <pin id="1637" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1638" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln12/1 "/>
+<opset="zext_ln11/1 "/>
 </bind>
 </comp>
 
@@ -5438,25 +5438,25 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="1710" class="1004" name="trunc_ln15_fu_1710">
+<comp id="1710" class="1004" name="trunc_ln14_fu_1710">
 <pin_list>
 <pin id="1711" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1712" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln15/1 "/>
+<opset="trunc_ln14/1 "/>
 </bind>
 </comp>
 
-<comp id="1714" class="1004" name="trunc_ln15_1_fu_1714">
+<comp id="1714" class="1004" name="trunc_ln14_1_fu_1714">
 <pin_list>
 <pin id="1715" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1716" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln15_1/1 "/>
+<opset="trunc_ln14_1/1 "/>
 </bind>
 </comp>
 
@@ -5473,14 +5473,14 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="1726" class="1004" name="zext_ln15_fu_1726">
+<comp id="1726" class="1004" name="zext_ln14_fu_1726">
 <pin_list>
 <pin id="1727" dir="0" index="0" bw="7" slack="0"/>
 <pin id="1728" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln15/1 "/>
+<opset="zext_ln14/1 "/>
 </bind>
 </comp>
 
@@ -5624,25 +5624,25 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="1992" class="1004" name="trunc_ln18_fu_1992">
+<comp id="1992" class="1004" name="trunc_ln17_fu_1992">
 <pin_list>
 <pin id="1993" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1994" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln18/1 "/>
+<opset="trunc_ln17/1 "/>
 </bind>
 </comp>
 
-<comp id="1996" class="1004" name="trunc_ln18_1_fu_1996">
+<comp id="1996" class="1004" name="trunc_ln17_1_fu_1996">
 <pin_list>
 <pin id="1997" dir="0" index="0" bw="5" slack="0"/>
 <pin id="1998" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln18_1/1 "/>
+<opset="trunc_ln17_1/1 "/>
 </bind>
 </comp>
 
@@ -5659,14 +5659,14 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="2008" class="1004" name="zext_ln18_fu_2008">
+<comp id="2008" class="1004" name="zext_ln17_fu_2008">
 <pin_list>
 <pin id="2009" dir="0" index="0" bw="5" slack="0"/>
 <pin id="2010" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln18/1 "/>
+<opset="zext_ln17/1 "/>
 </bind>
 </comp>
 
@@ -5714,14 +5714,14 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="2082" class="1004" name="trunc_ln21_fu_2082">
+<comp id="2082" class="1004" name="trunc_ln20_fu_2082">
 <pin_list>
 <pin id="2083" dir="0" index="0" bw="5" slack="0"/>
 <pin id="2084" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln21/1 "/>
+<opset="trunc_ln20/1 "/>
 </bind>
 </comp>
 
@@ -5741,18 +5741,18 @@ ret_ln26                 (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="2100" class="1004" name="trunc_ln9_fu_2100">
+<comp id="2100" class="1004" name="trunc_ln8_fu_2100">
 <pin_list>
 <pin id="2101" dir="0" index="0" bw="4" slack="0"/>
 <pin id="2102" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln9/1 "/>
+<opset="trunc_ln8/1 "/>
 </bind>
 </comp>
 
-<comp id="2104" class="1004" name="icmp_ln9_fu_2104">
+<comp id="2104" class="1004" name="icmp_ln8_fu_2104">
 <pin_list>
 <pin id="2105" dir="0" index="0" bw="2" slack="0"/>
 <pin id="2106" dir="0" index="1" bw="2" slack="0"/>
@@ -5760,11 +5760,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9/1 "/>
+<opset="icmp_ln8/1 "/>
 </bind>
 </comp>
 
-<comp id="2110" class="1004" name="icmp_ln9_1_fu_2110">
+<comp id="2110" class="1004" name="icmp_ln8_1_fu_2110">
 <pin_list>
 <pin id="2111" dir="0" index="0" bw="2" slack="0"/>
 <pin id="2112" dir="0" index="1" bw="2" slack="0"/>
@@ -5772,11 +5772,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9_1/1 "/>
+<opset="icmp_ln8_1/1 "/>
 </bind>
 </comp>
 
-<comp id="2116" class="1004" name="icmp_ln9_2_fu_2116">
+<comp id="2116" class="1004" name="icmp_ln8_2_fu_2116">
 <pin_list>
 <pin id="2117" dir="0" index="0" bw="2" slack="0"/>
 <pin id="2118" dir="0" index="1" bw="2" slack="0"/>
@@ -5784,11 +5784,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9_2/1 "/>
+<opset="icmp_ln8_2/1 "/>
 </bind>
 </comp>
 
-<comp id="2122" class="1004" name="icmp_ln9_3_fu_2122">
+<comp id="2122" class="1004" name="icmp_ln8_3_fu_2122">
 <pin_list>
 <pin id="2123" dir="0" index="0" bw="2" slack="0"/>
 <pin id="2124" dir="0" index="1" bw="2" slack="0"/>
@@ -5796,11 +5796,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9_3/1 "/>
+<opset="icmp_ln8_3/1 "/>
 </bind>
 </comp>
 
-<comp id="2128" class="1004" name="select_ln9_fu_2128">
+<comp id="2128" class="1004" name="select_ln8_fu_2128">
 <pin_list>
 <pin id="2129" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2130" dir="0" index="1" bw="8" slack="0"/>
@@ -5809,11 +5809,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9/1 "/>
+<opset="select_ln8/1 "/>
 </bind>
 </comp>
 
-<comp id="2136" class="1004" name="or_ln9_fu_2136">
+<comp id="2136" class="1004" name="or_ln8_fu_2136">
 <pin_list>
 <pin id="2137" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2138" dir="0" index="1" bw="1" slack="0"/>
@@ -5821,11 +5821,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln9/1 "/>
+<opset="or_ln8/1 "/>
 </bind>
 </comp>
 
-<comp id="2142" class="1004" name="select_ln9_1_fu_2142">
+<comp id="2142" class="1004" name="select_ln8_1_fu_2142">
 <pin_list>
 <pin id="2143" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2144" dir="0" index="1" bw="8" slack="0"/>
@@ -5834,11 +5834,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9_1/1 "/>
+<opset="select_ln8_1/1 "/>
 </bind>
 </comp>
 
-<comp id="2150" class="1004" name="or_ln9_1_fu_2150">
+<comp id="2150" class="1004" name="or_ln8_1_fu_2150">
 <pin_list>
 <pin id="2151" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2152" dir="0" index="1" bw="1" slack="0"/>
@@ -5846,11 +5846,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln9_1/1 "/>
+<opset="or_ln8_1/1 "/>
 </bind>
 </comp>
 
-<comp id="2156" class="1004" name="select_ln9_2_fu_2156">
+<comp id="2156" class="1004" name="select_ln8_2_fu_2156">
 <pin_list>
 <pin id="2157" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2158" dir="0" index="1" bw="8" slack="0"/>
@@ -5859,11 +5859,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9_2/1 "/>
+<opset="select_ln8_2/1 "/>
 </bind>
 </comp>
 
-<comp id="2164" class="1004" name="or_ln9_2_fu_2164">
+<comp id="2164" class="1004" name="or_ln8_2_fu_2164">
 <pin_list>
 <pin id="2165" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2166" dir="0" index="1" bw="1" slack="0"/>
@@ -5871,11 +5871,11 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln9_2/1 "/>
+<opset="or_ln8_2/1 "/>
 </bind>
 </comp>
 
-<comp id="2170" class="1004" name="select_ln9_3_fu_2170">
+<comp id="2170" class="1004" name="select_ln8_3_fu_2170">
 <pin_list>
 <pin id="2171" dir="0" index="0" bw="1" slack="0"/>
 <pin id="2172" dir="0" index="1" bw="8" slack="0"/>
@@ -5884,7 +5884,7 @@ ret_ln26                 (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9_3/1 "/>
+<opset="select_ln8_3/1 "/>
 </bind>
 </comp>
 
@@ -7397,27 +7397,27 @@ ret_ln26                 (ret           ) [ 00]
   - Chain level:
 	State 1
 		tmp_4 : 1
-		zext_ln12 : 2
+		zext_ln11 : 2
 		tmp : 3
 		tmp_5 : 1
-		zext_ln15 : 2
+		zext_ln14 : 2
 		tmp_1 : 3
 		tmp_6 : 1
-		zext_ln18 : 2
+		zext_ln17 : 2
 		tmp_2 : 3
 		tmp_3 : 1
-		icmp_ln9 : 1
-		icmp_ln9_1 : 1
-		icmp_ln9_2 : 1
-		icmp_ln9_3 : 1
-		select_ln9 : 4
-		or_ln9 : 2
-		select_ln9_1 : 4
-		or_ln9_1 : 2
-		select_ln9_2 : 5
-		or_ln9_2 : 2
-		select_ln9_3 : 6
-		ret_ln26 : 7
+		icmp_ln8 : 1
+		icmp_ln8_1 : 1
+		icmp_ln8_2 : 1
+		icmp_ln8_3 : 1
+		select_ln8 : 4
+		or_ln8 : 2
+		select_ln8_1 : 4
+		or_ln8_1 : 2
+		select_ln8_2 : 5
+		or_ln8_2 : 2
+		select_ln8_3 : 6
+		ret_ln25 : 7
 
 
 ============================================================
@@ -7433,19 +7433,19 @@ ret_ln26                 (ret           ) [ 00]
 |          |             tmp_2_fu_2012             |    0    |    21   |
 |          |             tmp_3_fu_2086             |    0    |    21   |
 |----------|---------------------------------------|---------|---------|
-|          |            icmp_ln9_fu_2104           |    0    |    8    |
-|   icmp   |           icmp_ln9_1_fu_2110          |    0    |    8    |
-|          |           icmp_ln9_2_fu_2116          |    0    |    8    |
-|          |           icmp_ln9_3_fu_2122          |    0    |    8    |
+|          |            icmp_ln8_fu_2104           |    0    |    8    |
+|   icmp   |           icmp_ln8_1_fu_2110          |    0    |    8    |
+|          |           icmp_ln8_2_fu_2116          |    0    |    8    |
+|          |           icmp_ln8_3_fu_2122          |    0    |    8    |
 |----------|---------------------------------------|---------|---------|
-|          |           select_ln9_fu_2128          |    0    |    8    |
-|  select  |          select_ln9_1_fu_2142         |    0    |    8    |
-|          |          select_ln9_2_fu_2156         |    0    |    8    |
-|          |          select_ln9_3_fu_2170         |    0    |    8    |
+|          |           select_ln8_fu_2128          |    0    |    8    |
+|  select  |          select_ln8_1_fu_2142         |    0    |    8    |
+|          |          select_ln8_2_fu_2156         |    0    |    8    |
+|          |          select_ln8_3_fu_2170         |    0    |    8    |
 |----------|---------------------------------------|---------|---------|
-|          |             or_ln9_fu_2136            |    0    |    2    |
-|    or    |            or_ln9_1_fu_2150           |    0    |    2    |
-|          |            or_ln9_2_fu_2164           |    0    |    2    |
+|          |             or_ln8_fu_2136            |    0    |    2    |
+|    or    |            or_ln8_1_fu_2150           |    0    |    2    |
+|          |            or_ln8_2_fu_2164           |    0    |    2    |
 |----------|---------------------------------------|---------|---------|
 |          |        index_1_read_read_fu_426       |    0    |    0    |
 |          |        index_0_read_read_fu_432       |    0    |    0    |
@@ -7647,22 +7647,22 @@ ret_ln26                 (ret           ) [ 00]
 |          | network_weights_weig_976_read_fu_1608 |    0    |    0    |
 |          | network_weights_weig_977_read_fu_1614 |    0    |    0    |
 |----------|---------------------------------------|---------|---------|
-|          |           trunc_ln12_fu_1620          |    0    |    0    |
-|          |          trunc_ln12_1_fu_1624         |    0    |    0    |
-|          |           trunc_ln15_fu_1710          |    0    |    0    |
-|   trunc  |          trunc_ln15_1_fu_1714         |    0    |    0    |
-|          |           trunc_ln18_fu_1992          |    0    |    0    |
-|          |          trunc_ln18_1_fu_1996         |    0    |    0    |
-|          |           trunc_ln21_fu_2082          |    0    |    0    |
-|          |           trunc_ln9_fu_2100           |    0    |    0    |
+|          |           trunc_ln11_fu_1620          |    0    |    0    |
+|          |          trunc_ln11_1_fu_1624         |    0    |    0    |
+|          |           trunc_ln14_fu_1710          |    0    |    0    |
+|   trunc  |          trunc_ln14_1_fu_1714         |    0    |    0    |
+|          |           trunc_ln17_fu_1992          |    0    |    0    |
+|          |          trunc_ln17_1_fu_1996         |    0    |    0    |
+|          |           trunc_ln20_fu_2082          |    0    |    0    |
+|          |           trunc_ln8_fu_2100           |    0    |    0    |
 |----------|---------------------------------------|---------|---------|
 |          |             tmp_4_fu_1628             |    0    |    0    |
 |bitconcatenate|             tmp_5_fu_1718             |    0    |    0    |
 |          |             tmp_6_fu_2000             |    0    |    0    |
 |----------|---------------------------------------|---------|---------|
-|          |           zext_ln12_fu_1636           |    0    |    0    |
-|   zext   |           zext_ln15_fu_1726           |    0    |    0    |
-|          |           zext_ln18_fu_2008           |    0    |    0    |
+|          |           zext_ln11_fu_1636           |    0    |    0    |
+|   zext   |           zext_ln14_fu_1726           |    0    |    0    |
+|          |           zext_ln17_fu_2008           |    0    |    0    |
 |----------|---------------------------------------|---------|---------|
 |   Total  |                                       |    0    |   154   |
 |----------|---------------------------------------|---------|---------|

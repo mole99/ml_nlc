@@ -122,6 +122,18 @@ set Interface17 "wire"
 set DataType17 "int"
 set Port17 [list $PortName17 $Interface17 $DataType17 $Pointer17 $Dims17 $Const17 $Volatile17 $ArrayOpt17]
 lappend structMem1 $Port17
+set PortName18 "output_conversion_scale"
+set BitWidth18 "64"
+set ArrayOpt18 ""
+set Const18 "0"
+set Volatile18 "0"
+set Pointer18 "0"
+set Reference18 "0"
+set Dims18 [list  4]
+set Interface18 "wire"
+set DataType18 "unsigned short"
+set Port18 [list $PortName18 $Interface18 $DataType18 $Pointer18 $Dims18 $Const18 $Volatile18 $ArrayOpt18]
+lappend structMem1 $Port18
 set structParameter1 [list ]
 set structArgument1 [list ]
 set NameSpace1 [list ]

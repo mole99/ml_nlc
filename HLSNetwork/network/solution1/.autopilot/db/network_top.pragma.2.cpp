@@ -1078,18 +1078,19 @@ typedef __uintmax_t uintmax_t;
 # 3 "network/network_top.cpp" 2
 
 # 1 "network/network_top.h" 1
-# 16 "network/network_top.h"
- struct network_weights
- {
-  int8_t weights_0[16][2];
-  int8_t weights_1[8][16];
-  int8_t weights_2[4][8];
-  int8_t weights_3[1][4];
-  int32_t bias_0[16];
-  int32_t bias_1[8];
-  int32_t bias_2[4];
-  int32_t bias_3[1];
- } typedef network_weights_t;
+# 33 "network/network_top.h"
+struct network_weights
+{
+ int8_t weights_0[16][2];
+ int8_t weights_1[8][16];
+ int8_t weights_2[4][8];
+ int8_t weights_3[1][4];
+ int32_t bias_0[16];
+ int32_t bias_1[8];
+ int32_t bias_2[4];
+ int32_t bias_3[1];
+ uint16_t output_conversion_scale[4];
+} typedef network_weights_t;
 
 
 
@@ -1097,9 +1098,8 @@ typedef __uintmax_t uintmax_t;
 
 
 
- void network_top(int8_t input[2], network_weights_t* network_weights, int8_t output[1]);
+void network_top(int8_t input[2], network_weights_t* network_weights, int8_t output[1]);
 # 5 "network/network_top.cpp" 2
-
 
 int8_t getWeight(network_weights_t* network_weights, int layer, int index_0, int index_1)
 {
@@ -1148,42 +1148,26 @@ struct layer
 
  const int dimension_0;
  const int dimension_1;
-
-
- const uint16_t output_conversion_scale;
- const int8_t output_zero_point;
 } typedef layer_t;
 
 static const layer_t layer_0 = {
  .dimension_0 = 16,
  .dimension_1 = 2,
-
- .output_conversion_scale = 952,
- .output_zero_point = -128
 };
 
 static const layer_t layer_1 = {
  .dimension_0 = 8,
  .dimension_1 = 16,
-
- .output_conversion_scale = 1592,
- .output_zero_point = -128
 };
 
 static const layer_t layer_2 = {
  .dimension_0 = 4,
  .dimension_1 = 8,
-
- .output_conversion_scale = 1212,
- .output_zero_point = -128
 };
 
 static const layer_t layer_3 = {
  .dimension_0 = 1,
  .dimension_1 = 4,
-
- .output_conversion_scale = 2995,
- .output_zero_point = -128
 };
 
 const layer_t network[] = {layer_0, layer_1, layer_2, layer_3};
@@ -1203,6 +1187,8 @@ _ssdm_SpecArrayPartition( network_weights->bias_0, 1, "COMPLETE", 0, "");
 _ssdm_SpecArrayPartition( network_weights->bias_1, 1, "COMPLETE", 0, "");
 _ssdm_SpecArrayPartition( network_weights->bias_2, 1, "COMPLETE", 0, "");
 _ssdm_SpecArrayPartition( network_weights->bias_3, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( network_weights->output_conversion_scale, 1, "COMPLETE", 0, "");
 
 
 
@@ -1249,27 +1235,13 @@ _ssdm_Unroll(0,0,0, "");
 
     do {} while (0);
 
-    int8_t input_zero_point;
-
-    if (current_layer == 0)
-    {
-     input_zero_point = -128;
-    }
-    else
-    {
-     input_zero_point = network[current_layer - 1].output_zero_point;
-    }
-
-    if (input_zero_point != 0)
-    {
-     buffer[i] -= (int16_t)getWeight(network_weights, current_layer, i, j) * input_zero_point;
-    }
+    buffer[i] -= (int16_t)getWeight(network_weights, current_layer, i, j) * (int8_t)-128;
 
     do {} while (0);
    }
 
 
-   buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network[current_layer].output_conversion_scale))>>17) + network[current_layer].output_zero_point;
+   buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network_weights->output_conversion_scale[current_layer]))>>17) + (int8_t)-128;
 
 
    if (buffer[i] > 127)
