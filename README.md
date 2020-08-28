@@ -5,25 +5,25 @@ NLC table replacement based on ML
 
 ## Getting Started
 
-To run most of the programs install the following dependencies:
+To run the programs install the following dependencies:
 
 - Python >= 3.5
 - Tensorflow >= 2.3.0
 - NumPy
 - Matplotlib
 
-Install [spfpm](https://pypi.org/project/spfpm/) to run the script for quantizing the Neural Network in Python via fixed point arithmetic.
+You will also need a C-Compiler for building the CNetwork and QuantizationScheme.
 
-You will also need a C-Compiler for TODO
-
-### Linux
+### Installation
 
 Install the python modules via pip:
 
 > pip install tensorflow <br>
+> pip install tensorflow\_model\_optimization <br>
 > pip install numpy <br>
 > pip install matplotlib <br>
-> pip install spfpm
+
+(Maybe you will need to use pip3 on your system)
 
 ## Project Directory Structure
 
@@ -38,8 +38,6 @@ This includes both curves in .csv format and *training\_data.py* to load and pro
 ### ReferenceImplementation
 
 *main.py* loads the weights of an already trained network in .json format and runs the Neural Network in pure Python. Only dense layers are supported as of now.
-
-Alternatively network inference can also be calculated with fixed point arithmetic. Use either *quantization.py* or *quantization2.py* for that.
 
 ### QuantizationScheme
 
@@ -57,6 +55,19 @@ A small reference implementation in C for the quantization scheme described here
 
 C implementation for performing inference of models exported via *ExportNetwork*. The output is compared to the dataset exported with *ExportDataset* and the resulting file can be displayed as a histogram by *display_results.py*.
 
-### hls
+### HLSNetwork
 
-Example project for high level synthesis.
+Vivado HLS project to synthesize the C-model and create the corresponding HDL files.
+
+## Documentation
+
+### Blogs
+
+The blog posts for this project are stored here.
+They are written with Markdown and also converted to .pdf format.
+
+### Online
+
+If reachable, the blog posts can also be read online here: [mole99.uber.space](https://mole99.uber.space/)
+
+Specifically starting with this [post](https://mole99.uber.space/2020_08_03/entry.html).
