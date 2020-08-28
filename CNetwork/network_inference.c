@@ -25,38 +25,59 @@
 
 void calculateNetwork(int8_t input[NUM_INPUT], int8_t output[NUM_OUTPUT])
 {
-	// TODO memcpy
-	int8_t input_buffer[16] = {input[0], input[1]};
+	int8_t input_buffer[16];
+	
+	for (int i=0; i<NUM_INPUT; i++)
+	{
+		input_buffer[i] = input[i];
+	}
 
 	// For every layer
 	for (int current_layer=0; current_layer<NUM_LAYERS; current_layer++)
 	{
-		int32_t buffer[16] = {0};
+		int32_t buffer[16];
 		
+		// For every neuron
 		for (int i = 0; i < network[current_layer].dimension_0; i++)
 		{
+			DEBUG(printf("\tInitializing buffer with bias\n"));
+			
+			buffer[i] = network[current_layer].bias[i];
+			
+			DEBUG(printf("\t%d\n", buffer[i]));
+		
 			DEBUG(printf("Calculating %d. Neuron\n", i));
 		
+			// For every weight
 			for (int j = 0; j < network[current_layer].dimension_1; j++)
 			{
 				DEBUG(printf("\tCalculating %d. weight", j));
 			
 				// Dot product
-				buffer[i] += (int16_t)network[current_layer].weights[i * network[current_layer].dimension_1 + j] * (int16_t)input_buffer[j];
+				buffer[i] += network[current_layer].weights[i * network[current_layer].dimension_1 + j] * input_buffer[j];
 				
 				DEBUG(printf("\t%d\n", buffer[i]));
+								
+				int8_t input_zero_point;
 				
-				// TODO skip for input_zero_point == 0
-				buffer[i] -= (int16_t)network[current_layer].weights[i * network[current_layer].dimension_1 + j] * network[current_layer].input_zero_point;
+				if (current_layer == 0)
+				{
+					input_zero_point = NETWORK_INPUT_ZERO_POINT;
+				}
+				else
+				{
+					input_zero_point = network[current_layer - 1].output_zero_point;
+				}
+				
+				if (input_zero_point != 0)
+				{
+					buffer[i] -= network[current_layer].weights[i * network[current_layer].dimension_1 + j] * input_zero_point;
+				}
 				
 				DEBUG(printf("\t%d\n", buffer[i]));
 			}
 			
-			DEBUG(printf("\tAdding bias\n"));
 			
-			buffer[i] += network[current_layer].bias[i];
-			
-			DEBUG(printf("\t%d\n", buffer[i]));
 			
 			DEBUG(printf("\tRelu\n"));
 			
@@ -70,7 +91,7 @@ void calculateNetwork(int8_t input[NUM_INPUT], int8_t output[NUM_OUTPUT])
 				
 			
 			// TODO Check for overflow in fixed point conversion
-			buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network[current_layer].output_conversion_scale*65536*2))>>17) + network[current_layer].output_zero_point;
+			buffer[i] = (((int32_t)buffer[i] * (uint16_t)(network[current_layer].output_conversion_scale))>>17) + network[current_layer].output_zero_point;
 			
 			// TODO old float multiplication
 			//buffer[i] = buffer[i] * network[current_layer].output_conversion_scale + network[current_layer].output_zero_point;
