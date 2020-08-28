@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table</title>
+<style>
+table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+<table id="myTable">
+<tr>
+	<th onclick="sortTable(0)">training_data_path</th>
+	<th onclick="sortTable(1)">omit_saturated_values</th>
+	<th onclick="sortTable(2)">batch_size</th>
+	<th onclick="sortTable(3)">num_epochs</th>
+	<th onclick="sortTable(4)">early_stopping</th>
+	<th onclick="sortTable(5)">patience</th>
+	<th onclick="sortTable(6)">num_iterations_per_config</th>
+	<th onclick="sortTable(7)">layer_configuration</th>
+	<th onclick="sortTable(8)">trainable_count</th>
+	<th onclick="sortTable(9)">non_trainable_count</th>
+	<th onclick="sortTable(10)">loss</th>
+	<th onclick="sortTable(11)">mean_absolute_error</th>
+	<th onclick="sortTable(12)">trained_epochs</th>
+	<th onclick="sortTable(13)">min_loss</th>
+	<th onclick="sortTable(14)">min_mean_absolute_error</th>
+	<th onclick="sortTable(15)">max_trained_epochs</th>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>13</td>
+	<td>5</td>
+	<td>[2, 12]</td>
+	<td>205</td>
+	<td>0.0</td>
+	<td>[40.753013610839844, 1.263873815536499, 0.9203372001647949, 0.9253178834915161, 0.9877761006355286]</td>
+	<td>[4.374220848083496, 0.6682803630828857, 0.618493378162384, 0.6245432496070862, 0.6322466731071472]</td>
+	<td>[500, 500, 500, 500, 500]</td>
+	<td>0.9203372001647949</td>
+	<td>0.618493378162384</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>13</td>
+	<td>5</td>
+	<td>[2, 16]</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>[3.2364635467529297, 1.4806679487228394, 0.861514687538147, 0.5815922617912292, 0.6432222723960876]</td>
+	<td>[1.2135587930679321, 0.5772862434387207, 0.5750337243080139, 0.4781542420387268, 0.5489988923072815]</td>
+	<td>[500, 500, 500, 500, 500]</td>
+	<td>0.5815922617912292</td>
+	<td>0.4781542420387268</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>13</td>
+	<td>5</td>
+	<td>[2, 4, 2, 8]</td>
+	<td>209</td>
+	<td>0.0</td>
+	<td>[2.6165807247161865, 1.6971946954727173, 1.7745099067687988, 1.6119087934494019, 1.697968602180481]</td>
+	<td>[1.0759601593017578, 0.8265158534049988, 0.8552892208099365, 0.8018912672996521, 0.7946659922599792]</td>
+	<td>[500, 500, 500, 500, 500]</td>
+	<td>1.6119087934494019</td>
+	<td>0.7946659922599792</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>13</td>
+	<td>5</td>
+	<td>[1, 4, 2, 12]</td>
+	<td>293</td>
+	<td>0.0</td>
+	<td>[2.080944538116455, 2.300341844558716, 1.4075058698654175, 1.5939867496490479, 0.9152947068214417]</td>
+	<td>[0.8419855833053589, 0.9704986214637756, 0.8234264850616455, 0.971981406211853, 0.6525710821151733]</td>
+	<td>[500, 500, 500, 500, 500]</td>
+	<td>0.9152947068214417</td>
+	<td>0.6525710821151733</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>13</td>
+	<td>5</td>
+	<td>[2, 8, 2, 8]</td>
+	<td>393</td>
+	<td>0.0</td>
+	<td>[3.6595468521118164, 3.659170627593994, 2.430276870727539, 2.770576238632202, 2.657695770263672]</td>
+	<td>[1.2790268659591675, 1.291285514831543, 0.978449821472168, 1.1738511323928833, 1.0227257013320923]</td>
+	<td>[500, 500, 500, 500, 500]</td>
+	<td>2.430276870727539</td>
+	<td>0.978449821472168</td>
+	<td>500</td>
+</tr>
+</table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

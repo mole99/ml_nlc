@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+<table id="myTable">
+<tr>
+	<th onclick="sortTable(0)">layer_count</th>
+	<th onclick="sortTable(1)">neurons_per_layer</th>
+	<th onclick="sortTable(2)">batch_size</th>
+	<th onclick="sortTable(3)">trainable_count</th>
+	<th onclick="sortTable(4)">non_trainable_count</th>
+	<th onclick="sortTable(5)">loss</th>
+	<th onclick="sortTable(6)">mean_absolute_error</th>
+	<th onclick="sortTable(7)">trained_epochs</th>
+</tr>
+<tr>
+	<td>2</td>
+	<td>8</td>
+	<td>64</td>
+	<td>105</td>
+	<td>0.0</td>
+	<td>37.128501892089844</td>
+	<td>3.287710189819336</td>
+	<td>154</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>12</td>
+	<td>64</td>
+	<td>205</td>
+	<td>0.0</td>
+	<td>2.372648239135742</td>
+	<td>1.0170133113861084</td>
+	<td>301</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>16</td>
+	<td>64</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>73.12403869628906</td>
+	<td>5.0262932777404785</td>
+	<td>53</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>20</td>
+	<td>64</td>
+	<td>501</td>
+	<td>0.0</td>
+	<td>1.011539101600647</td>
+	<td>0.6322861313819885</td>
+	<td>402</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>8</td>
+	<td>64</td>
+	<td>177</td>
+	<td>0.0</td>
+	<td>72.52847290039062</td>
+	<td>5.147062301635742</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>12</td>
+	<td>64</td>
+	<td>361</td>
+	<td>0.0</td>
+	<td>1.282552719116211</td>
+	<td>0.7362217903137207</td>
+	<td>226</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>16</td>
+	<td>64</td>
+	<td>609</td>
+	<td>0.0</td>
+	<td>1.5890023708343506</td>
+	<td>0.890569806098938</td>
+	<td>211</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>20</td>
+	<td>64</td>
+	<td>921</td>
+	<td>0.0</td>
+	<td>1.7011293172836304</td>
+	<td>1.0098285675048828</td>
+	<td>291</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>8</td>
+	<td>64</td>
+	<td>249</td>
+	<td>0.0</td>
+	<td>7.86570930480957</td>
+	<td>1.861528992652893</td>
+	<td>312</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>12</td>
+	<td>64</td>
+	<td>517</td>
+	<td>0.0</td>
+	<td>5.819312572479248</td>
+	<td>1.762702465057373</td>
+	<td>238</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>16</td>
+	<td>64</td>
+	<td>881</td>
+	<td>0.0</td>
+	<td>2.1420416831970215</td>
+	<td>0.9987424612045288</td>
+	<td>168</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>20</td>
+	<td>64</td>
+	<td>1341</td>
+	<td>0.0</td>
+	<td>2.601071357727051</td>
+	<td>1.4487457275390625</td>
+	<td>164</td>
+</tr>
+</table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

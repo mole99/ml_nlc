@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+<table id="myTable">
+<tr>
+	<th onclick="sortTable(0)">training_data_path</th>
+	<th onclick="sortTable(1)">omit_saturated_values</th>
+	<th onclick="sortTable(2)">batch_size</th>
+	<th onclick="sortTable(3)">num_epochs</th>
+	<th onclick="sortTable(4)">early_stopping</th>
+	<th onclick="sortTable(5)">patience</th>
+	<th onclick="sortTable(6)">num_iterations_per_config</th>
+	<th onclick="sortTable(7)">leaky_relu</th>
+	<th onclick="sortTable(8)">layer_configuration</th>
+	<th onclick="sortTable(9)">trainable_count</th>
+	<th onclick="sortTable(10)">non_trainable_count</th>
+	<th onclick="sortTable(11)">loss</th>
+	<th onclick="sortTable(12)">mean_absolute_error</th>
+	<th onclick="sortTable(13)">trained_epochs</th>
+	<th onclick="sortTable(14)">min_loss</th>
+	<th onclick="sortTable(15)">min_mean_absolute_error</th>
+	<th onclick="sortTable(16)">max_trained_epochs</th>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[16, 16, 1]</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>[1.6883341073989868, 0.9973322749137878, 0.9866244196891785]</td>
+	<td>[0.7470577955245972, 0.6223694086074829, 0.5640744566917419]</td>
+	<td>[500, 500, 500]</td>
+	<td>0.9866244196891785</td>
+	<td>0.5640744566917419</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[16, 'pa', 16, 1]</td>
+	<td>209</td>
+	<td>0.0</td>
+	<td>[1.2561421394348145, 1.7412456274032593, 2.496608257293701]</td>
+	<td>[0.6061537861824036, 0.8134989142417908, 0.83336341381073]</td>
+	<td>[500, 500, 500]</td>
+	<td>1.2561421394348145</td>
+	<td>0.6061537861824036</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[16, 'pm', 16, 1]</td>
+	<td>209</td>
+	<td>0.0</td>
+	<td>[2.0822439193725586, 1.5722135305404663, 1.5927926301956177]</td>
+	<td>[0.8100166320800781, 0.7336972951889038, 0.7425314784049988]</td>
+	<td>[500, 500, 500]</td>
+	<td>1.5722135305404663</td>
+	<td>0.7336972951889038</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[14, 14, 1]</td>
+	<td>267</td>
+	<td>0.0</td>
+	<td>[1.866481065750122, 1.2180061340332031, 1.436571717262268]</td>
+	<td>[0.8483442664146423, 0.6821861863136292, 0.7002953290939331]</td>
+	<td>[500, 500, 500]</td>
+	<td>1.2180061340332031</td>
+	<td>0.6821861863136292</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[14, 'pa', 14, 1]</td>
+	<td>169</td>
+	<td>0.0</td>
+	<td>[3.2243311405181885, 3.03701114654541, 1.6053965091705322]</td>
+	<td>[1.067889928817749, 1.1173444986343384, 0.7676057815551758]</td>
+	<td>[500, 500, 500]</td>
+	<td>1.6053965091705322</td>
+	<td>0.7676057815551758</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>../TrainingData/ideal_dchg.csv</td>
+	<td>True</td>
+	<td>64</td>
+	<td>500</td>
+	<td>False</td>
+	<td>8</td>
+	<td>3</td>
+	<td>True</td>
+	<td>[14, 'pm', 14, 1]</td>
+	<td>169</td>
+	<td>0.0</td>
+	<td>[4.794541358947754, 1.9356153011322021, 8.12060260772705]</td>
+	<td>[1.5957541465759277, 0.8282612562179565, 1.7470147609710693]</td>
+	<td>[500, 500, 500]</td>
+	<td>1.9356153011322021</td>
+	<td>0.8282612562179565</td>
+	<td>500</td>
+</tr>
+</table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

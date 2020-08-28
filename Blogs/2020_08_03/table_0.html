@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+<table id="myTable">
+<tr>
+	<th onclick="sortTable(0)">layer_count</th>
+	<th onclick="sortTable(1)">neurons_per_layer</th>
+	<th onclick="sortTable(2)">batch_size</th>
+	<th onclick="sortTable(3)">trainable_count</th>
+	<th onclick="sortTable(4)">non_trainable_count</th>
+	<th onclick="sortTable(5)">loss</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td>4</td>
+	<td>32</td>
+	<td>17</td>
+	<td>0.0</td>
+	<td>73.66944122314453</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>8</td>
+	<td>32</td>
+	<td>33</td>
+	<td>0.0</td>
+	<td>277.318115234375</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>12</td>
+	<td>32</td>
+	<td>49</td>
+	<td>0.0</td>
+	<td>277.3970642089844</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>16</td>
+	<td>32</td>
+	<td>65</td>
+	<td>0.0</td>
+	<td>277.3319396972656</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>20</td>
+	<td>32</td>
+	<td>81</td>
+	<td>0.0</td>
+	<td>72.50027465820312</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>4</td>
+	<td>32</td>
+	<td>37</td>
+	<td>0.0</td>
+	<td>1315.933349609375</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>8</td>
+	<td>32</td>
+	<td>105</td>
+	<td>0.0</td>
+	<td>1.482591986656189</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>12</td>
+	<td>32</td>
+	<td>205</td>
+	<td>0.0</td>
+	<td>3.5121827125549316</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>16</td>
+	<td>32</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>3.578572988510132</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>20</td>
+	<td>32</td>
+	<td>501</td>
+	<td>0.0</td>
+	<td>1.7896679639816284</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>4</td>
+	<td>32</td>
+	<td>57</td>
+	<td>0.0</td>
+	<td>73.92650604248047</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>8</td>
+	<td>32</td>
+	<td>177</td>
+	<td>0.0</td>
+	<td>7.991455078125</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>12</td>
+	<td>32</td>
+	<td>361</td>
+	<td>0.0</td>
+	<td>2.45584774017334</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>16</td>
+	<td>32</td>
+	<td>609</td>
+	<td>0.0</td>
+	<td>1.4348387718200684</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>20</td>
+	<td>32</td>
+	<td>921</td>
+	<td>0.0</td>
+	<td>1.4319132566452026</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>4</td>
+	<td>64</td>
+	<td>17</td>
+	<td>0.0</td>
+	<td>277.2957458496094</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>8</td>
+	<td>64</td>
+	<td>33</td>
+	<td>0.0</td>
+	<td>73.74281311035156</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>12</td>
+	<td>64</td>
+	<td>49</td>
+	<td>0.0</td>
+	<td>72.95250701904297</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>16</td>
+	<td>64</td>
+	<td>65</td>
+	<td>0.0</td>
+	<td>80.83717346191406</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>20</td>
+	<td>64</td>
+	<td>81</td>
+	<td>0.0</td>
+	<td>72.87377166748047</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>4</td>
+	<td>64</td>
+	<td>37</td>
+	<td>0.0</td>
+	<td>19.150772094726562</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>8</td>
+	<td>64</td>
+	<td>105</td>
+	<td>0.0</td>
+	<td>72.85797882080078</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>12</td>
+	<td>64</td>
+	<td>205</td>
+	<td>0.0</td>
+	<td>11.25563907623291</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>16</td>
+	<td>64</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>0.7890778183937073</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>20</td>
+	<td>64</td>
+	<td>501</td>
+	<td>0.0</td>
+	<td>3.269629955291748</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>4</td>
+	<td>64</td>
+	<td>57</td>
+	<td>0.0</td>
+	<td>212.5292205810547</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>8</td>
+	<td>64</td>
+	<td>177</td>
+	<td>0.0</td>
+	<td>6.884561061859131</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>12</td>
+	<td>64</td>
+	<td>361</td>
+	<td>0.0</td>
+	<td>1.9290443658828735</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>16</td>
+	<td>64</td>
+	<td>609</td>
+	<td>0.0</td>
+	<td>3.087388277053833</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>20</td>
+	<td>64</td>
+	<td>921</td>
+	<td>0.0</td>
+	<td>1.0761380195617676</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>4</td>
+	<td>96</td>
+	<td>17</td>
+	<td>0.0</td>
+	<td>80.79036712646484</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>8</td>
+	<td>96</td>
+	<td>33</td>
+	<td>0.0</td>
+	<td>277.2982177734375</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>12</td>
+	<td>96</td>
+	<td>49</td>
+	<td>0.0</td>
+	<td>72.63105010986328</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>16</td>
+	<td>96</td>
+	<td>65</td>
+	<td>0.0</td>
+	<td>277.3165588378906</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>20</td>
+	<td>96</td>
+	<td>81</td>
+	<td>0.0</td>
+	<td>73.94429779052734</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>4</td>
+	<td>96</td>
+	<td>37</td>
+	<td>0.0</td>
+	<td>24.220571517944336</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>8</td>
+	<td>96</td>
+	<td>105</td>
+	<td>0.0</td>
+	<td>4.575565338134766</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>12</td>
+	<td>96</td>
+	<td>205</td>
+	<td>0.0</td>
+	<td>14.101103782653809</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>16</td>
+	<td>96</td>
+	<td>337</td>
+	<td>0.0</td>
+	<td>2.0950207710266113</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>20</td>
+	<td>96</td>
+	<td>501</td>
+	<td>0.0</td>
+	<td>2.2741901874542236</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>4</td>
+	<td>96</td>
+	<td>57</td>
+	<td>0.0</td>
+	<td>35.28038024902344</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>8</td>
+	<td>96</td>
+	<td>177</td>
+	<td>0.0</td>
+	<td>1.8963894844055176</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>12</td>
+	<td>96</td>
+	<td>361</td>
+	<td>0.0</td>
+	<td>2.0068817138671875</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>16</td>
+	<td>96</td>
+	<td>609</td>
+	<td>0.0</td>
+	<td>2.9333345890045166</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>20</td>
+	<td>96</td>
+	<td>921</td>
+	<td>0.0</td>
+	<td>2.111996650695801</td>
+</tr>
+</table>
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
