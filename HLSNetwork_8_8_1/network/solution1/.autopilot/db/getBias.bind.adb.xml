@@ -1,0 +1,714 @@
+<stg><name>getBias</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="4" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+_ifconv:0  %index_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %index)
+
+]]></Node>
+<StgValue><ssdm name="index_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="4" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+_ifconv:1  %layer_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %layer)
+
+]]></Node>
+<StgValue><ssdm name="layer_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:2  %network_weights_bias_49 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_48)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_49"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:3  %network_weights_bias_50 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_47)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_50"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:4  %network_weights_bias_51 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_46)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_51"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:5  %network_weights_bias_52 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_45)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_52"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:6  %network_weights_bias_53 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_44)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_53"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:7  %network_weights_bias_54 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_43)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_54"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:8  %network_weights_bias_55 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_42)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_55"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:9  %network_weights_bias_56 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_41)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_56"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="30" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:10  %network_weights_bias_57 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_40)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_57"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:11  %network_weights_bias_58 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_39)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_58"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="32" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:12  %network_weights_bias_59 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_38)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_59"/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:13  %network_weights_bias_60 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_37)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_60"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:14  %network_weights_bias_61 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_36)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_61"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="35" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:15  %network_weights_bias_62 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_35)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_62"/></StgValue>
+</operation>
+
+<operation id="18" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="36" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:16  %network_weights_bias_63 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_34)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_63"/></StgValue>
+</operation>
+
+<operation id="19" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:17  %network_weights_bias_64 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_33)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_64"/></StgValue>
+</operation>
+
+<operation id="20" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="38" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+_ifconv:18  %network_weights_bias_65 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias)
+
+]]></Node>
+<StgValue><ssdm name="network_weights_bias_65"/></StgValue>
+</operation>
+
+<operation id="21" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln26" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="39" bw="3" op_0_bw="4">
+<![CDATA[
+_ifconv:19  %trunc_ln29 = trunc i4 %index_read to i3
+
+]]></Node>
+<StgValue><ssdm name="trunc_ln29"/></StgValue>
+</operation>
+
+<operation id="22" st_id="1" stage="1" lat="1">
+<core>MuxnS</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln26_2" val="1"/>
+<literal name="or_ln26" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="40" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="3">
+<![CDATA[
+_ifconv:20  %tmp = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_65, i32 %network_weights_bias_64, i32 %network_weights_bias_63, i32 %network_weights_bias_62, i32 %network_weights_bias_61, i32 %network_weights_bias_60, i32 %network_weights_bias_59, i32 %network_weights_bias_58, i3 %trunc_ln29)
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="23" st_id="1" stage="1" lat="1">
+<core>MuxnS</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln26_2" val="0"/>
+<literal name="or_ln26" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="41" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="3">
+<![CDATA[
+_ifconv:21  %tmp_3 = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_57, i32 %network_weights_bias_56, i32 %network_weights_bias_55, i32 %network_weights_bias_54, i32 %network_weights_bias_53, i32 %network_weights_bias_52, i32 %network_weights_bias_51, i32 %network_weights_bias_50, i3 %trunc_ln29)
+
+]]></Node>
+<StgValue><ssdm name="tmp_3"/></StgValue>
+</operation>
+
+<operation id="24" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="42" bw="2" op_0_bw="4">
+<![CDATA[
+_ifconv:22  %trunc_ln26 = trunc i4 %layer_read to i2
+
+]]></Node>
+<StgValue><ssdm name="trunc_ln26"/></StgValue>
+</operation>
+
+<operation id="25" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln26" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="43" bw="1" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+_ifconv:23  %icmp_ln26 = icmp eq i2 %trunc_ln26, -2
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln26"/></StgValue>
+</operation>
+
+<operation id="26" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="44" bw="1" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+_ifconv:24  %icmp_ln26_1 = icmp eq i2 %trunc_ln26, 1
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln26_1"/></StgValue>
+</operation>
+
+<operation id="27" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="1" op_0_bw="2" op_1_bw="2">
+<![CDATA[
+_ifconv:25  %icmp_ln26_2 = icmp eq i2 %trunc_ln26, 0
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln26_2"/></StgValue>
+</operation>
+
+<operation id="28" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln26" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="46" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+_ifconv:26  %select_ln26 = select i1 %icmp_ln26_2, i32 %tmp, i32 %tmp_3
+
+]]></Node>
+<StgValue><ssdm name="select_ln26"/></StgValue>
+</operation>
+
+<operation id="29" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="47" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:27  %or_ln26 = or i1 %icmp_ln26_2, %icmp_ln26_1
+
+]]></Node>
+<StgValue><ssdm name="or_ln26"/></StgValue>
+</operation>
+
+<operation id="30" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="or_ln26" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="48" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+_ifconv:28  %select_ln26_1 = select i1 %icmp_ln26, i32 %network_weights_bias_49, i32 0
+
+]]></Node>
+<StgValue><ssdm name="select_ln26_1"/></StgValue>
+</operation>
+
+<operation id="31" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="49" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+_ifconv:29  %select_ln26_2 = select i1 %or_ln26, i32 %select_ln26, i32 %select_ln26_1
+
+]]></Node>
+<StgValue><ssdm name="select_ln26_2"/></StgValue>
+</operation>
+
+<operation id="32" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="50" bw="0" op_0_bw="32">
+<![CDATA[
+_ifconv:30  ret i32 %select_ln26_2
+
+]]></Node>
+<StgValue><ssdm name="ret_ln40"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="34" name="network_weights_bias" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias"/></StgValue>
+</port>
+<port id="35" name="network_weights_bias_33" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_33"/></StgValue>
+</port>
+<port id="36" name="network_weights_bias_34" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_34"/></StgValue>
+</port>
+<port id="37" name="network_weights_bias_35" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_35"/></StgValue>
+</port>
+<port id="38" name="network_weights_bias_36" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_36"/></StgValue>
+</port>
+<port id="39" name="network_weights_bias_37" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_37"/></StgValue>
+</port>
+<port id="40" name="network_weights_bias_38" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_38"/></StgValue>
+</port>
+<port id="41" name="network_weights_bias_39" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_39"/></StgValue>
+</port>
+<port id="42" name="network_weights_bias_40" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_40"/></StgValue>
+</port>
+<port id="43" name="network_weights_bias_41" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_41"/></StgValue>
+</port>
+<port id="44" name="network_weights_bias_42" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_42"/></StgValue>
+</port>
+<port id="45" name="network_weights_bias_43" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_43"/></StgValue>
+</port>
+<port id="46" name="network_weights_bias_44" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_44"/></StgValue>
+</port>
+<port id="47" name="network_weights_bias_45" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_45"/></StgValue>
+</port>
+<port id="48" name="network_weights_bias_46" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_46"/></StgValue>
+</port>
+<port id="49" name="network_weights_bias_47" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_47"/></StgValue>
+</port>
+<port id="50" name="network_weights_bias_48" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="network_weights_bias_48"/></StgValue>
+</port>
+<port id="51" name="layer" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="layer"/></StgValue>
+</port>
+<port id="52" name="index" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="index"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="54" from="_ssdm_op_Read.ap_auto.i4" to="index_read" fromId="53" toId="2">
+</dataflow>
+<dataflow id="55" from="index" to="index_read" fromId="52" toId="2">
+</dataflow>
+<dataflow id="56" from="_ssdm_op_Read.ap_auto.i4" to="layer_read" fromId="53" toId="3">
+</dataflow>
+<dataflow id="57" from="layer" to="layer_read" fromId="51" toId="3">
+</dataflow>
+<dataflow id="59" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_49" fromId="58" toId="4">
+</dataflow>
+<dataflow id="60" from="network_weights_bias_48" to="network_weights_bias_49" fromId="50" toId="4">
+</dataflow>
+<dataflow id="61" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_50" fromId="58" toId="5">
+</dataflow>
+<dataflow id="62" from="network_weights_bias_47" to="network_weights_bias_50" fromId="49" toId="5">
+</dataflow>
+<dataflow id="63" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_51" fromId="58" toId="6">
+</dataflow>
+<dataflow id="64" from="network_weights_bias_46" to="network_weights_bias_51" fromId="48" toId="6">
+</dataflow>
+<dataflow id="65" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_52" fromId="58" toId="7">
+</dataflow>
+<dataflow id="66" from="network_weights_bias_45" to="network_weights_bias_52" fromId="47" toId="7">
+</dataflow>
+<dataflow id="67" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_53" fromId="58" toId="8">
+</dataflow>
+<dataflow id="68" from="network_weights_bias_44" to="network_weights_bias_53" fromId="46" toId="8">
+</dataflow>
+<dataflow id="69" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_54" fromId="58" toId="9">
+</dataflow>
+<dataflow id="70" from="network_weights_bias_43" to="network_weights_bias_54" fromId="45" toId="9">
+</dataflow>
+<dataflow id="71" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_55" fromId="58" toId="10">
+</dataflow>
+<dataflow id="72" from="network_weights_bias_42" to="network_weights_bias_55" fromId="44" toId="10">
+</dataflow>
+<dataflow id="73" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_56" fromId="58" toId="11">
+</dataflow>
+<dataflow id="74" from="network_weights_bias_41" to="network_weights_bias_56" fromId="43" toId="11">
+</dataflow>
+<dataflow id="75" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_57" fromId="58" toId="12">
+</dataflow>
+<dataflow id="76" from="network_weights_bias_40" to="network_weights_bias_57" fromId="42" toId="12">
+</dataflow>
+<dataflow id="77" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_58" fromId="58" toId="13">
+</dataflow>
+<dataflow id="78" from="network_weights_bias_39" to="network_weights_bias_58" fromId="41" toId="13">
+</dataflow>
+<dataflow id="79" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_59" fromId="58" toId="14">
+</dataflow>
+<dataflow id="80" from="network_weights_bias_38" to="network_weights_bias_59" fromId="40" toId="14">
+</dataflow>
+<dataflow id="81" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_60" fromId="58" toId="15">
+</dataflow>
+<dataflow id="82" from="network_weights_bias_37" to="network_weights_bias_60" fromId="39" toId="15">
+</dataflow>
+<dataflow id="83" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_61" fromId="58" toId="16">
+</dataflow>
+<dataflow id="84" from="network_weights_bias_36" to="network_weights_bias_61" fromId="38" toId="16">
+</dataflow>
+<dataflow id="85" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_62" fromId="58" toId="17">
+</dataflow>
+<dataflow id="86" from="network_weights_bias_35" to="network_weights_bias_62" fromId="37" toId="17">
+</dataflow>
+<dataflow id="87" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_63" fromId="58" toId="18">
+</dataflow>
+<dataflow id="88" from="network_weights_bias_34" to="network_weights_bias_63" fromId="36" toId="18">
+</dataflow>
+<dataflow id="89" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_64" fromId="58" toId="19">
+</dataflow>
+<dataflow id="90" from="network_weights_bias_33" to="network_weights_bias_64" fromId="35" toId="19">
+</dataflow>
+<dataflow id="91" from="_ssdm_op_Read.ap_auto.i32" to="network_weights_bias_65" fromId="58" toId="20">
+</dataflow>
+<dataflow id="92" from="network_weights_bias" to="network_weights_bias_65" fromId="34" toId="20">
+</dataflow>
+<dataflow id="93" from="index_read" to="trunc_ln29" fromId="2" toId="21">
+</dataflow>
+<dataflow id="95" from="_ssdm_op_Mux.ap_auto.8i32.i3" to="tmp" fromId="94" toId="22">
+</dataflow>
+<dataflow id="96" from="network_weights_bias_65" to="tmp" fromId="20" toId="22">
+</dataflow>
+<dataflow id="97" from="network_weights_bias_64" to="tmp" fromId="19" toId="22">
+</dataflow>
+<dataflow id="98" from="network_weights_bias_63" to="tmp" fromId="18" toId="22">
+</dataflow>
+<dataflow id="99" from="network_weights_bias_62" to="tmp" fromId="17" toId="22">
+</dataflow>
+<dataflow id="100" from="network_weights_bias_61" to="tmp" fromId="16" toId="22">
+</dataflow>
+<dataflow id="101" from="network_weights_bias_60" to="tmp" fromId="15" toId="22">
+</dataflow>
+<dataflow id="102" from="network_weights_bias_59" to="tmp" fromId="14" toId="22">
+</dataflow>
+<dataflow id="103" from="network_weights_bias_58" to="tmp" fromId="13" toId="22">
+</dataflow>
+<dataflow id="104" from="trunc_ln29" to="tmp" fromId="21" toId="22">
+</dataflow>
+<dataflow id="105" from="_ssdm_op_Mux.ap_auto.8i32.i3" to="tmp_3" fromId="94" toId="23">
+</dataflow>
+<dataflow id="106" from="network_weights_bias_57" to="tmp_3" fromId="12" toId="23">
+</dataflow>
+<dataflow id="107" from="network_weights_bias_56" to="tmp_3" fromId="11" toId="23">
+</dataflow>
+<dataflow id="108" from="network_weights_bias_55" to="tmp_3" fromId="10" toId="23">
+</dataflow>
+<dataflow id="109" from="network_weights_bias_54" to="tmp_3" fromId="9" toId="23">
+</dataflow>
+<dataflow id="110" from="network_weights_bias_53" to="tmp_3" fromId="8" toId="23">
+</dataflow>
+<dataflow id="111" from="network_weights_bias_52" to="tmp_3" fromId="7" toId="23">
+</dataflow>
+<dataflow id="112" from="network_weights_bias_51" to="tmp_3" fromId="6" toId="23">
+</dataflow>
+<dataflow id="113" from="network_weights_bias_50" to="tmp_3" fromId="5" toId="23">
+</dataflow>
+<dataflow id="114" from="trunc_ln29" to="tmp_3" fromId="21" toId="23">
+</dataflow>
+<dataflow id="115" from="layer_read" to="trunc_ln26" fromId="3" toId="24">
+</dataflow>
+<dataflow id="116" from="trunc_ln26" to="icmp_ln26" fromId="24" toId="25">
+</dataflow>
+<dataflow id="118" from="StgValue_117" to="icmp_ln26" fromId="117" toId="25">
+</dataflow>
+<dataflow id="119" from="trunc_ln26" to="icmp_ln26_1" fromId="24" toId="26">
+</dataflow>
+<dataflow id="121" from="StgValue_120" to="icmp_ln26_1" fromId="120" toId="26">
+</dataflow>
+<dataflow id="122" from="trunc_ln26" to="icmp_ln26_2" fromId="24" toId="27">
+</dataflow>
+<dataflow id="124" from="StgValue_123" to="icmp_ln26_2" fromId="123" toId="27">
+</dataflow>
+<dataflow id="125" from="icmp_ln26_2" to="select_ln26" fromId="27" toId="28">
+</dataflow>
+<dataflow id="126" from="tmp" to="select_ln26" fromId="22" toId="28">
+</dataflow>
+<dataflow id="127" from="tmp_3" to="select_ln26" fromId="23" toId="28">
+</dataflow>
+<dataflow id="128" from="icmp_ln26_2" to="or_ln26" fromId="27" toId="29">
+</dataflow>
+<dataflow id="129" from="icmp_ln26_1" to="or_ln26" fromId="26" toId="29">
+</dataflow>
+<dataflow id="130" from="icmp_ln26" to="select_ln26_1" fromId="25" toId="30">
+</dataflow>
+<dataflow id="131" from="network_weights_bias_49" to="select_ln26_1" fromId="4" toId="30">
+</dataflow>
+<dataflow id="133" from="StgValue_132" to="select_ln26_1" fromId="132" toId="30">
+</dataflow>
+<dataflow id="134" from="or_ln26" to="select_ln26_2" fromId="29" toId="31">
+</dataflow>
+<dataflow id="135" from="select_ln26" to="select_ln26_2" fromId="28" toId="31">
+</dataflow>
+<dataflow id="136" from="select_ln26_1" to="select_ln26_2" fromId="30" toId="31">
+</dataflow>
+<dataflow id="137" from="select_ln26_2" to="ret_ln40" fromId="31" toId="32">
+</dataflow>
+<dataflow id="138" from="or_ln26" to="StgValue_1" fromId="29" toId="1">
+</dataflow>
+<dataflow id="139" from="icmp_ln26_2" to="StgValue_1" fromId="27" toId="1">
+</dataflow>
+</dataflows>
+
+
+</stg>

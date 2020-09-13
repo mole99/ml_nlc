@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vivado HLS Report for 'getWeight'
+================================================================
+* Date:           Sun Sep 13 15:46:33 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        network
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 0.10 us | 2.574 ns |  12.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      51|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       0|     123|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       0|     174|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     2060|   2800|  607200|  303600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|       0|   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |         Instance         |        Module        | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |network_top_mux_1cud_U23  |network_top_mux_1cud  |        0|      0|  0|  41|    0|
+    |network_top_mux_6dEe_U24  |network_top_mux_6dEe  |        0|      0|  0|  41|    0|
+    |network_top_mux_8eOg_U25  |network_top_mux_8eOg  |        0|      0|  0|  41|    0|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+    |Total                     |                      |        0|      0|  0| 123|    0|
+    +--------------------------+----------------------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |icmp_ln8_1_fu_990_p2     |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln8_2_fu_996_p2     |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln8_fu_984_p2       |   icmp   |      0|  0|   9|           2|           3|
+    |or_ln8_fu_1010_p2        |    or    |      0|  0|   2|           1|           1|
+    |ap_return                |  select  |      0|  0|   8|           1|           8|
+    |select_ln8_1_fu_1016_p3  |  select  |      0|  0|   8|           1|           8|
+    |select_ln8_fu_1002_p3    |  select  |      0|  0|   8|           1|           8|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0|  51|          10|          30|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+|ap_ready                  | out |    1| ap_ctrl_hs |         getWeight        | return value |
+|ap_return                 | out |    8| ap_ctrl_hs |         getWeight        | return value |
+|network_weights_weig      |  in |    8|   ap_none  |   network_weights_weig   |    scalar    |
+|network_weights_weig_175  |  in |    8|   ap_none  | network_weights_weig_175 |    scalar    |
+|network_weights_weig_176  |  in |    8|   ap_none  | network_weights_weig_176 |    scalar    |
+|network_weights_weig_177  |  in |    8|   ap_none  | network_weights_weig_177 |    scalar    |
+|network_weights_weig_178  |  in |    8|   ap_none  | network_weights_weig_178 |    scalar    |
+|network_weights_weig_179  |  in |    8|   ap_none  | network_weights_weig_179 |    scalar    |
+|network_weights_weig_180  |  in |    8|   ap_none  | network_weights_weig_180 |    scalar    |
+|network_weights_weig_181  |  in |    8|   ap_none  | network_weights_weig_181 |    scalar    |
+|network_weights_weig_182  |  in |    8|   ap_none  | network_weights_weig_182 |    scalar    |
+|network_weights_weig_183  |  in |    8|   ap_none  | network_weights_weig_183 |    scalar    |
+|network_weights_weig_184  |  in |    8|   ap_none  | network_weights_weig_184 |    scalar    |
+|network_weights_weig_185  |  in |    8|   ap_none  | network_weights_weig_185 |    scalar    |
+|network_weights_weig_186  |  in |    8|   ap_none  | network_weights_weig_186 |    scalar    |
+|network_weights_weig_187  |  in |    8|   ap_none  | network_weights_weig_187 |    scalar    |
+|network_weights_weig_188  |  in |    8|   ap_none  | network_weights_weig_188 |    scalar    |
+|network_weights_weig_189  |  in |    8|   ap_none  | network_weights_weig_189 |    scalar    |
+|network_weights_weig_190  |  in |    8|   ap_none  | network_weights_weig_190 |    scalar    |
+|network_weights_weig_191  |  in |    8|   ap_none  | network_weights_weig_191 |    scalar    |
+|network_weights_weig_192  |  in |    8|   ap_none  | network_weights_weig_192 |    scalar    |
+|network_weights_weig_193  |  in |    8|   ap_none  | network_weights_weig_193 |    scalar    |
+|network_weights_weig_194  |  in |    8|   ap_none  | network_weights_weig_194 |    scalar    |
+|network_weights_weig_195  |  in |    8|   ap_none  | network_weights_weig_195 |    scalar    |
+|network_weights_weig_196  |  in |    8|   ap_none  | network_weights_weig_196 |    scalar    |
+|network_weights_weig_197  |  in |    8|   ap_none  | network_weights_weig_197 |    scalar    |
+|network_weights_weig_198  |  in |    8|   ap_none  | network_weights_weig_198 |    scalar    |
+|network_weights_weig_199  |  in |    8|   ap_none  | network_weights_weig_199 |    scalar    |
+|network_weights_weig_200  |  in |    8|   ap_none  | network_weights_weig_200 |    scalar    |
+|network_weights_weig_201  |  in |    8|   ap_none  | network_weights_weig_201 |    scalar    |
+|network_weights_weig_202  |  in |    8|   ap_none  | network_weights_weig_202 |    scalar    |
+|network_weights_weig_203  |  in |    8|   ap_none  | network_weights_weig_203 |    scalar    |
+|network_weights_weig_204  |  in |    8|   ap_none  | network_weights_weig_204 |    scalar    |
+|network_weights_weig_205  |  in |    8|   ap_none  | network_weights_weig_205 |    scalar    |
+|network_weights_weig_206  |  in |    8|   ap_none  | network_weights_weig_206 |    scalar    |
+|network_weights_weig_207  |  in |    8|   ap_none  | network_weights_weig_207 |    scalar    |
+|network_weights_weig_208  |  in |    8|   ap_none  | network_weights_weig_208 |    scalar    |
+|network_weights_weig_209  |  in |    8|   ap_none  | network_weights_weig_209 |    scalar    |
+|network_weights_weig_210  |  in |    8|   ap_none  | network_weights_weig_210 |    scalar    |
+|network_weights_weig_211  |  in |    8|   ap_none  | network_weights_weig_211 |    scalar    |
+|network_weights_weig_212  |  in |    8|   ap_none  | network_weights_weig_212 |    scalar    |
+|network_weights_weig_213  |  in |    8|   ap_none  | network_weights_weig_213 |    scalar    |
+|network_weights_weig_214  |  in |    8|   ap_none  | network_weights_weig_214 |    scalar    |
+|network_weights_weig_215  |  in |    8|   ap_none  | network_weights_weig_215 |    scalar    |
+|network_weights_weig_216  |  in |    8|   ap_none  | network_weights_weig_216 |    scalar    |
+|network_weights_weig_217  |  in |    8|   ap_none  | network_weights_weig_217 |    scalar    |
+|network_weights_weig_218  |  in |    8|   ap_none  | network_weights_weig_218 |    scalar    |
+|network_weights_weig_219  |  in |    8|   ap_none  | network_weights_weig_219 |    scalar    |
+|network_weights_weig_220  |  in |    8|   ap_none  | network_weights_weig_220 |    scalar    |
+|network_weights_weig_221  |  in |    8|   ap_none  | network_weights_weig_221 |    scalar    |
+|network_weights_weig_222  |  in |    8|   ap_none  | network_weights_weig_222 |    scalar    |
+|network_weights_weig_223  |  in |    8|   ap_none  | network_weights_weig_223 |    scalar    |
+|network_weights_weig_224  |  in |    8|   ap_none  | network_weights_weig_224 |    scalar    |
+|network_weights_weig_225  |  in |    8|   ap_none  | network_weights_weig_225 |    scalar    |
+|network_weights_weig_226  |  in |    8|   ap_none  | network_weights_weig_226 |    scalar    |
+|network_weights_weig_227  |  in |    8|   ap_none  | network_weights_weig_227 |    scalar    |
+|network_weights_weig_228  |  in |    8|   ap_none  | network_weights_weig_228 |    scalar    |
+|network_weights_weig_229  |  in |    8|   ap_none  | network_weights_weig_229 |    scalar    |
+|network_weights_weig_230  |  in |    8|   ap_none  | network_weights_weig_230 |    scalar    |
+|network_weights_weig_231  |  in |    8|   ap_none  | network_weights_weig_231 |    scalar    |
+|network_weights_weig_232  |  in |    8|   ap_none  | network_weights_weig_232 |    scalar    |
+|network_weights_weig_233  |  in |    8|   ap_none  | network_weights_weig_233 |    scalar    |
+|network_weights_weig_234  |  in |    8|   ap_none  | network_weights_weig_234 |    scalar    |
+|network_weights_weig_235  |  in |    8|   ap_none  | network_weights_weig_235 |    scalar    |
+|network_weights_weig_236  |  in |    8|   ap_none  | network_weights_weig_236 |    scalar    |
+|network_weights_weig_237  |  in |    8|   ap_none  | network_weights_weig_237 |    scalar    |
+|network_weights_weig_238  |  in |    8|   ap_none  | network_weights_weig_238 |    scalar    |
+|network_weights_weig_239  |  in |    8|   ap_none  | network_weights_weig_239 |    scalar    |
+|network_weights_weig_240  |  in |    8|   ap_none  | network_weights_weig_240 |    scalar    |
+|network_weights_weig_241  |  in |    8|   ap_none  | network_weights_weig_241 |    scalar    |
+|network_weights_weig_242  |  in |    8|   ap_none  | network_weights_weig_242 |    scalar    |
+|network_weights_weig_243  |  in |    8|   ap_none  | network_weights_weig_243 |    scalar    |
+|network_weights_weig_244  |  in |    8|   ap_none  | network_weights_weig_244 |    scalar    |
+|network_weights_weig_245  |  in |    8|   ap_none  | network_weights_weig_245 |    scalar    |
+|network_weights_weig_246  |  in |    8|   ap_none  | network_weights_weig_246 |    scalar    |
+|network_weights_weig_247  |  in |    8|   ap_none  | network_weights_weig_247 |    scalar    |
+|network_weights_weig_248  |  in |    8|   ap_none  | network_weights_weig_248 |    scalar    |
+|network_weights_weig_249  |  in |    8|   ap_none  | network_weights_weig_249 |    scalar    |
+|network_weights_weig_250  |  in |    8|   ap_none  | network_weights_weig_250 |    scalar    |
+|network_weights_weig_251  |  in |    8|   ap_none  | network_weights_weig_251 |    scalar    |
+|network_weights_weig_252  |  in |    8|   ap_none  | network_weights_weig_252 |    scalar    |
+|network_weights_weig_253  |  in |    8|   ap_none  | network_weights_weig_253 |    scalar    |
+|network_weights_weig_254  |  in |    8|   ap_none  | network_weights_weig_254 |    scalar    |
+|network_weights_weig_255  |  in |    8|   ap_none  | network_weights_weig_255 |    scalar    |
+|network_weights_weig_256  |  in |    8|   ap_none  | network_weights_weig_256 |    scalar    |
+|network_weights_weig_257  |  in |    8|   ap_none  | network_weights_weig_257 |    scalar    |
+|network_weights_weig_258  |  in |    8|   ap_none  | network_weights_weig_258 |    scalar    |
+|network_weights_weig_259  |  in |    8|   ap_none  | network_weights_weig_259 |    scalar    |
+|network_weights_weig_260  |  in |    8|   ap_none  | network_weights_weig_260 |    scalar    |
+|network_weights_weig_261  |  in |    8|   ap_none  | network_weights_weig_261 |    scalar    |
+|layer                     |  in |    4|   ap_none  |           layer          |    scalar    |
+|index_0                   |  in |    4|   ap_none  |          index_0         |    scalar    |
+|index_1                   |  in |    4|   ap_none  |          index_1         |    scalar    |
++--------------------------+-----+-----+------------+--------------------------+--------------+
+

@@ -175,7 +175,6 @@ def exportNetwork(name):
 	# Create weight arrays
 	for i, layer in enumerate(sorted_layers):
 
-		
 		shape = interpreter.get_tensor(layer['weight_index']).shape
 		weights = interpreter.get_tensor(layer['weight_index']).tolist()
 
@@ -188,7 +187,6 @@ def exportNetwork(name):
 	# Create bias arrays
 	for i, layer in enumerate(sorted_layers):
 
-		
 		shape = interpreter.get_tensor(layer['bias_index']).shape
 		weights = interpreter.get_tensor(layer['bias_index']).tolist()
 
@@ -197,6 +195,36 @@ def exportNetwork(name):
 		print(weights)
 
 		out_file.write("const int32_t bias_{}[{}] = {};\n\n".format(i, shape[0], weights))
+
+
+	out_file.write("const uint16_t output_conversion_scale[] = {")
+
+	# Create output conversion scales
+	for i, layer in enumerate(sorted_layers):
+		
+		layer_output_scale = layer_details[layer['output_quantization_index']]['quantization_parameters']['scales'][0]
+		layer_bias_scale = layer_details[layer['bias_index']]['quantization_parameters']['scales'][0]
+		
+		layer_output_conversion_scale = int(round(layer_bias_scale / layer_output_scale * 2**17)) # Fixed point number
+
+		if i == (len(sorted_layers) - 1): 
+			out_file.write("{}}};\n".format(layer_output_conversion_scale))
+		else:
+			out_file.write("{}, ".format(layer_output_conversion_scale))
+	
+	out_file.write("const int8_t output_zero_point[] = {")
+
+	# Create output zero points
+	for i, layer in enumerate(sorted_layers):
+		
+		layer_output_zero_point = layer_details[layer['output_quantization_index']]['quantization_parameters']['zero_points'][0]
+		
+		if i == (len(sorted_layers) - 1): 
+			out_file.write("{}}};\n".format(layer_output_zero_point))
+		else:
+			out_file.write("{}, ".format(layer_output_zero_point))
+
+
 
 	out_file.write("\n")
 
@@ -296,8 +324,8 @@ def exportNetwork(name):
 	print("Output quantization: " + str(interpreter.get_output_details()[0]['quantization']))
 
 def main():
-	exportNetwork('model_post_quant_dchg')
-	exportNetwork('model_post_quant_chg')
+	exportNetwork('model_post_quant_8x8x1_dchg')
+	exportNetwork('model_post_quant_8x8x1_chg')
 
 
 if __name__ == "__main__":

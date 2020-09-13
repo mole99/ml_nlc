@@ -1,0 +1,1165 @@
+
+
+================================================================
+== Vivado HLS Report for 'getBias'
+================================================================
+* Date:           Sun Sep 13 15:46:33 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        network
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 0.10 us | 2.066 ns |  12.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|     123|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       0|      82|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       0|     205|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     2060|   2800|  607200|  303600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|       0|   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |network_top_mux_8bkb_U1  |network_top_mux_8bkb  |        0|      0|  0|  41|    0|
+    |network_top_mux_8bkb_U2  |network_top_mux_8bkb  |        0|      0|  0|  41|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |Total                    |                      |        0|      0|  0|  82|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |icmp_ln26_1_fu_224_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln26_2_fu_230_p2    |   icmp   |      0|  0|   8|           2|           1|
+    |icmp_ln26_fu_218_p2      |   icmp   |      0|  0|   9|           2|           3|
+    |or_ln26_fu_244_p2        |    or    |      0|  0|   2|           1|           1|
+    |ap_return                |  select  |      0|  0|  32|           1|          32|
+    |select_ln26_1_fu_250_p3  |  select  |      0|  0|  32|           1|          32|
+    |select_ln26_fu_236_p3    |  select  |      0|  0|  32|           1|          32|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0| 123|          10|         102|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_ready                 | out |    1| ap_ctrl_hs |         getBias         | return value |
+|ap_return                | out |   32| ap_ctrl_hs |         getBias         | return value |
+|network_weights_bias     |  in |   32|   ap_none  |   network_weights_bias  |    scalar    |
+|network_weights_bias_33  |  in |   32|   ap_none  | network_weights_bias_33 |    scalar    |
+|network_weights_bias_34  |  in |   32|   ap_none  | network_weights_bias_34 |    scalar    |
+|network_weights_bias_35  |  in |   32|   ap_none  | network_weights_bias_35 |    scalar    |
+|network_weights_bias_36  |  in |   32|   ap_none  | network_weights_bias_36 |    scalar    |
+|network_weights_bias_37  |  in |   32|   ap_none  | network_weights_bias_37 |    scalar    |
+|network_weights_bias_38  |  in |   32|   ap_none  | network_weights_bias_38 |    scalar    |
+|network_weights_bias_39  |  in |   32|   ap_none  | network_weights_bias_39 |    scalar    |
+|network_weights_bias_40  |  in |   32|   ap_none  | network_weights_bias_40 |    scalar    |
+|network_weights_bias_41  |  in |   32|   ap_none  | network_weights_bias_41 |    scalar    |
+|network_weights_bias_42  |  in |   32|   ap_none  | network_weights_bias_42 |    scalar    |
+|network_weights_bias_43  |  in |   32|   ap_none  | network_weights_bias_43 |    scalar    |
+|network_weights_bias_44  |  in |   32|   ap_none  | network_weights_bias_44 |    scalar    |
+|network_weights_bias_45  |  in |   32|   ap_none  | network_weights_bias_45 |    scalar    |
+|network_weights_bias_46  |  in |   32|   ap_none  | network_weights_bias_46 |    scalar    |
+|network_weights_bias_47  |  in |   32|   ap_none  | network_weights_bias_47 |    scalar    |
+|network_weights_bias_48  |  in |   32|   ap_none  | network_weights_bias_48 |    scalar    |
+|layer                    |  in |    4|   ap_none  |          layer          |    scalar    |
+|index                    |  in |    4|   ap_none  |          index          |    scalar    |
++-------------------------+-----+-----+------------+-------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 1
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.06>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%index_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %index)" [network/network_top.cpp:24]   --->   Operation 2 'read' 'index_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%layer_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %layer)" [network/network_top.cpp:24]   --->   Operation 3 'read' 'layer_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%network_weights_bias_49 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_48)" [network/network_top.cpp:24]   --->   Operation 4 'read' 'network_weights_bias_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%network_weights_bias_50 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_47)" [network/network_top.cpp:24]   --->   Operation 5 'read' 'network_weights_bias_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%network_weights_bias_51 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_46)" [network/network_top.cpp:24]   --->   Operation 6 'read' 'network_weights_bias_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%network_weights_bias_52 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_45)" [network/network_top.cpp:24]   --->   Operation 7 'read' 'network_weights_bias_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%network_weights_bias_53 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_44)" [network/network_top.cpp:24]   --->   Operation 8 'read' 'network_weights_bias_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%network_weights_bias_54 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_43)" [network/network_top.cpp:24]   --->   Operation 9 'read' 'network_weights_bias_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%network_weights_bias_55 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_42)" [network/network_top.cpp:24]   --->   Operation 10 'read' 'network_weights_bias_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%network_weights_bias_56 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_41)" [network/network_top.cpp:24]   --->   Operation 11 'read' 'network_weights_bias_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%network_weights_bias_57 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_40)" [network/network_top.cpp:24]   --->   Operation 12 'read' 'network_weights_bias_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%network_weights_bias_58 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_39)" [network/network_top.cpp:24]   --->   Operation 13 'read' 'network_weights_bias_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%network_weights_bias_59 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_38)" [network/network_top.cpp:24]   --->   Operation 14 'read' 'network_weights_bias_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%network_weights_bias_60 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_37)" [network/network_top.cpp:24]   --->   Operation 15 'read' 'network_weights_bias_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%network_weights_bias_61 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_36)" [network/network_top.cpp:24]   --->   Operation 16 'read' 'network_weights_bias_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%network_weights_bias_62 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_35)" [network/network_top.cpp:24]   --->   Operation 17 'read' 'network_weights_bias_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%network_weights_bias_63 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_34)" [network/network_top.cpp:24]   --->   Operation 18 'read' 'network_weights_bias_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%network_weights_bias_64 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_33)" [network/network_top.cpp:24]   --->   Operation 19 'read' 'network_weights_bias_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%network_weights_bias_65 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias)" [network/network_top.cpp:24]   --->   Operation 20 'read' 'network_weights_bias_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln29 = trunc i4 %index_read to i3" [network/network_top.cpp:29]   --->   Operation 21 'trunc' 'trunc_ln29' <Predicate = (or_ln26)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.45ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_65, i32 %network_weights_bias_64, i32 %network_weights_bias_63, i32 %network_weights_bias_62, i32 %network_weights_bias_61, i32 %network_weights_bias_60, i32 %network_weights_bias_59, i32 %network_weights_bias_58, i3 %trunc_ln29)" [network/network_top.cpp:29]   --->   Operation 22 'mux' 'tmp' <Predicate = (icmp_ln26_2 & or_ln26)> <Delay = 1.45> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (1.45ns)   --->   "%tmp_3 = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_57, i32 %network_weights_bias_56, i32 %network_weights_bias_55, i32 %network_weights_bias_54, i32 %network_weights_bias_53, i32 %network_weights_bias_52, i32 %network_weights_bias_51, i32 %network_weights_bias_50, i3 %trunc_ln29)" [network/network_top.cpp:32]   --->   Operation 23 'mux' 'tmp_3' <Predicate = (!icmp_ln26_2 & or_ln26)> <Delay = 1.45> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln26 = trunc i4 %layer_read to i2" [network/network_top.cpp:26]   --->   Operation 24 'trunc' 'trunc_ln26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.61ns)   --->   "%icmp_ln26 = icmp eq i2 %trunc_ln26, -2" [network/network_top.cpp:26]   --->   Operation 25 'icmp' 'icmp_ln26' <Predicate = (!or_ln26)> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.61ns)   --->   "%icmp_ln26_1 = icmp eq i2 %trunc_ln26, 1" [network/network_top.cpp:26]   --->   Operation 26 'icmp' 'icmp_ln26_1' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.61ns)   --->   "%icmp_ln26_2 = icmp eq i2 %trunc_ln26, 0" [network/network_top.cpp:26]   --->   Operation 27 'icmp' 'icmp_ln26_2' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node select_ln26_2)   --->   "%select_ln26 = select i1 %icmp_ln26_2, i32 %tmp, i32 %tmp_3" [network/network_top.cpp:26]   --->   Operation 28 'select' 'select_ln26' <Predicate = (or_ln26)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node select_ln26_2)   --->   "%or_ln26 = or i1 %icmp_ln26_2, %icmp_ln26_1" [network/network_top.cpp:26]   --->   Operation 29 'or' 'or_ln26' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln26_1 = select i1 %icmp_ln26, i32 %network_weights_bias_49, i32 0" [network/network_top.cpp:26]   --->   Operation 30 'select' 'select_ln26_1' <Predicate = (!or_ln26)> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln26_2 = select i1 %or_ln26, i32 %select_ln26, i32 %select_ln26_1" [network/network_top.cpp:26]   --->   Operation 31 'select' 'select_ln26_2' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "ret i32 %select_ln26_2" [network/network_top.cpp:40]   --->   Operation 32 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ network_weights_bias]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_33]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_34]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_35]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_36]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_37]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_38]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_39]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_40]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_41]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_42]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_43]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_44]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_45]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_46]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_47]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ network_weights_bias_48]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ layer]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ index]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+index_read              (read  ) [ 00]
+layer_read              (read  ) [ 00]
+network_weights_bias_49 (read  ) [ 00]
+network_weights_bias_50 (read  ) [ 00]
+network_weights_bias_51 (read  ) [ 00]
+network_weights_bias_52 (read  ) [ 00]
+network_weights_bias_53 (read  ) [ 00]
+network_weights_bias_54 (read  ) [ 00]
+network_weights_bias_55 (read  ) [ 00]
+network_weights_bias_56 (read  ) [ 00]
+network_weights_bias_57 (read  ) [ 00]
+network_weights_bias_58 (read  ) [ 00]
+network_weights_bias_59 (read  ) [ 00]
+network_weights_bias_60 (read  ) [ 00]
+network_weights_bias_61 (read  ) [ 00]
+network_weights_bias_62 (read  ) [ 00]
+network_weights_bias_63 (read  ) [ 00]
+network_weights_bias_64 (read  ) [ 00]
+network_weights_bias_65 (read  ) [ 00]
+trunc_ln29              (trunc ) [ 00]
+tmp                     (mux   ) [ 00]
+tmp_3                   (mux   ) [ 00]
+trunc_ln26              (trunc ) [ 00]
+icmp_ln26               (icmp  ) [ 00]
+icmp_ln26_1             (icmp  ) [ 00]
+icmp_ln26_2             (icmp  ) [ 01]
+select_ln26             (select) [ 00]
+or_ln26                 (or    ) [ 01]
+select_ln26_1           (select) [ 00]
+select_ln26_2           (select) [ 00]
+ret_ln40                (ret   ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="network_weights_bias">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="network_weights_bias_33">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_33"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="network_weights_bias_34">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_34"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="network_weights_bias_35">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_35"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="network_weights_bias_36">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_36"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="network_weights_bias_37">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_37"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="network_weights_bias_38">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_38"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="network_weights_bias_39">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_39"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="network_weights_bias_40">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_40"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="network_weights_bias_41">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_41"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="network_weights_bias_42">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_42"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="network_weights_bias_43">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_43"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="network_weights_bias_44">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_44"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="network_weights_bias_45">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_45"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="network_weights_bias_46">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_46"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="network_weights_bias_47">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_47"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="network_weights_bias_48">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="network_weights_bias_48"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="layer">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="index">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="index"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Mux.ap_auto.8i32.i3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="index_read_read_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="4" slack="0"/>
+<pin id="54" dir="0" index="1" bw="4" slack="0"/>
+<pin id="55" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="index_read/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="layer_read_read_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="4" slack="0"/>
+<pin id="60" dir="0" index="1" bw="4" slack="0"/>
+<pin id="61" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="layer_read/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="network_weights_bias_49_read_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="32" slack="0"/>
+<pin id="66" dir="0" index="1" bw="32" slack="0"/>
+<pin id="67" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_49/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="network_weights_bias_50_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="32" slack="0"/>
+<pin id="72" dir="0" index="1" bw="32" slack="0"/>
+<pin id="73" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_50/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="network_weights_bias_51_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="32" slack="0"/>
+<pin id="78" dir="0" index="1" bw="32" slack="0"/>
+<pin id="79" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_51/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="network_weights_bias_52_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="32" slack="0"/>
+<pin id="84" dir="0" index="1" bw="32" slack="0"/>
+<pin id="85" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_52/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="network_weights_bias_53_read_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="32" slack="0"/>
+<pin id="90" dir="0" index="1" bw="32" slack="0"/>
+<pin id="91" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_53/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="network_weights_bias_54_read_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="32" slack="0"/>
+<pin id="96" dir="0" index="1" bw="32" slack="0"/>
+<pin id="97" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_54/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="network_weights_bias_55_read_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="32" slack="0"/>
+<pin id="102" dir="0" index="1" bw="32" slack="0"/>
+<pin id="103" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_55/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="network_weights_bias_56_read_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="32" slack="0"/>
+<pin id="108" dir="0" index="1" bw="32" slack="0"/>
+<pin id="109" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_56/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="network_weights_bias_57_read_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="32" slack="0"/>
+<pin id="114" dir="0" index="1" bw="32" slack="0"/>
+<pin id="115" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_57/1 "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="network_weights_bias_58_read_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="32" slack="0"/>
+<pin id="120" dir="0" index="1" bw="32" slack="0"/>
+<pin id="121" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_58/1 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="network_weights_bias_59_read_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="32" slack="0"/>
+<pin id="126" dir="0" index="1" bw="32" slack="0"/>
+<pin id="127" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_59/1 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="network_weights_bias_60_read_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="32" slack="0"/>
+<pin id="132" dir="0" index="1" bw="32" slack="0"/>
+<pin id="133" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_60/1 "/>
+</bind>
+</comp>
+
+<comp id="136" class="1004" name="network_weights_bias_61_read_fu_136">
+<pin_list>
+<pin id="137" dir="0" index="0" bw="32" slack="0"/>
+<pin id="138" dir="0" index="1" bw="32" slack="0"/>
+<pin id="139" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_61/1 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="network_weights_bias_62_read_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="32" slack="0"/>
+<pin id="144" dir="0" index="1" bw="32" slack="0"/>
+<pin id="145" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_62/1 "/>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="network_weights_bias_63_read_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="32" slack="0"/>
+<pin id="150" dir="0" index="1" bw="32" slack="0"/>
+<pin id="151" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_63/1 "/>
+</bind>
+</comp>
+
+<comp id="154" class="1004" name="network_weights_bias_64_read_fu_154">
+<pin_list>
+<pin id="155" dir="0" index="0" bw="32" slack="0"/>
+<pin id="156" dir="0" index="1" bw="32" slack="0"/>
+<pin id="157" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_64/1 "/>
+</bind>
+</comp>
+
+<comp id="160" class="1004" name="network_weights_bias_65_read_fu_160">
+<pin_list>
+<pin id="161" dir="0" index="0" bw="32" slack="0"/>
+<pin id="162" dir="0" index="1" bw="32" slack="0"/>
+<pin id="163" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="network_weights_bias_65/1 "/>
+</bind>
+</comp>
+
+<comp id="166" class="1004" name="trunc_ln29_fu_166">
+<pin_list>
+<pin id="167" dir="0" index="0" bw="4" slack="0"/>
+<pin id="168" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln29/1 "/>
+</bind>
+</comp>
+
+<comp id="170" class="1004" name="tmp_fu_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="32" slack="0"/>
+<pin id="172" dir="0" index="1" bw="32" slack="0"/>
+<pin id="173" dir="0" index="2" bw="32" slack="0"/>
+<pin id="174" dir="0" index="3" bw="32" slack="0"/>
+<pin id="175" dir="0" index="4" bw="32" slack="0"/>
+<pin id="176" dir="0" index="5" bw="32" slack="0"/>
+<pin id="177" dir="0" index="6" bw="32" slack="0"/>
+<pin id="178" dir="0" index="7" bw="32" slack="0"/>
+<pin id="179" dir="0" index="8" bw="32" slack="0"/>
+<pin id="180" dir="0" index="9" bw="3" slack="0"/>
+<pin id="181" dir="1" index="10" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mux(1196) " fcode="mux"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="192" class="1004" name="tmp_3_fu_192">
+<pin_list>
+<pin id="193" dir="0" index="0" bw="32" slack="0"/>
+<pin id="194" dir="0" index="1" bw="32" slack="0"/>
+<pin id="195" dir="0" index="2" bw="32" slack="0"/>
+<pin id="196" dir="0" index="3" bw="32" slack="0"/>
+<pin id="197" dir="0" index="4" bw="32" slack="0"/>
+<pin id="198" dir="0" index="5" bw="32" slack="0"/>
+<pin id="199" dir="0" index="6" bw="32" slack="0"/>
+<pin id="200" dir="0" index="7" bw="32" slack="0"/>
+<pin id="201" dir="0" index="8" bw="32" slack="0"/>
+<pin id="202" dir="0" index="9" bw="3" slack="0"/>
+<pin id="203" dir="1" index="10" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mux(1196) " fcode="mux"/>
+<opset="tmp_3/1 "/>
+</bind>
+</comp>
+
+<comp id="214" class="1004" name="trunc_ln26_fu_214">
+<pin_list>
+<pin id="215" dir="0" index="0" bw="4" slack="0"/>
+<pin id="216" dir="1" index="1" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln26/1 "/>
+</bind>
+</comp>
+
+<comp id="218" class="1004" name="icmp_ln26_fu_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="2" slack="0"/>
+<pin id="220" dir="0" index="1" bw="2" slack="0"/>
+<pin id="221" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln26/1 "/>
+</bind>
+</comp>
+
+<comp id="224" class="1004" name="icmp_ln26_1_fu_224">
+<pin_list>
+<pin id="225" dir="0" index="0" bw="2" slack="0"/>
+<pin id="226" dir="0" index="1" bw="2" slack="0"/>
+<pin id="227" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln26_1/1 "/>
+</bind>
+</comp>
+
+<comp id="230" class="1004" name="icmp_ln26_2_fu_230">
+<pin_list>
+<pin id="231" dir="0" index="0" bw="2" slack="0"/>
+<pin id="232" dir="0" index="1" bw="2" slack="0"/>
+<pin id="233" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln26_2/1 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1004" name="select_ln26_fu_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="1" slack="0"/>
+<pin id="238" dir="0" index="1" bw="32" slack="0"/>
+<pin id="239" dir="0" index="2" bw="32" slack="0"/>
+<pin id="240" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln26/1 "/>
+</bind>
+</comp>
+
+<comp id="244" class="1004" name="or_ln26_fu_244">
+<pin_list>
+<pin id="245" dir="0" index="0" bw="1" slack="0"/>
+<pin id="246" dir="0" index="1" bw="1" slack="0"/>
+<pin id="247" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="or_ln26/1 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1004" name="select_ln26_1_fu_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="1" slack="0"/>
+<pin id="252" dir="0" index="1" bw="32" slack="0"/>
+<pin id="253" dir="0" index="2" bw="32" slack="0"/>
+<pin id="254" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln26_1/1 "/>
+</bind>
+</comp>
+
+<comp id="258" class="1004" name="select_ln26_2_fu_258">
+<pin_list>
+<pin id="259" dir="0" index="0" bw="1" slack="0"/>
+<pin id="260" dir="0" index="1" bw="32" slack="0"/>
+<pin id="261" dir="0" index="2" bw="32" slack="0"/>
+<pin id="262" dir="1" index="3" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln26_2/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="56"><net_src comp="38" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="57"><net_src comp="36" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="62"><net_src comp="38" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="63"><net_src comp="34" pin="0"/><net_sink comp="58" pin=1"/></net>
+
+<net id="68"><net_src comp="40" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="69"><net_src comp="32" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="74"><net_src comp="40" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="30" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="40" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="28" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="40" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="26" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="40" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="24" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="98"><net_src comp="40" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="99"><net_src comp="22" pin="0"/><net_sink comp="94" pin=1"/></net>
+
+<net id="104"><net_src comp="40" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="105"><net_src comp="20" pin="0"/><net_sink comp="100" pin=1"/></net>
+
+<net id="110"><net_src comp="40" pin="0"/><net_sink comp="106" pin=0"/></net>
+
+<net id="111"><net_src comp="18" pin="0"/><net_sink comp="106" pin=1"/></net>
+
+<net id="116"><net_src comp="40" pin="0"/><net_sink comp="112" pin=0"/></net>
+
+<net id="117"><net_src comp="16" pin="0"/><net_sink comp="112" pin=1"/></net>
+
+<net id="122"><net_src comp="40" pin="0"/><net_sink comp="118" pin=0"/></net>
+
+<net id="123"><net_src comp="14" pin="0"/><net_sink comp="118" pin=1"/></net>
+
+<net id="128"><net_src comp="40" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="129"><net_src comp="12" pin="0"/><net_sink comp="124" pin=1"/></net>
+
+<net id="134"><net_src comp="40" pin="0"/><net_sink comp="130" pin=0"/></net>
+
+<net id="135"><net_src comp="10" pin="0"/><net_sink comp="130" pin=1"/></net>
+
+<net id="140"><net_src comp="40" pin="0"/><net_sink comp="136" pin=0"/></net>
+
+<net id="141"><net_src comp="8" pin="0"/><net_sink comp="136" pin=1"/></net>
+
+<net id="146"><net_src comp="40" pin="0"/><net_sink comp="142" pin=0"/></net>
+
+<net id="147"><net_src comp="6" pin="0"/><net_sink comp="142" pin=1"/></net>
+
+<net id="152"><net_src comp="40" pin="0"/><net_sink comp="148" pin=0"/></net>
+
+<net id="153"><net_src comp="4" pin="0"/><net_sink comp="148" pin=1"/></net>
+
+<net id="158"><net_src comp="40" pin="0"/><net_sink comp="154" pin=0"/></net>
+
+<net id="159"><net_src comp="2" pin="0"/><net_sink comp="154" pin=1"/></net>
+
+<net id="164"><net_src comp="40" pin="0"/><net_sink comp="160" pin=0"/></net>
+
+<net id="165"><net_src comp="0" pin="0"/><net_sink comp="160" pin=1"/></net>
+
+<net id="169"><net_src comp="52" pin="2"/><net_sink comp="166" pin=0"/></net>
+
+<net id="182"><net_src comp="42" pin="0"/><net_sink comp="170" pin=0"/></net>
+
+<net id="183"><net_src comp="160" pin="2"/><net_sink comp="170" pin=1"/></net>
+
+<net id="184"><net_src comp="154" pin="2"/><net_sink comp="170" pin=2"/></net>
+
+<net id="185"><net_src comp="148" pin="2"/><net_sink comp="170" pin=3"/></net>
+
+<net id="186"><net_src comp="142" pin="2"/><net_sink comp="170" pin=4"/></net>
+
+<net id="187"><net_src comp="136" pin="2"/><net_sink comp="170" pin=5"/></net>
+
+<net id="188"><net_src comp="130" pin="2"/><net_sink comp="170" pin=6"/></net>
+
+<net id="189"><net_src comp="124" pin="2"/><net_sink comp="170" pin=7"/></net>
+
+<net id="190"><net_src comp="118" pin="2"/><net_sink comp="170" pin=8"/></net>
+
+<net id="191"><net_src comp="166" pin="1"/><net_sink comp="170" pin=9"/></net>
+
+<net id="204"><net_src comp="42" pin="0"/><net_sink comp="192" pin=0"/></net>
+
+<net id="205"><net_src comp="112" pin="2"/><net_sink comp="192" pin=1"/></net>
+
+<net id="206"><net_src comp="106" pin="2"/><net_sink comp="192" pin=2"/></net>
+
+<net id="207"><net_src comp="100" pin="2"/><net_sink comp="192" pin=3"/></net>
+
+<net id="208"><net_src comp="94" pin="2"/><net_sink comp="192" pin=4"/></net>
+
+<net id="209"><net_src comp="88" pin="2"/><net_sink comp="192" pin=5"/></net>
+
+<net id="210"><net_src comp="82" pin="2"/><net_sink comp="192" pin=6"/></net>
+
+<net id="211"><net_src comp="76" pin="2"/><net_sink comp="192" pin=7"/></net>
+
+<net id="212"><net_src comp="70" pin="2"/><net_sink comp="192" pin=8"/></net>
+
+<net id="213"><net_src comp="166" pin="1"/><net_sink comp="192" pin=9"/></net>
+
+<net id="217"><net_src comp="58" pin="2"/><net_sink comp="214" pin=0"/></net>
+
+<net id="222"><net_src comp="214" pin="1"/><net_sink comp="218" pin=0"/></net>
+
+<net id="223"><net_src comp="44" pin="0"/><net_sink comp="218" pin=1"/></net>
+
+<net id="228"><net_src comp="214" pin="1"/><net_sink comp="224" pin=0"/></net>
+
+<net id="229"><net_src comp="46" pin="0"/><net_sink comp="224" pin=1"/></net>
+
+<net id="234"><net_src comp="214" pin="1"/><net_sink comp="230" pin=0"/></net>
+
+<net id="235"><net_src comp="48" pin="0"/><net_sink comp="230" pin=1"/></net>
+
+<net id="241"><net_src comp="230" pin="2"/><net_sink comp="236" pin=0"/></net>
+
+<net id="242"><net_src comp="170" pin="10"/><net_sink comp="236" pin=1"/></net>
+
+<net id="243"><net_src comp="192" pin="10"/><net_sink comp="236" pin=2"/></net>
+
+<net id="248"><net_src comp="230" pin="2"/><net_sink comp="244" pin=0"/></net>
+
+<net id="249"><net_src comp="224" pin="2"/><net_sink comp="244" pin=1"/></net>
+
+<net id="255"><net_src comp="218" pin="2"/><net_sink comp="250" pin=0"/></net>
+
+<net id="256"><net_src comp="64" pin="2"/><net_sink comp="250" pin=1"/></net>
+
+<net id="257"><net_src comp="50" pin="0"/><net_sink comp="250" pin=2"/></net>
+
+<net id="263"><net_src comp="244" pin="2"/><net_sink comp="258" pin=0"/></net>
+
+<net id="264"><net_src comp="236" pin="3"/><net_sink comp="258" pin=1"/></net>
+
+<net id="265"><net_src comp="250" pin="3"/><net_sink comp="258" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: getBias : network_weights_bias | {1 }
+	Port: getBias : network_weights_bias_33 | {1 }
+	Port: getBias : network_weights_bias_34 | {1 }
+	Port: getBias : network_weights_bias_35 | {1 }
+	Port: getBias : network_weights_bias_36 | {1 }
+	Port: getBias : network_weights_bias_37 | {1 }
+	Port: getBias : network_weights_bias_38 | {1 }
+	Port: getBias : network_weights_bias_39 | {1 }
+	Port: getBias : network_weights_bias_40 | {1 }
+	Port: getBias : network_weights_bias_41 | {1 }
+	Port: getBias : network_weights_bias_42 | {1 }
+	Port: getBias : network_weights_bias_43 | {1 }
+	Port: getBias : network_weights_bias_44 | {1 }
+	Port: getBias : network_weights_bias_45 | {1 }
+	Port: getBias : network_weights_bias_46 | {1 }
+	Port: getBias : network_weights_bias_47 | {1 }
+	Port: getBias : network_weights_bias_48 | {1 }
+	Port: getBias : layer | {1 }
+	Port: getBias : index | {1 }
+  - Chain level:
+	State 1
+		tmp : 1
+		tmp_3 : 1
+		icmp_ln26 : 1
+		icmp_ln26_1 : 1
+		icmp_ln26_2 : 1
+		select_ln26 : 2
+		or_ln26 : 2
+		select_ln26_1 : 2
+		select_ln26_2 : 2
+		ret_ln40 : 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------|---------|---------|
+| Operation|           Functional Unit           |    FF   |   LUT   |
+|----------|-------------------------------------|---------|---------|
+|          |          select_ln26_fu_236         |    0    |    32   |
+|  select  |         select_ln26_1_fu_250        |    0    |    32   |
+|          |         select_ln26_2_fu_258        |    0    |    32   |
+|----------|-------------------------------------|---------|---------|
+|    mux   |              tmp_fu_170             |    0    |    41   |
+|          |             tmp_3_fu_192            |    0    |    41   |
+|----------|-------------------------------------|---------|---------|
+|          |           icmp_ln26_fu_218          |    0    |    8    |
+|   icmp   |          icmp_ln26_1_fu_224         |    0    |    8    |
+|          |          icmp_ln26_2_fu_230         |    0    |    8    |
+|----------|-------------------------------------|---------|---------|
+|    or    |            or_ln26_fu_244           |    0    |    2    |
+|----------|-------------------------------------|---------|---------|
+|          |        index_read_read_fu_52        |    0    |    0    |
+|          |        layer_read_read_fu_58        |    0    |    0    |
+|          |  network_weights_bias_49_read_fu_64 |    0    |    0    |
+|          |  network_weights_bias_50_read_fu_70 |    0    |    0    |
+|          |  network_weights_bias_51_read_fu_76 |    0    |    0    |
+|          |  network_weights_bias_52_read_fu_82 |    0    |    0    |
+|          |  network_weights_bias_53_read_fu_88 |    0    |    0    |
+|          |  network_weights_bias_54_read_fu_94 |    0    |    0    |
+|          | network_weights_bias_55_read_fu_100 |    0    |    0    |
+|   read   | network_weights_bias_56_read_fu_106 |    0    |    0    |
+|          | network_weights_bias_57_read_fu_112 |    0    |    0    |
+|          | network_weights_bias_58_read_fu_118 |    0    |    0    |
+|          | network_weights_bias_59_read_fu_124 |    0    |    0    |
+|          | network_weights_bias_60_read_fu_130 |    0    |    0    |
+|          | network_weights_bias_61_read_fu_136 |    0    |    0    |
+|          | network_weights_bias_62_read_fu_142 |    0    |    0    |
+|          | network_weights_bias_63_read_fu_148 |    0    |    0    |
+|          | network_weights_bias_64_read_fu_154 |    0    |    0    |
+|          | network_weights_bias_65_read_fu_160 |    0    |    0    |
+|----------|-------------------------------------|---------|---------|
+|   trunc  |          trunc_ln29_fu_166          |    0    |    0    |
+|          |          trunc_ln26_fu_214          |    0    |    0    |
+|----------|-------------------------------------|---------|---------|
+|   Total  |                                     |    0    |   204   |
+|----------|-------------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   204  |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |    -   |    -   |
++-----------+--------+--------+
+|   Total   |    0   |   204  |
++-----------+--------+--------+

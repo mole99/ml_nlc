@@ -21,13 +21,12 @@ sys.path.append('../')
 from TrainingData import training_data
 
 global_configuration = {
-	'training_data_path' : '../TrainingData/ideal_dchg.csv',
+	'training_data_path' : '../TrainingData/ideal_chg.csv',
 	'omit_saturated_values' : True,
 	'batch_size' : 64,
-	'num_epochs' : 500,
+	'num_epochs' : 300,
 	'early_stopping' : False,
 	'patience' : 8,
-	'num_iterations_per_config' : 3,
 	'relu_max_value' : None,
 	'relu_negative_slope' : 0.0,
 	'verbose' : True,
@@ -212,10 +211,9 @@ def evaluate_model(interpreter):
 def main():
 	
 	layers = []
-	layers.append(keras.layers.Dense(16, activation='relu', use_bias=True, name='dense_0', input_shape=(2,)))
+	layers.append(keras.layers.Dense(8, activation='relu', use_bias=True, name='dense_0', input_shape=(2,)))
 	layers.append(keras.layers.Dense(8, activation='relu', use_bias=True, name='dense_1'))
-	layers.append(keras.layers.Dense(4, activation='relu', use_bias=True, name='dense_2'))
-	layers.append(keras.layers.Dense(1, activation='linear', use_bias=True, name='dense_3'))
+	layers.append(keras.layers.Dense(1, activation='linear', use_bias=True, name='dense_2'))
 	model = keras.models.Sequential(layers)
 	
 	#model = network.getSequential_model([16, 8, 4, 1], relu_max_value=global_configuration['relu_max_value'], relu_negative_slope = global_configuration['relu_negative_slope'])

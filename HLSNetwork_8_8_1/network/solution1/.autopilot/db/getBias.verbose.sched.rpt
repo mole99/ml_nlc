@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vivado HLS Report for 'getBias'
+================================================================
+* Date:           Sun Sep 13 15:46:28 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        network
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 0.10 us | 2.066 ns |  12.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.06>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%index_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %index)" [network/network_top.cpp:24]   --->   Operation 2 'read' 'index_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%layer_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %layer)" [network/network_top.cpp:24]   --->   Operation 3 'read' 'layer_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%network_weights_bias_49 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_48)" [network/network_top.cpp:24]   --->   Operation 4 'read' 'network_weights_bias_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%network_weights_bias_50 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_47)" [network/network_top.cpp:24]   --->   Operation 5 'read' 'network_weights_bias_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%network_weights_bias_51 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_46)" [network/network_top.cpp:24]   --->   Operation 6 'read' 'network_weights_bias_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%network_weights_bias_52 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_45)" [network/network_top.cpp:24]   --->   Operation 7 'read' 'network_weights_bias_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%network_weights_bias_53 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_44)" [network/network_top.cpp:24]   --->   Operation 8 'read' 'network_weights_bias_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%network_weights_bias_54 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_43)" [network/network_top.cpp:24]   --->   Operation 9 'read' 'network_weights_bias_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%network_weights_bias_55 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_42)" [network/network_top.cpp:24]   --->   Operation 10 'read' 'network_weights_bias_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%network_weights_bias_56 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_41)" [network/network_top.cpp:24]   --->   Operation 11 'read' 'network_weights_bias_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%network_weights_bias_57 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_40)" [network/network_top.cpp:24]   --->   Operation 12 'read' 'network_weights_bias_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%network_weights_bias_58 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_39)" [network/network_top.cpp:24]   --->   Operation 13 'read' 'network_weights_bias_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%network_weights_bias_59 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_38)" [network/network_top.cpp:24]   --->   Operation 14 'read' 'network_weights_bias_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%network_weights_bias_60 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_37)" [network/network_top.cpp:24]   --->   Operation 15 'read' 'network_weights_bias_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%network_weights_bias_61 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_36)" [network/network_top.cpp:24]   --->   Operation 16 'read' 'network_weights_bias_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%network_weights_bias_62 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_35)" [network/network_top.cpp:24]   --->   Operation 17 'read' 'network_weights_bias_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%network_weights_bias_63 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_34)" [network/network_top.cpp:24]   --->   Operation 18 'read' 'network_weights_bias_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%network_weights_bias_64 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias_33)" [network/network_top.cpp:24]   --->   Operation 19 'read' 'network_weights_bias_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%network_weights_bias_65 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %network_weights_bias)" [network/network_top.cpp:24]   --->   Operation 20 'read' 'network_weights_bias_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln29 = trunc i4 %index_read to i3" [network/network_top.cpp:29]   --->   Operation 21 'trunc' 'trunc_ln29' <Predicate = (or_ln26)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.45ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_65, i32 %network_weights_bias_64, i32 %network_weights_bias_63, i32 %network_weights_bias_62, i32 %network_weights_bias_61, i32 %network_weights_bias_60, i32 %network_weights_bias_59, i32 %network_weights_bias_58, i3 %trunc_ln29)" [network/network_top.cpp:29]   --->   Operation 22 'mux' 'tmp' <Predicate = (icmp_ln26_2 & or_ln26)> <Delay = 1.45> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (1.45ns)   --->   "%tmp_3 = call i32 @_ssdm_op_Mux.ap_auto.8i32.i3(i32 %network_weights_bias_57, i32 %network_weights_bias_56, i32 %network_weights_bias_55, i32 %network_weights_bias_54, i32 %network_weights_bias_53, i32 %network_weights_bias_52, i32 %network_weights_bias_51, i32 %network_weights_bias_50, i3 %trunc_ln29)" [network/network_top.cpp:32]   --->   Operation 23 'mux' 'tmp_3' <Predicate = (!icmp_ln26_2 & or_ln26)> <Delay = 1.45> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln26 = trunc i4 %layer_read to i2" [network/network_top.cpp:26]   --->   Operation 24 'trunc' 'trunc_ln26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.61ns)   --->   "%icmp_ln26 = icmp eq i2 %trunc_ln26, -2" [network/network_top.cpp:26]   --->   Operation 25 'icmp' 'icmp_ln26' <Predicate = (!or_ln26)> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.61ns)   --->   "%icmp_ln26_1 = icmp eq i2 %trunc_ln26, 1" [network/network_top.cpp:26]   --->   Operation 26 'icmp' 'icmp_ln26_1' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.61ns)   --->   "%icmp_ln26_2 = icmp eq i2 %trunc_ln26, 0" [network/network_top.cpp:26]   --->   Operation 27 'icmp' 'icmp_ln26_2' <Predicate = true> <Delay = 0.61> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node select_ln26_2)   --->   "%select_ln26 = select i1 %icmp_ln26_2, i32 %tmp, i32 %tmp_3" [network/network_top.cpp:26]   --->   Operation 28 'select' 'select_ln26' <Predicate = (or_ln26)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node select_ln26_2)   --->   "%or_ln26 = or i1 %icmp_ln26_2, %icmp_ln26_1" [network/network_top.cpp:26]   --->   Operation 29 'or' 'or_ln26' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln26_1 = select i1 %icmp_ln26, i32 %network_weights_bias_49, i32 0" [network/network_top.cpp:26]   --->   Operation 30 'select' 'select_ln26_1' <Predicate = (!or_ln26)> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.61ns) (out node of the LUT)   --->   "%select_ln26_2 = select i1 %or_ln26, i32 %select_ln26, i32 %select_ln26_1" [network/network_top.cpp:26]   --->   Operation 31 'select' 'select_ln26_2' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "ret i32 %select_ln26_2" [network/network_top.cpp:40]   --->   Operation 32 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 100ns, clock uncertainty: 12.5ns.
+
+ <State 1>: 2.07ns
+The critical path consists of the following:
+	wire read on port 'index' (network/network_top.cpp:24) [20]  (0 ns)
+	'mux' operation ('tmp', network/network_top.cpp:29) [40]  (1.45 ns)
+	'select' operation ('select_ln26', network/network_top.cpp:26) [46]  (0 ns)
+	'select' operation ('select_ln26_2', network/network_top.cpp:26) [49]  (0.616 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

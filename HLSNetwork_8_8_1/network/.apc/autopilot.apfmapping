@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="network_top.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/network_top.h"/>
+    <originFiles name="network_top.cpp" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/network_top.cpp"/>
+    <originFiles name="model_post_quant_dchg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/networks/model_post_quant_dchg.h"/>
+    <originFiles name="model_post_quant_chg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/networks/model_post_quant_chg.h"/>
+  </source>
+  <testbench>
+    <originFiles name="network_tb.cpp" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/network_tb.cpp"/>
+    <originFiles name="ideal_dchg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/test_data/ideal_dchg.h"/>
+    <originFiles name="ideal_chg.h" path="/home/leo/Nextcloud/Fachhochschule/Praktikum/github/ml_nlc/HLSNetwork_8_8_1/network/test_data/ideal_chg.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

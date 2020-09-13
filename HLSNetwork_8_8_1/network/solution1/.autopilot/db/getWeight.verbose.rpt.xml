@@ -1,0 +1,203 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'getWeight'" level="0">
+<item name = "Date">Sun Sep 13 15:46:33 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">network</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx485t-ffg1157-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">0.10 us, 2.574 ns, 12.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 51, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 123, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">2060, 2800, 607200, 303600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="network_top_mux_1cud_U23">network_top_mux_1cud, 0, 0, 0, 41, 0</column>
+<column name="network_top_mux_6dEe_U24">network_top_mux_6dEe, 0, 0, 0, 41, 0</column>
+<column name="network_top_mux_8eOg_U25">network_top_mux_8eOg, 0, 0, 0, 41, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="icmp_ln8_1_fu_990_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln8_2_fu_996_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln8_fu_984_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="or_ln8_fu_1010_p2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_return">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln8_1_fu_1016_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln8_fu_1002_p3">select, 0, 0, 8, 1, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_ready">out, 1, ap_ctrl_hs, getWeight, return value</column>
+<column name="ap_return">out, 8, ap_ctrl_hs, getWeight, return value</column>
+<column name="network_weights_weig">in, 8, ap_none, network_weights_weig, scalar</column>
+<column name="network_weights_weig_175">in, 8, ap_none, network_weights_weig_175, scalar</column>
+<column name="network_weights_weig_176">in, 8, ap_none, network_weights_weig_176, scalar</column>
+<column name="network_weights_weig_177">in, 8, ap_none, network_weights_weig_177, scalar</column>
+<column name="network_weights_weig_178">in, 8, ap_none, network_weights_weig_178, scalar</column>
+<column name="network_weights_weig_179">in, 8, ap_none, network_weights_weig_179, scalar</column>
+<column name="network_weights_weig_180">in, 8, ap_none, network_weights_weig_180, scalar</column>
+<column name="network_weights_weig_181">in, 8, ap_none, network_weights_weig_181, scalar</column>
+<column name="network_weights_weig_182">in, 8, ap_none, network_weights_weig_182, scalar</column>
+<column name="network_weights_weig_183">in, 8, ap_none, network_weights_weig_183, scalar</column>
+<column name="network_weights_weig_184">in, 8, ap_none, network_weights_weig_184, scalar</column>
+<column name="network_weights_weig_185">in, 8, ap_none, network_weights_weig_185, scalar</column>
+<column name="network_weights_weig_186">in, 8, ap_none, network_weights_weig_186, scalar</column>
+<column name="network_weights_weig_187">in, 8, ap_none, network_weights_weig_187, scalar</column>
+<column name="network_weights_weig_188">in, 8, ap_none, network_weights_weig_188, scalar</column>
+<column name="network_weights_weig_189">in, 8, ap_none, network_weights_weig_189, scalar</column>
+<column name="network_weights_weig_190">in, 8, ap_none, network_weights_weig_190, scalar</column>
+<column name="network_weights_weig_191">in, 8, ap_none, network_weights_weig_191, scalar</column>
+<column name="network_weights_weig_192">in, 8, ap_none, network_weights_weig_192, scalar</column>
+<column name="network_weights_weig_193">in, 8, ap_none, network_weights_weig_193, scalar</column>
+<column name="network_weights_weig_194">in, 8, ap_none, network_weights_weig_194, scalar</column>
+<column name="network_weights_weig_195">in, 8, ap_none, network_weights_weig_195, scalar</column>
+<column name="network_weights_weig_196">in, 8, ap_none, network_weights_weig_196, scalar</column>
+<column name="network_weights_weig_197">in, 8, ap_none, network_weights_weig_197, scalar</column>
+<column name="network_weights_weig_198">in, 8, ap_none, network_weights_weig_198, scalar</column>
+<column name="network_weights_weig_199">in, 8, ap_none, network_weights_weig_199, scalar</column>
+<column name="network_weights_weig_200">in, 8, ap_none, network_weights_weig_200, scalar</column>
+<column name="network_weights_weig_201">in, 8, ap_none, network_weights_weig_201, scalar</column>
+<column name="network_weights_weig_202">in, 8, ap_none, network_weights_weig_202, scalar</column>
+<column name="network_weights_weig_203">in, 8, ap_none, network_weights_weig_203, scalar</column>
+<column name="network_weights_weig_204">in, 8, ap_none, network_weights_weig_204, scalar</column>
+<column name="network_weights_weig_205">in, 8, ap_none, network_weights_weig_205, scalar</column>
+<column name="network_weights_weig_206">in, 8, ap_none, network_weights_weig_206, scalar</column>
+<column name="network_weights_weig_207">in, 8, ap_none, network_weights_weig_207, scalar</column>
+<column name="network_weights_weig_208">in, 8, ap_none, network_weights_weig_208, scalar</column>
+<column name="network_weights_weig_209">in, 8, ap_none, network_weights_weig_209, scalar</column>
+<column name="network_weights_weig_210">in, 8, ap_none, network_weights_weig_210, scalar</column>
+<column name="network_weights_weig_211">in, 8, ap_none, network_weights_weig_211, scalar</column>
+<column name="network_weights_weig_212">in, 8, ap_none, network_weights_weig_212, scalar</column>
+<column name="network_weights_weig_213">in, 8, ap_none, network_weights_weig_213, scalar</column>
+<column name="network_weights_weig_214">in, 8, ap_none, network_weights_weig_214, scalar</column>
+<column name="network_weights_weig_215">in, 8, ap_none, network_weights_weig_215, scalar</column>
+<column name="network_weights_weig_216">in, 8, ap_none, network_weights_weig_216, scalar</column>
+<column name="network_weights_weig_217">in, 8, ap_none, network_weights_weig_217, scalar</column>
+<column name="network_weights_weig_218">in, 8, ap_none, network_weights_weig_218, scalar</column>
+<column name="network_weights_weig_219">in, 8, ap_none, network_weights_weig_219, scalar</column>
+<column name="network_weights_weig_220">in, 8, ap_none, network_weights_weig_220, scalar</column>
+<column name="network_weights_weig_221">in, 8, ap_none, network_weights_weig_221, scalar</column>
+<column name="network_weights_weig_222">in, 8, ap_none, network_weights_weig_222, scalar</column>
+<column name="network_weights_weig_223">in, 8, ap_none, network_weights_weig_223, scalar</column>
+<column name="network_weights_weig_224">in, 8, ap_none, network_weights_weig_224, scalar</column>
+<column name="network_weights_weig_225">in, 8, ap_none, network_weights_weig_225, scalar</column>
+<column name="network_weights_weig_226">in, 8, ap_none, network_weights_weig_226, scalar</column>
+<column name="network_weights_weig_227">in, 8, ap_none, network_weights_weig_227, scalar</column>
+<column name="network_weights_weig_228">in, 8, ap_none, network_weights_weig_228, scalar</column>
+<column name="network_weights_weig_229">in, 8, ap_none, network_weights_weig_229, scalar</column>
+<column name="network_weights_weig_230">in, 8, ap_none, network_weights_weig_230, scalar</column>
+<column name="network_weights_weig_231">in, 8, ap_none, network_weights_weig_231, scalar</column>
+<column name="network_weights_weig_232">in, 8, ap_none, network_weights_weig_232, scalar</column>
+<column name="network_weights_weig_233">in, 8, ap_none, network_weights_weig_233, scalar</column>
+<column name="network_weights_weig_234">in, 8, ap_none, network_weights_weig_234, scalar</column>
+<column name="network_weights_weig_235">in, 8, ap_none, network_weights_weig_235, scalar</column>
+<column name="network_weights_weig_236">in, 8, ap_none, network_weights_weig_236, scalar</column>
+<column name="network_weights_weig_237">in, 8, ap_none, network_weights_weig_237, scalar</column>
+<column name="network_weights_weig_238">in, 8, ap_none, network_weights_weig_238, scalar</column>
+<column name="network_weights_weig_239">in, 8, ap_none, network_weights_weig_239, scalar</column>
+<column name="network_weights_weig_240">in, 8, ap_none, network_weights_weig_240, scalar</column>
+<column name="network_weights_weig_241">in, 8, ap_none, network_weights_weig_241, scalar</column>
+<column name="network_weights_weig_242">in, 8, ap_none, network_weights_weig_242, scalar</column>
+<column name="network_weights_weig_243">in, 8, ap_none, network_weights_weig_243, scalar</column>
+<column name="network_weights_weig_244">in, 8, ap_none, network_weights_weig_244, scalar</column>
+<column name="network_weights_weig_245">in, 8, ap_none, network_weights_weig_245, scalar</column>
+<column name="network_weights_weig_246">in, 8, ap_none, network_weights_weig_246, scalar</column>
+<column name="network_weights_weig_247">in, 8, ap_none, network_weights_weig_247, scalar</column>
+<column name="network_weights_weig_248">in, 8, ap_none, network_weights_weig_248, scalar</column>
+<column name="network_weights_weig_249">in, 8, ap_none, network_weights_weig_249, scalar</column>
+<column name="network_weights_weig_250">in, 8, ap_none, network_weights_weig_250, scalar</column>
+<column name="network_weights_weig_251">in, 8, ap_none, network_weights_weig_251, scalar</column>
+<column name="network_weights_weig_252">in, 8, ap_none, network_weights_weig_252, scalar</column>
+<column name="network_weights_weig_253">in, 8, ap_none, network_weights_weig_253, scalar</column>
+<column name="network_weights_weig_254">in, 8, ap_none, network_weights_weig_254, scalar</column>
+<column name="network_weights_weig_255">in, 8, ap_none, network_weights_weig_255, scalar</column>
+<column name="network_weights_weig_256">in, 8, ap_none, network_weights_weig_256, scalar</column>
+<column name="network_weights_weig_257">in, 8, ap_none, network_weights_weig_257, scalar</column>
+<column name="network_weights_weig_258">in, 8, ap_none, network_weights_weig_258, scalar</column>
+<column name="network_weights_weig_259">in, 8, ap_none, network_weights_weig_259, scalar</column>
+<column name="network_weights_weig_260">in, 8, ap_none, network_weights_weig_260, scalar</column>
+<column name="network_weights_weig_261">in, 8, ap_none, network_weights_weig_261, scalar</column>
+<column name="layer">in, 4, ap_none, layer, scalar</column>
+<column name="index_0">in, 4, ap_none, index_0, scalar</column>
+<column name="index_1">in, 4, ap_none, index_1, scalar</column>
+</table>
+</item>
+</section>
+</profile>
