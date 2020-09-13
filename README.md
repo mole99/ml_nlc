@@ -29,15 +29,15 @@ Install the python modules via pip:
 
 ### ReluNetwork
 
-Contains everything to train a Neural Network via *train\_network.py* and run multiple tests for comparing different network sizes with *test\_configurations.py*. <br> *quantize\_network.py* trains a network, applies post-quantization (quantization aware training will follow) to it and saves it in the .tflite file format.
+Contains everything to train a Neural Network via `train_network.py` and run multiple tests for comparing different network sizes with `test_configurations.py`. <br> `quantize_network.py` trains a network, applies post-quantization (quantization aware training will follow) to it and saves it in the .tflite file format.
 
 ### TrainingData
 
-This includes both curves in .csv format and *training\_data.py* to load and process the training data.
+This includes both curves in .csv format and `training_data.py` to load and process the training data.
 
 ### ReferenceImplementation
 
-*main.py* loads the weights of an already trained network in .json format and runs the Neural Network in pure Python. Only dense layers are supported as of now.
+`main.py` loads the weights of an already trained network in .json format and runs the Neural Network in pure Python. Only dense layers are supported as of now.
 
 ### QuantizationScheme
 
@@ -45,29 +45,34 @@ A small reference implementation in C for the quantization scheme described here
 
 ### ExportNetwork
 
-*export_network.py* takes a model in .tflite file format and exports it as a C struct, ready to be read by *CNetwork*.
+`export_network.py` takes a model in .tflite file format and exports it as a C struct, ready to be read by `CNetwork`.
 
 ### ExportDataset
 
-*export_dataset.py* exports the training set found under *TrainingData* as a C array.
+`export_dataset.py` exports the training set found under `TrainingData` as a C array.
 
 ### CNetwork
 
-C implementation for performing inference of models exported via *ExportNetwork*. The output is compared to the dataset exported with *ExportDataset* and the resulting file can be displayed as a histogram by *display_results.py*.
+C implementation for performing inference of models exported via `ExportNetwork`. The output is compared to the dataset exported with `ExportDataset` and the resulting file can be displayed as a histogram by `display_results.py`.
 
 ### HLSNetwork
 
 Vivado HLS project to synthesize the C-model and create the corresponding HDL files.
+
+### HLSNetwork\_8\_8\_1
+
+Vivado HLS project to synthesize the C-model and create the corresponding HDL files. It implements a 3 layer network with `8_8_1` neurons. 
+
 
 ## Documentation
 
 ### Blogs
 
 The blog posts for this project are stored here.
-They are written with Markdown and also converted to .pdf format.
+They are written in Markdown and also converted to .pdf format.
 
 ### Online
 
-If reachable, the blog posts can also be read online here: [mole99.uber.space](https://mole99.uber.space/)
+If available, the blog posts can also be read online here: [mole99.uber.space](https://mole99.uber.space/)
 
 Specifically starting with this [post](https://mole99.uber.space/2020_08_03/entry.html).
